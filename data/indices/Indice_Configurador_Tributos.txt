@@ -1,0 +1,413 @@
+INDICE MESTRE DE DOCUMENTACAO - CONFIGURADOR DE TRIBUTOS (FISA170)
+======================================================================
+
+1. DOCUMENTACAO TECNICA ESTRUTURAL (TDN - 43 links)
+----------------------------------------------------------------------
+[*] CFGTRIB - Adequação do Configurador de Tributos aos Códigos de Classificação Tributária do IBS, CBS e IS
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=962623217
+
+[*] CFGTRIB - Ajustes de Lançamento no Configurador de Tributos
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=822223872
+
+[*] CFGTRIB - Boas Práticas - Guia de Utilização do Configurador de Tributos
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=825324804
+
+[*] CFGTRIB - Cadastro de Mensagens no Documento Fiscal
+    Link: https://tdn.totvs.com/display/PROT/CFGTRIB+-+Cadastro+de+Mensagens+no+Documento+Fiscal
+
+[*] CFGTRIB - Cadastro de Perfis do Configurador de Tributos - Boas Práticas
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=825324804
+
+[*] CFGTRIB - Cadastro de Regras de Cálculo no Configurador de Tributos - Boas Práticas
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=825324804
+
+[*] CFGTRIB - Cadastro e Apuração Código IPM
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=979039175
+
+[*] CFGTRIB - Campos da TES
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=943126076
+
+[*] CFGTRIB - Campos do cadastro de Tipos de Entrada e Saída descontinuados em favor do Configurador de Tributos
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=906853167
+
+[*] CFGTRIB - Campos que Permanecem no TES ( 🚧documentação em construção )
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=928965724
+
+[*] CFGTRIB - Compartilhamento de Tabelas
+    Link: https://tdn.totvs.com/display/PROT/CFGTRIB+-+Compartilhamento+de+Tabelas
+
+[*] CFGTRIB - Compra Governamental
+    Link: https://tdn.totvs.com/display/PROT/CFGTRIB+-+Compra+Governamental
+
+[*] CFGTRIB - Configurador de Tributos - P12
+    Link: https://tdn.totvs.com/display/PROT/CFGTRIB+-+Configurador+de+Tributos+-+P12
+
+[*] CFGTRIB - Configurador de Tributos
+    Link: https://tdn.totvs.com/display/PROT/CFGTRIB+-+Configurador+de+Tributos
+
+[*] CFGTRIB - Crédito Presumido de IBS e CBS da Reforma Tributária
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=1016682375
+
+[*] CFGTRIB - Cálculos no Configurador de Tributos
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=676039354
+
+[*] CFGTRIB - DIFAL e ICMS Complementar - Cálculos no Configurador de Tributos
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=899211861
+
+[*] CFGTRIB - Dados Adicionais
+    Link: https://tdn.totvs.com/display/PROT/CFGTRIB+-+Dados+Adicionais
+
+[*] CFGTRIB - Desligamento Automático de PIS/COFINS
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=1103673321
+
+[*] CFGTRIB - Frete Pauta considerado nos registros C195 e C197
+    Link: https://tdn.totvs.com/display/PROT/CFGTRIB+-+Frete+Pauta+considerado+nos+registros+C195+e+C197
+
+[*] CFGTRIB - Fundo de Reforma do Estado Rio Grande do Sul - IN 030/24
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=889126322
+
+[*] CFGTRIB - Fundos e Contribuições - Cálculos no Configurador de Tributos
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=899211548
+
+[*] CFGTRIB - Guia Prático Configurador de Tributos
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=966220651
+
+[*] CFGTRIB - ICMS Complementar com Código de Ajuste de Lançamento
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=847892777
+
+[*] CFGTRIB - ICMS Monofásico - Cálculos no Configurador de Tributos
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=899211922
+
+[*] CFGTRIB - ICMS Próprio - Cálculos no Configurador de Tributos
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=899211646
+
+[*] CFGTRIB - ICMS-ST - Cálculos no Configurador de Tributos
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=899211761
+
+[*] CFGTRIB - Indicadores da Operação (IndOp)
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=1016684365
+
+[*] CFGTRIB - Integração dos tributos legados com o Configurador de Tributos para atender aos novos tributos
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=960010301
+
+[*] CFGTRIB - Lançamento CAT 66/2018
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=822223908
+
+[*] CFGTRIB - Mecanismo de aprovação de regra
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=942068847
+
+[*] CFGTRIB - Operações de Serviço - Cálculos no Configurador de Tributos
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=899211533
+
+[*] CFGTRIB - Otimizador de Perfis Tributários - Participantes
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=1018572961
+
+[*] CFGTRIB - Otimizador de Perfis Tributários - Produtos
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=1027813812
+
+[*] CFGTRIB - Outros Cálculos no Configurador de Tributos
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=899211948
+
+[*] CFGTRIB - Perfil de Operação - Política do Tributo para Documentos que possuem vínculos com o Documentos de Origem
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=1070065237
+
+[*] CFGTRIB - Perguntas e Respostas - Configurador de Tributos
+    Link: https://tdn.totvs.com/display/PROT/CFGTRIB+-+Perguntas+e+Respostas+-+Configurador+de+Tributos
+
+[*] CFGTRIB - Regras por NCM
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=942052690
+
+[*] CFGTRIB - Simulador Comparativo
+    Link: https://tdn.totvs.com/display/PROT/CFGTRIB+-+Simulador+Comparativo
+
+[*] CFGTRIB - Simulador de Operação
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=877863294
+
+[*] CFGTRIB - Zona Franca de Manaus
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=930778873
+
+[*] Central de Diagnóstico: Reforma Tributária - Configurações Mínimas
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=1027814147
+
+[*] How To - Configurador de Tributos
+    Link: https://tdn.totvs.com/pages/viewpage.action?pageId=985663880
+
+
+2. CASOS PRATICOS E SUPORTE (CENTRAL DE ATENDIMENTO - 92 links)
+----------------------------------------------------------------------
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS - Como configurar o Suframa com ICMS, PIS e COFINS desonerados no fisa170?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/40468684143127-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-Como-configurar-o-Suframa-com-ICMS-PIS-e-COFINS-desonerados-no-fisa170
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS - Documentação de Acesso e Funcionalidades do Classificação Tributária by Systax
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/35553797284247-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-Documenta%C3%A7%C3%A3o-de-Acesso-e-Funcionalidades-do-Classifica%C3%A7%C3%A3o-Tribut%C3%A1ria-by-Systax
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS - Erro argument #0 error, expected A->U,  function asize on TOTVS.PROTHEUS.BACKOFFICE.FISCAL ao gerar nota com impostos calculados pelo Configurador de Tributos
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/35148267248279-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-Erro-argument-0-error-expected-A-U-function-asize-on-TOTVS-PROTHEUS-BACKOFFICE-FISCAL-ao-gerar-nota-com-impostos-calculados-pelo-Configurador-de-Tributos
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS - FISA170 - Como calcular PIS e COFINS alíquota zero?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/35367817354647-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-calcular-PIS-e-COFINS-al%C3%ADquota-zero
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS - FISA170 - Cálculo de IRRF utilizando a tabela progressiva, com desconto simplificado ou desconto normal
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/38714800109463-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-C%C3%A1lculo-de-IRRF-utilizando-a-tabela-progressiva-com-desconto-simplificado-ou-desconto-normal
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS - FISA170 - Cálculo de SUFRAMA (Zona Franca de Manaus) no Configurador de Tributos
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/36189964214551-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-C%C3%A1lculo-de-SUFRAMA-Zona-Franca-de-Manaus-no-Configurador-de-Tributos
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS - HELP: FWNOWUDTH ao incluir Fornecedor em Perfil de Participante
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/36267191647895-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-HELP-FWNOWUDTH-ao-incluir-Fornecedor-em-Perfil-de-Participante
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS - Relacionamento entre tabelas SD1/SD2, SFT, CJ3 e F2D no Configurador de Tributos
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/38741160434199-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-Relacionamento-entre-tabelas-SD1-SD2-SFT-CJ3-e-F2D-no-Configurador-de-Tributos
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – Com a utilização do Configurador de Tributos, os campos C5_RECISS e A1_RECISS são utilizados?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/35033655429399-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-Com-a-utiliza%C3%A7%C3%A3o-do-Configurador-de-Tributos-os-campos-C5-RECISS-e-A1-RECISS-s%C3%A3o-utilizados
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – Como excluir um cadastro de tributo padrão no Configurador de Tributos?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/35031475928855-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-Como-excluir-um-cadastro-de-tributo-padr%C3%A3o-no-Configurador-de-Tributos
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – ERROR.LOG cannot find function CHARGECK2 in AppMap on X170CARGA(FISA170.PRW) ao acessar o Configurador de Tributos
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/34975727614359-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-ERROR-LOG-cannot-find-function-CHARGECK2-in-AppMap-on-X170CARGA-FISA170-PRW-ao-acessar-o-Configurador-de-Tributos
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – FISA170 - A TES Inteligente irá permanecer com a implantação do Configurador de Tributos?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/35554255260439-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-A-TES-Inteligente-ir%C3%A1-permanecer-com-a-implanta%C3%A7%C3%A3o-do-Configurador-de-Tributos
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – FISA170 - Campo Config Arred (F2B_RND) arredondamento de imposto Configurador de Tributos
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/35444960995735-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Campo-Config-Arred-F2B-RND-arredondamento-de-imposto-Configurador-de-Tributos
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – FISA170 - Campo Redução de Alíquota (F28_REDALI)  no Configurador de Tributos
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/35440407805463-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Campo-Redu%C3%A7%C3%A3o-de-Al%C3%ADquota-F28-REDALI-no-Configurador-de-Tributos
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – FISA170 - Campos da TES irá permanecer com a implantação do Configurador de Tributos.
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/34900857950615-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Campos-da-TES-ir%C3%A1-permanecer-com-a-implanta%C3%A7%C3%A3o-do-Configurador-de-Tributos
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – FISA170 - Como calcular Diferencial de alíquotas nas entradas base dupla para RJ?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/34900941734807-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-calcular-Diferencial-de-al%C3%ADquotas-nas-entradas-base-dupla-para-RJ
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – FISA170 - Como calcular o Diferencial de alíquotas base dupla no Configurador de Tributos?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/32109854540695-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-calcular-o-Diferencial-de-al%C3%ADquotas-base-dupla-no-Configurador-de-Tributos
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – FISA170 - Como calcular o FUST/FUNTTEL pelo Configurador de Tributos?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/35985212819991-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-calcular-o-FUST-FUNTTEL-pelo-Configurador-de-Tributos
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – FISA170 - Como configurar o ICMS ST com FECP ST no Configurador de Tributos?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/31938533487639-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-configurar-o-ICMS-ST-com-FECP-ST-no-Configurador-de-Tributos
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – FISA170 - Como configurar o Reflexo para Diferencial de alíquotas no RJ?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/34902675464343-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-configurar-o-Reflexo-para-Diferencial-de-al%C3%ADquotas-no-RJ
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – FISA170 - Como configurar o reflexo sobre o Diferencial de alíquotas calculado pelo Configurador de Tributos?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/32111591006359-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-configurar-o-reflexo-sobre-o-Diferencial-de-al%C3%ADquotas-calculado-pelo-Configurador-de-Tributos
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – FISA170 - Como confirmar se os impostos estão sendo gerados pelo Configurador de Tributos ou TES?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/35357410638231-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-confirmar-se-os-impostos-est%C3%A3o-sendo-gerados-pelo-Configurador-de-Tributos-ou-TES
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – FISA170 - Como fazer uma Venda com  o mesmo CFOP para fins diferentes na Configurador de Tributos?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/34775583988887-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-fazer-uma-Venda-com-o-mesmo-CFOP-para-fins-diferentes-na-Configurador-de-Tributos
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – FISA170 - Como garantir o cálculo correto do tributo na nota fiscal utilizando a Regra de Cálculo no Configurador de Tributos?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/35041323516183-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-garantir-o-c%C3%A1lculo-correto-do-tributo-na-nota-fiscal-utilizando-a-Regra-de-C%C3%A1lculo-no-Configurador-de-Tributos
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – FISA170 - Como incluir o Configurador de Tributos no menu?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/35445470588823-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-incluir-o-Configurador-de-Tributos-no-menu
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – FISA170 - Como somar ou deduzir impostos no total da nota pelo Configurador de Tributos?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/35472380487703-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-somar-ou-deduzir-impostos-no-total-da-nota-pelo-Configurador-de-Tributos
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – FISA170 - O código das regras de calculo do documento fiscal (F2B_REGRA) grava em quais tabelas?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/35361266596759-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-O-c%C3%B3digo-das-regras-de-calculo-do-documento-fiscal-F2B-REGRA-grava-em-quais-tabelas
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – FISA170 - Os recursos do Configurador de Tributos estão disponíveis em quais versões do Protheus?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/35436184155927-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Os-recursos-do-Configurador-de-Tributos-est%C3%A3o-dispon%C3%ADveis-em-quais-vers%C3%B5es-do-Protheus
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – FISA170 – Como altera a consulta padrão do código de serviço da tabela 60 para a CCQ.
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/33778269624471-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-altera-a-consulta-padr%C3%A3o-do-c%C3%B3digo-de-servi%C3%A7o-da-tabela-60-para-a-CCQ
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – FISA170 – Como calcular FUNRURAL utilizando o Configurador de Tributos para notas de entrada e saída.
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/33723976776471-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-calcular-FUNRURAL-utilizando-o-Configurador-de-Tributos-para-notas-de-entrada-e-sa%C3%ADda
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – FISA170 – Como calcular IRRF utilizando o Configurador de Tributos para notas de entrada e saída.
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/28271222087959-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-calcular-IRRF-utilizando-o-Configurador-de-Tributos-para-notas-de-entrada-e-sa%C3%ADda
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – FISA170 – Como calcular PIS-COFINS Apuração utilizando o Configurador de Tributos para notas de entrada e saída.
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/28273192090135-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-calcular-PIS-COFINS-Apura%C3%A7%C3%A3o-utilizando-o-Configurador-de-Tributos-para-notas-de-entrada-e-sa%C3%ADda
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – FISA170 – Como calcular PIS/COFINS Auto Peças utilizando o Configurador de Tributos?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/35619536885015-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-calcular-PIS-COFINS-Auto-Pe%C3%A7as-utilizando-o-Configurador-de-Tributos
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – FISA170 – Como calcular PIS/COFINS/CSLL retenção utilizando o Configurador de Tributos para notas de entrada e saída.
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/28271950709399-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-calcular-PIS-COFINS-CSLL-reten%C3%A7%C3%A3o-utilizando-o-Configurador-de-Tributos-para-notas-de-entrada-e-sa%C3%ADda
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – FISA170 – Como calcular o INSS utilizando o Configurador de Tributos para notas de entrada e saída.
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/33702907793175-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-calcular-o-INSS-utilizando-o-Configurador-de-Tributos-para-notas-de-entrada-e-sa%C3%ADda
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – FISA170 – Como calcular o ISS utilizando o Configurador de Tributos para notas de entrada e saída?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/33675439757335-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-calcular-o-ISS-utilizando-o-Configurador-de-Tributos-para-notas-de-entrada-e-sa%C3%ADda
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – FISA170 – Como deduzir o valor do ICMS na base do PIS/COFINS Apuração utilizando o Configurador de Tributos.
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/28273997578391-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-deduzir-o-valor-do-ICMS-na-base-do-PIS-COFINS-Apura%C3%A7%C3%A3o-utilizando-o-Configurador-de-Tributos
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – FISA170 – Como deduzir o valor do ISS da base somente do PIS/COFINS Apuração utilizando o Configurador de Tributos
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/28279954561559-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-deduzir-o-valor-do-ISS-da-base-somente-do-PIS-COFINS-Apura%C3%A7%C3%A3o-utilizando-o-Configurador-de-Tributos
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – FISA170 – Como utilizar uma alíquota de ISS por Município com Configurador de Tributos.
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/28272502990999-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-utilizar-uma-al%C3%ADquota-de-ISS-por-Munic%C3%ADpio-com-Configurador-de-Tributos
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – FISA170 – Valor do ICMS ST na base do PIS/COFINS Apuração utilizando o Configurador de Tributos.
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/28280530067479-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Valor-do-ICMS-ST-na-base-do-PIS-COFINS-Apura%C3%A7%C3%A3o-utilizando-o-Configurador-de-Tributos
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – FISA170 – Valor do IPI na base do PIS/COFINS Apuração utilizando o Configurador de Tributos.
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/28280838148503-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Valor-do-IPI-na-base-do-PIS-COFINS-Apura%C3%A7%C3%A3o-utilizando-o-Configurador-de-Tributos
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – Função: X160TPREG Called By X3CBOX
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/35048675396503-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-Fun%C3%A7%C3%A3o-X160TPREG-Called-By-X3CBOX
+
+[*] CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – Não consta o CST de devolução dos impostos calculados pelo Configurador de Tributos.
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/35068259496599-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-N%C3%A3o-consta-o-CST-de-devolu%C3%A7%C3%A3o-dos-impostos-calculados-pelo-Configurador-de-Tributos
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Como calcular Difal EC/87 com redução de base calculo Conv 52/91?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/15478798420247-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-calcular-Difal-EC-87-com-redu%C3%A7%C3%A3o-de-base-calculo-Conv-52-91
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Como calcular ICMS Efetivo pelo Configurador de Tributador?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/34823839541655-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-calcular-ICMS-Efetivo-pelo-Configurador-de-Tributador
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Como calcular ICMS diferido 100% com CST 53?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/19120465589783-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-calcular-ICMS-diferido-100-com-CST-53
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Como calcular ICMS e não creditar?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/23399818732055-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-calcular-ICMS-e-n%C3%A3o-creditar
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Como calcular IPI no Configurador de Tributos?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/34605029826455-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-calcular-IPI-no-Configurador-de-Tributos
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Como calcular nota fiscal de importação do Paraná com ICMS Diferido?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/15473198697495-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-calcular-nota-fiscal-de-importa%C3%A7%C3%A3o-do-Paran%C3%A1-com-ICMS-Diferido
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Como calcular o Difal EC/87 com base dupla?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/26081448258071-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-calcular-o-Difal-EC-87-com-base-dupla
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Como calcular o ICMS ST?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/17802352397591-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-calcular-o-ICMS-ST
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Como calcular o ICMS próprio em operações de entrada e saída?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/23397761395223-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-calcular-o-ICMS-pr%C3%B3prio-em-opera%C3%A7%C3%B5es-de-entrada-e-sa%C3%ADda
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Como compartilhar as regras dos perfis entre filias no FISA170?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/23377972562455-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-compartilhar-as-regras-dos-perfis-entre-filias-no-FISA170
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Como configurar a Regra de NCM para todos os estados?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/34612307631127-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-configurar-a-Regra-de-NCM-para-todos-os-estados
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Como configurar as regras dos impostos quando um imposto influencia o cálculo de outro?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/26438476614935-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-configurar-as-regras-dos-impostos-quando-um-imposto-influencia-o-c%C3%A1lculo-de-outro
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Como configurar o Fundo Reforma do estado do RS?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/23234598436759-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-configurar-o-Fundo-Reforma-do-estado-do-RS
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Como configurar o ICMS ST pauta e FECP ST separados para vendas internas no DF?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/24624084772759-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-configurar-o-ICMS-ST-pauta-e-FECP-ST-separados-para-vendas-internas-no-DF
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Como configurar o credito presumido?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/20294406847383-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-configurar-o-credito-presumido
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Como configurar o cálculo do ICMS-ST com base reduzida e frete agregado?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/21248237337623-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-configurar-o-c%C3%A1lculo-do-ICMS-ST-com-base-reduzida-e-frete-agregado
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Como configurar o código de reflexo?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/20296402734103-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-configurar-o-c%C3%B3digo-de-reflexo
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Como configurar o fundo FDI do estado PI?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/16595925125527-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-configurar-o-fundo-FDI-do-estado-PI
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Como contabilizar os tributos genéricos?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/23400899238295-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-contabilizar-os-tributos-gen%C3%A9ricos
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Como deduzir o icms monofasico da base de calculo do pis e cofins no fisa170?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/28308697631639-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-deduzir-o-icms-monofasico-da-base-de-calculo-do-pis-e-cofins-no-fisa170
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Como descontar do ICMS diferido da base do PIS/COFINS?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/16618587210263-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-descontar-do-ICMS-diferido-da-base-do-PIS-COFINS
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Como gerar devolução do CST 61 STMONO?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/17500823205143-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-gerar-devolu%C3%A7%C3%A3o-do-CST-61-STMONO
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Como gerar nota de complemento do STMONO CST 61?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/25934584625047-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-gerar-nota-de-complemento-do-STMONO-CST-61
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Como gerar o STMONO 61?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/15741756726423-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-gerar-o-STMONO-61
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Como lançar a nota fiscal de compra de Gasolina CST 15?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/15109110244119-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-lan%C3%A7ar-a-nota-fiscal-de-compra-de-Gasolina-CST-15
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Como lançar nota fiscal de entrada de óleo diesel TAG15 no MATA103?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/14558273258007-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-lan%C3%A7ar-nota-fiscal-de-entrada-de-%C3%B3leo-diesel-TAG15-no-MATA103
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Como se creditar do ICMS para as compras do CST 61?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/25745226524823-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-se-creditar-do-ICMS-para-as-compras-do-CST-61
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Como usar a Sub Apuração junto com o configurador de tributos
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/33642391246103-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-usar-a-Sub-Apura%C3%A7%C3%A3o-junto-com-o-configurador-de-tributos
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Como utilizar o Facilitador de cadastro no perfil de produtos e participante no Configurador de Tributos?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/34824467940247-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-utilizar-o-Facilitador-de-cadastro-no-perfil-de-produtos-e-participante-no-Configurador-de-Tributos
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Compartilhamento de Tabelas de Perfis, Regras de Cálculo e Regra de Escrituração
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/36181199260183-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Compartilhamento-de-Tabelas-de-Perfis-Regras-de-C%C3%A1lculo-e-Regra-de-Escritura%C3%A7%C3%A3o
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Mecanismo de aprovação de Regras de Cálculo (campo Status) no Configurador de Tributos
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/35344118632215-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Mecanismo-de-aprova%C3%A7%C3%A3o-de-Regras-de-C%C3%A1lculo-campo-Status-no-Configurador-de-Tributos
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Onde informar a data de vigência da regra criada no Configurador de Tributos?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/33964900963223-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Onde-informar-a-data-de-vig%C3%AAncia-da-regra-criada-no-Configurador-de-Tributos
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Quais tabelas fazem parte do Configurador de Tributos?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/35314721022103-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Quais-tabelas-fazem-parte-do-Configurador-de-Tributos
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Tratativa do Campo Incidência da Regra de Escrituração sobre operação de redução
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/35360344325527-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Tratativa-do-Campo-Incid%C3%AAncia-da-Regra-de-Escritura%C3%A7%C3%A3o-sobre-opera%C3%A7%C3%A3o-de-redu%C3%A7%C3%A3o
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - Quantas majorações posso incluir em outro tributo no Configurador de Tributos?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/34371268913303-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-Quantas-majora%C3%A7%C3%B5es-posso-incluir-em-outro-tributo-no-Configurador-de-Tributos
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - Simulador Comparativo
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/34881724308119-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-Simulador-Comparativo
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - Simulador de Operações
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/34881620535831-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-Simulador-de-Opera%C3%A7%C3%B5es
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS Como configurar o ICMS diferido 100% e gerar cBenef para SP?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/38777174413463-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-Como-configurar-o-ICMS-diferido-100-e-gerar-cBenef-para-SP
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS Como gerar CJ3 para nota fiscal de devolução ?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/42821818356247-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-Como-gerar-CJ3-para-nota-fiscal-de-devolu%C3%A7%C3%A3o
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - SIGAFIS - Tabelas CJ3 e F2D em branco, o que validar?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/42532771513111-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-SIGAFIS-Tabelas-CJ3-e-F2D-em-branco-o-que-validar
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - SIGAFIS - Webinars e Treinamentos do Configurador de Tributos (FISA170)
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/40308222614551-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-SIGAFIS-Webinars-e-Treinamentos-do-Configurador-de-Tributos-FISA170
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - TOTVS Gestão Fiscal - FIS - Calculo ICMS ST Pauta ou MVA (Configurador de Tributos)?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/40638468014103-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-TOTVS-Gest%C3%A3o-Fiscal-FIS-Calculo-ICMS-ST-Pauta-ou-MVA-Configurador-de-Tributos
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - TOTVS Gestão Fiscal - FIS - Como calcular FECP nas operações com ICMS no Fisa170?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/40128147887895-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-TOTVS-Gest%C3%A3o-Fiscal-FIS-Como-calcular-FECP-nas-opera%C3%A7%C3%B5es-com-ICMS-no-Fisa170
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - TOTVS Gestão Fiscal - FIS - Como calcular Suframa de forma Hibrida com cBenef ?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/40300010845975-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-TOTVS-Gest%C3%A3o-Fiscal-FIS-Como-calcular-Suframa-de-forma-Hibrida-com-cBenef
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - TOTVS Gestão Fiscal - FIS - Como fazer a devolução de compra com IBS/CBS forma Hibrida?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/38656780729623-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-TOTVS-Gest%C3%A3o-Fiscal-FIS-Como-fazer-a-devolu%C3%A7%C3%A3o-de-compra-com-IBS-CBS-forma-Hibrida
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - TOTVS Gestão Fiscal - FIS Como fazer devolução de Saidas com calculo IBS/CBS forma Hibrida ?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/38604180935447-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-TOTVS-Gest%C3%A3o-Fiscal-FIS-Como-fazer-devolu%C3%A7%C3%A3o-de-Saidas-com-calculo-IBS-CBS-forma-Hibrida
+
+[*] Cross Segmento - TOTVS Backoffice (Linha Protheus) - TOTVS Gestão Fiscal - FIS Como gerar cBenef com redução de base de calculo no fisa170?
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/38986562919447-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-TOTVS-Gest%C3%A3o-Fiscal-FIS-Como-gerar-cBenef-com-redu%C3%A7%C3%A3o-de-base-de-calculo-no-fisa170
+
+[*] Cross Segmentos - Backoffice Protheus - FIS - Escrita Fiscal - Dicionário desatualizado, favor verificar atualizações do motor de cálculo fiscal
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/36699322874263-Cross-Segmentos-Backoffice-Protheus-FIS-Escrita-Fiscal-Dicion%C3%A1rio-desatualizado-favor-verificar-atualiza%C3%A7%C3%B5es-do-motor-de-c%C3%A1lculo-fiscal
+
+[*] Cross Segmentos - Backoffice Protheus - FIS - Escrita Fiscal - ErrorLog Invalid column name 'CJ2_MSGCOD'.
+    Link: https://centraldeatendimento.totvs.com/hc/pt-br/articles/37274769467159-Cross-Segmentos-Backoffice-Protheus-FIS-Escrita-Fiscal-ErrorLog-Invalid-column-name-CJ2-MSGCOD
+

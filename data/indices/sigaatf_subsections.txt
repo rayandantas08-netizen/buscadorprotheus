@@ -1,0 +1,30 @@
+Ativo Fixo - Ajuste e Alteração do Bem|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001546862-Ativo-Fixo-Ajuste-e-Altera%C3%A7%C3%A3o-do-Bem
+Ativo Fixo - Ampliação|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001535321-Ativo-Fixo-Amplia%C3%A7%C3%A3o
+Ativo Fixo - Apontamento Produção|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001546922-Ativo-Fixo-Apontamento-Produ%C3%A7%C3%A3o
+Ativo Fixo - Aquisição por Transferência|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001535341-Ativo-Fixo-Aquisi%C3%A7%C3%A3o-por-Transfer%C3%AAncia
+Ativo Fixo - Ativo X ICMS / CIAP, Impostos, Seguro, Frete|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001546982-Ativo-Fixo-Ativo-X-ICMS-CIAP-Impostos-Seguro-Frete
+Ativo Fixo - Baixa e Baixa de Adiantamento|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001535901-Ativo-Fixo-Baixa-e-Baixa-de-Adiantamento
+Ativo Fixo - Bens terceiros|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001536381-Ativo-Fixo-Bens-terceiros
+Ativo Fixo - Bens X Manutenção de ativo|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001536141-Ativo-Fixo-Bens-X-Manuten%C3%A7%C3%A3o-de-ativo
+Ativo Fixo - Bloqueio/Desbloqueio de Movimentação|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001547562-Ativo-Fixo-Bloqueio-Desbloqueio-de-Movimenta%C3%A7%C3%A3o
+Ativo Fixo - Cadastro Ativo/Classificação de Compras|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001547662-Ativo-Fixo-Cadastro-Ativo-Classifica%C3%A7%C3%A3o-de-Compras
+Ativo Fixo - Cálculo, Descalculo e Simulação de Depreciação e Depreciação acelerada|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001536401-Ativo-Fixo-C%C3%A1lculo-Descalculo-e-Simula%C3%A7%C3%A3o-de-Deprecia%C3%A7%C3%A3o-e-Deprecia%C3%A7%C3%A3o-acelerada
+Ativo Fixo - Contabilização/Lançamento padrão|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001536421-Ativo-Fixo-Contabiliza%C3%A7%C3%A3o-Lan%C3%A7amento-padr%C3%A3o
+Ativo Fixo - EFD Contribuições - Registros F120/F130|https://centraldeatendimento.totvs.com/hc/pt-br/sections/31045161075991-Ativo-Fixo-EFD-Contribui%C3%A7%C3%B5es-Registros-F120-F130
+Ativo Fixo - Grupo de Bens|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001536521-Ativo-Fixo-Grupo-de-Bens
+Ativo fixo - Integração EAI PIMS Protheus|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001536581-Ativo-fixo-Integra%C3%A7%C3%A3o-EAI-PIMS-Protheus
+Ativo Fixo - Inventário|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001536621-Ativo-Fixo-Invent%C3%A1rio
+Ativo Fixo - Mile|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001536661-Ativo-Fixo-Mile
+Ativo Fixo - Moedas|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001536641-Ativo-Fixo-Moedas
+Ativo Fixo - Ponto de entrada, Customizações, Funções, Execauto|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001536601-Ativo-Fixo-Ponto-de-entrada-Customiza%C3%A7%C3%B5es-Fun%C3%A7%C3%B5es-Execauto
+Ativo Fixo - Procedures|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001536541-Ativo-Fixo-Procedures
+Ativo Fixo - Projeto imobiliário|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001536441-Ativo-Fixo-Projeto-imobili%C3%A1rio
+Ativo Fixo - Rateio|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001547782-Ativo-Fixo-Rateio
+Ativo Fixo - Reavaliação AVP, BENS, ANUAL|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001536361-Ativo-Fixo-Reavalia%C3%A7%C3%A3o-AVP-BENS-ANUAL
+Ativo Fixo - Refaz Saldos|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001536321-Ativo-Fixo-Refaz-Saldos
+Ativo fixo - Reforma Tributária|https://centraldeatendimento.totvs.com/hc/pt-br/sections/37095895776791-Ativo-fixo-Reforma-Tribut%C3%A1ria
+Ativo Fixo - Relatórios|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001536301-Ativo-Fixo-Relat%C3%B3rios
+Ativo Fixo - Responsáveis x Bens|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001547682-Ativo-Fixo-Respons%C3%A1veis-x-Bens
+Ativo Fixo - Solicitação Baixa ou Transferência|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001547622-Ativo-Fixo-Solicita%C3%A7%C3%A3o-Baixa-ou-Transfer%C3%AAncia
+Ativo Fixo - Tabelas, Parâmetros, Campos .Gatilho|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001536201-Ativo-Fixo-Tabelas-Par%C3%A2metros-Campos-Gatilho
+Ativo Fixo - Taxa Regulamentadas|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001536121-Ativo-Fixo-Taxa-Regulamentadas

@@ -1,0 +1,17 @@
+ACOMPANHA CUSTOS - JORNADA DE FECHAMENTO (NOVO)|https://centraldeatendimento.totvs.com/hc/pt-br/sections/5367899706647-ACOMPANHA-CUSTOS-JORNADA-DE-FECHAMENTO-NOVO
+Materiais - Estoque e Custos (SIGAEST)|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001602842-Materiais-Estoque-e-Custos-SIGAEST
+SIGAACD - Automação e Coleta de Dados|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001550002-SIGAACD-Automa%C3%A7%C3%A3o-e-Coleta-de-Dados
+SIGAEST - CADASTROS E CONFIGURAÇÕES GERAIS|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001550022-SIGAEST-CADASTROS-E-CONFIGURA%C3%87%C3%95ES-GERAIS
+SIGAEST - CÁLCULOS|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001550082-SIGAEST-C%C3%81LCULOS
+SIGAEST - CONSULTAS|https://centraldeatendimento.totvs.com/hc/pt-br/sections/5367925055639-SIGAEST-CONSULTAS
+SIGAEST - CUSTOS|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001538901-SIGAEST-CUSTOS
+SIGAEST - FECHAMENTO DE ESTOQUE (VIRADA DOS SALDOS)|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001538921-SIGAEST-FECHAMENTO-DE-ESTOQUE-VIRADA-DOS-SALDOS
+SIGAEST - INTEGRAÇÕES|https://centraldeatendimento.totvs.com/hc/pt-br/sections/21226442947351-SIGAEST-INTEGRA%C3%87%C3%95ES
+SIGAEST - INVENTÁRIO|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001538961-SIGAEST-INVENT%C3%81RIO
+SIGAEST - LEGAIS|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001538941-SIGAEST-LEGAIS
+SIGAEST - MOVIMENTAÇÕES|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001550102-SIGAEST-MOVIMENTA%C3%87%C3%95ES
+SIGAEST - PODER DE TERCEIROS|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001538881-SIGAEST-PODER-DE-TERCEIROS
+SIGAEST - PROCESSAMENTOS|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001538861-SIGAEST-PROCESSAMENTOS
+SIGAEST - RELATORIOS|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001538841-SIGAEST-RELATORIOS
+SIGAEST - SALDOS|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001538801-SIGAEST-SALDOS
+SIGAEST - SMARTVIEW|https://centraldeatendimento.totvs.com/hc/pt-br/sections/16108365627287-SIGAEST-SMARTVIEW

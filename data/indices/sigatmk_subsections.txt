@@ -1,0 +1,5 @@
+Call Center - Dúvidas Gerais|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001548242-Call-Center-D%C3%BAvidas-Gerais
+Call Center - Help Desk|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001537181-Call-Center-Help-Desk
+Call Center - Telecobrança|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001548222-Call-Center-Telecobran%C3%A7a
+Call Center - Telemarketing|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001548162-Call-Center-Telemarketing
+Call Center - Televendas|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001537121-Call-Center-Televendas

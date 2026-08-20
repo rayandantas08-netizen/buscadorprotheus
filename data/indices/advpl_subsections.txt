@@ -1,0 +1,5 @@
+ADVPL - Classe e Função|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001538041-ADVPL-Classe-e-Fun%C3%A7%C3%A3o
+ADVPL - Ponto de Entrada|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001549122-ADVPL-Ponto-de-Entrada
+ADVPL - Relatório|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001549062-ADVPL-Relat%C3%B3rio
+ADVPL - Rotina Automática|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001538001-ADVPL-Rotina-Autom%C3%A1tica
+ADVPL - Web Service|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001567342-ADVPL-Web-Service

@@ -1,0 +1,282 @@
+Guia de Relacionamentos - Específico PROTHEUS | https://tdn.totvs.com/pages/viewpage.action?pageId=547876496
+Documento de Referência | https://tdn.totvs.com/pages/viewpage.action?pageId=189305592
+Protheus  12 | https://tdn.totvs.com/display/PROT/Protheus++12
+Call Center - Protheus 12 | https://tdn.totvs.com/display/PROT/Call+Center+-+Protheus+12
+Business Intelligence - Protheus 12 | https://tdn.totvs.com/display/PROT/Business+Intelligence+-+Protheus+12
+Framework - Protheus 12 | https://tdn.totvs.com/display/PROT/Framework+-+Protheus+12
+Controle de Lojas - Protheus 12 | https://tdn.totvs.com/display/PROT/Controle+de+Lojas+-+Protheus+12
+Financeiro -  Protheus 12 | https://tdn.totvs.com/display/PROT/Financeiro+-++Protheus+12
+Fiscal - Protheus 12 | https://tdn.totvs.com/display/PROT/Fiscal+-+Protheus+12
+Pontos de Entrada - Fiscal - P12 | https://tdn.totvs.com/display/PROT/Pontos+de+Entrada+-+Fiscal+-+P12
+Menu do Módulo - Fiscal - P12 | https://tdn.totvs.com/pages/viewpage.action?pageId=514445940
+Atualizações - Fiscal - P12 | https://tdn.totvs.com/pages/viewpage.action?pageId=497202878
+Cadastros - Fiscal - P12 | https://tdn.totvs.com/display/PROT/Cadastros+-+Fiscal+-+P12
+Facilitadores - Fiscal - P12 | https://tdn.totvs.com/display/PROT/Facilitadores+-+Fiscal+-+P12
+CFGTRIB - Configurador de Tributos - P12 | https://tdn.totvs.com/display/PROT/CFGTRIB+-+Configurador+de+Tributos+-+P12
+Central de Diagnóstico: Reforma Tributária - Configurações Mínimas | https://tdn.totvs.com/pages/viewpage.action?pageId=1027814147
+CFGTRIB - Adequação do Configurador de Tributos aos Códigos de Classificação Tributária do IBS, CBS e IS | https://tdn.totvs.com/pages/viewpage.action?pageId=962623217
+CFGTRIB - Ajustes de Lançamento no Configurador de Tributos | https://tdn.totvs.com/pages/viewpage.action?pageId=822223872
+CFGTRIB - Frete Pauta considerado nos registros C195 e C197 | https://tdn.totvs.com/display/PROT/CFGTRIB+-+Frete+Pauta+considerado+nos+registros+C195+e+C197
+CFGTRIB - Fundo de Reforma do Estado Rio Grande do Sul - IN 030/24 | https://tdn.totvs.com/pages/viewpage.action?pageId=889126322
+CFGTRIB - ICMS Complementar com Código de Ajuste de Lançamento | https://tdn.totvs.com/pages/viewpage.action?pageId=847892777
+CFGTRIB - Lançamento CAT 66/2018 | https://tdn.totvs.com/pages/viewpage.action?pageId=822223908
+CFGTRIB - Boas Práticas - Guia de Utilização do Configurador de Tributos | https://tdn.totvs.com/pages/viewpage.action?pageId=825324804
+CFGTRIB - Cadastro de Mensagens no Documento Fiscal | https://tdn.totvs.com/display/PROT/CFGTRIB+-+Cadastro+de+Mensagens+no+Documento+Fiscal
+CFGTRIB - Cadastro e Apuração Código IPM | https://tdn.totvs.com/pages/viewpage.action?pageId=979039175
+CFGTRIB - Cálculos no Configurador de Tributos | https://tdn.totvs.com/pages/viewpage.action?pageId=676039354
+CFGTRIB - Campos do cadastro de Tipos de Entrada e Saída descontinuados em favor do Configurador de Tributos | https://tdn.totvs.com/pages/viewpage.action?pageId=906853167
+CFGTRIB - Campos que Permanecem no TES ( 🚧documentação em construção ) | https://tdn.totvs.com/pages/viewpage.action?pageId=928965724
+CFGTRIB - Compartilhamento de Tabelas | https://tdn.totvs.com/display/PROT/CFGTRIB+-+Compartilhamento+de+Tabelas
+CFGTRIB - Compra Governamental | https://tdn.totvs.com/display/PROT/CFGTRIB+-+Compra+Governamental
+CFGTRIB - Configurador de Tributos | https://tdn.totvs.com/display/PROT/CFGTRIB+-+Configurador+de+Tributos
+CFGTRIB - Crédito Presumido de IBS e CBS da Reforma Tributária | https://tdn.totvs.com/pages/viewpage.action?pageId=1016682375
+CFGTRIB - Dados Adicionais | https://tdn.totvs.com/display/PROT/CFGTRIB+-+Dados+Adicionais
+CFGTRIB - Desligamento Automático de PIS/COFINS | https://tdn.totvs.com/pages/viewpage.action?pageId=1103673321
+CFGTRIB - Guia Prático Configurador de Tributos | https://tdn.totvs.com/pages/viewpage.action?pageId=966220651
+CFGTRIB - Indicadores da Operação (IndOp) | https://tdn.totvs.com/pages/viewpage.action?pageId=1016684365
+CFGTRIB - Integração dos tributos legados com o Configurador de Tributos para atender aos novos tributos | https://tdn.totvs.com/pages/viewpage.action?pageId=960010301
+CFGTRIB - Mecanismo de aprovação de regra | https://tdn.totvs.com/pages/viewpage.action?pageId=942068847
+CFGTRIB - Otimizador de Perfis Tributários - Participantes | https://tdn.totvs.com/pages/viewpage.action?pageId=1018572961
+CFGTRIB - Otimizador de Perfis Tributários - Produtos | https://tdn.totvs.com/pages/viewpage.action?pageId=1027813812
+CFGTRIB - Perfil de Operação - Política do Tributo para Documentos que possuem vínculos com o Documentos de Origem | https://tdn.totvs.com/pages/viewpage.action?pageId=1070065237
+CFGTRIB - Perguntas e Respostas - Configurador de Tributos | https://tdn.totvs.com/display/PROT/CFGTRIB+-+Perguntas+e+Respostas+-+Configurador+de+Tributos
+CFGTRIB - Simulador Comparativo | https://tdn.totvs.com/display/PROT/CFGTRIB+-+Simulador+Comparativo
+CFGTRIB - Simulador de Operação | https://tdn.totvs.com/pages/viewpage.action?pageId=877863294
+CLASSTRIB- Classificação Tributária by Systax | https://tdn.totvs.com/pages/viewpage.action?pageId=727362166
+Glossário - Nomenclaturas utilizadas no Configurador de Tributos e Classificação Tributária by Systax | https://tdn.totvs.com/pages/viewpage.action?pageId=893426939
+Movimentos - Fiscal - P12 | https://tdn.totvs.com/display/PROT/Movimentos+-+Fiscal+-+P12
+Sped - Fiscal - P12 | https://tdn.totvs.com/display/PROT/Sped+-+Fiscal+-+P12
+Consultas - Fiscal P12 | https://tdn.totvs.com/display/PROT/Consultas+-+Fiscal+P12
+Miscelânea - Fiscal - P12 | https://tdn.totvs.com/pages/viewpage.action?pageId=270923448
+Outras Ações - Fiscal - P12 | https://tdn.totvs.com/pages/viewpage.action?pageId=270094017
+Relatórios - Fiscal - P12 | https://tdn.totvs.com/pages/viewpage.action?pageId=270923451
+Conceitos - Fiscal - P12 | https://tdn.totvs.com/display/PROT/Conceitos+-+Fiscal+-+P12
+Configurações - Fiscal - P12 | https://tdn.totvs.com/pages/viewpage.action?pageId=514456601
+Integrações - Fiscal - P12 | https://tdn.totvs.com/pages/viewpage.action?pageId=514719960
+Expedição Contínua - Fiscal - P12 | https://tdn.totvs.com/pages/viewpage.action?pageId=527848707
+Funções - Fiscal - P12 | https://tdn.totvs.com/pages/viewpage.action?pageId=539527253
+Localizaciones - Fiscal - P12 | https://tdn.totvs.com/display/PROT/Localizaciones+-+Fiscal+-+P12
+Especificação de Requisitos | https://tdn.totvs.com/pages/viewpage.action?pageId=594429492
+TOTVS News Fiscal | https://tdn.totvs.com/display/PROT/TOTVS+News+Fiscal
+Banco de Conhecimento - Fiscal - P12 | https://tdn.totvs.com/display/PROT/Banco+de+Conhecimento+-+Fiscal+-+P12
+FAQ - Fiscal - P12 | https://tdn.totvs.com/display/PROT/FAQ+-+Fiscal+-+P12
+SmartView - Fiscal | https://tdn.totvs.com/display/PROT/SmartView+-+Fiscal
+Ciclo de Vida (SIGAFIS) | https://tdn.totvs.com/pages/viewpage.action?pageId=841682134
+Gestão de Projetos - Protheus 12 | https://tdn.totvs.com/pages/viewpage.action?pageId=351016657
+Gestão de Contratos -  Protheus 12 | https://tdn.totvs.com/pages/viewpage.action?pageId=224127467
+Gestão de Compras - Protheus 12 | https://tdn.totvs.com/pages/viewpage.action?pageId=312157188
+Gestão de Contratos Públicos - Protheus 12 | https://tdn.totvs.com/pages/viewpage.action?pageId=341222185
+Gestão Jurídica -  Protheus 12 | https://tdn.totvs.com/pages/viewpage.action?pageId=239030162
+Terceirização (SIGATEC) - Protheus 12 | https://tdn.totvs.com/pages/viewpage.action?pageId=236601804
+Pré-faturamento de Serviços - Protheus 12 | https://tdn.totvs.com/pages/viewpage.action?pageId=243658362
+Gestão da Qualidade | https://tdn.totvs.com/pages/viewpage.action?pageId=552102435
+Gestão de Transporte de Passageiro - Protheus 12 | https://tdn.totvs.com/pages/viewpage.action?pageId=393367125
+TAF Totvs Automação Fiscal - Protheus 12 | https://tdn.totvs.com/pages/viewpage.action?pageId=464958325
+Controladoria - Protheus 12 | https://tdn.totvs.com/display/PROT/Controladoria+-+Protheus+12
+Gestão Agrícola (SIGAAGR) | https://tdn.totvs.com/pages/viewpage.action?pageId=484681680
+Recursos Humanos - Protheus 12 | https://tdn.totvs.com/display/PROT/Recursos+Humanos+-+Protheus+12
+Plano de Saúde - Protheus 12 | https://tdn.totvs.com/pages/viewpage.action?pageId=357604808
+Logística - Protheus 12 | https://tdn.totvs.com/pages/viewpage.action?pageId=272153559
+Manufatura - Protheus 12 | https://tdn.totvs.com/display/PROT/Manufatura+-+Protheus+12
+Estoque e Custos - Protheus 12 | https://tdn.totvs.com/display/PROT/Estoque+e+Custos+-+Protheus+12
+Customer Relationship Management - Protheus 12 | https://tdn.totvs.com/display/PROT/Customer+Relationship+Management+-+Protheus+12
+Medicina e Segurança do Trabalho (SIGAMDT) - Protheus 12 | https://tdn.totvs.com/pages/viewpage.action?pageId=525798529
+Gestão Ambiental (SIGASGA) - Protheus 12 | https://tdn.totvs.com/pages/viewpage.action?pageId=525798770
+Comércio Exterior - Protheus 12 | https://tdn.totvs.com/pages/viewpage.action?pageId=284872382
+Central de Obrigações - Protheus 12 | https://tdn.totvs.com/pages/viewpage.action?pageId=527003924
+Documentos Eletrônicos - Protheus 12 | https://tdn.totvs.com/pages/viewpage.action?pageId=531034095
+ACD (Automação de Coleta de Dados) - Protheus 12 | https://tdn.totvs.com/pages/viewpage.action?pageId=539529526
+Controle de Direitos Autorais - P12 | https://tdn.totvs.com/display/PROT/Controle+de+Direitos+Autorais+-+P12
+Manutenção de ativos(SIGAMNT) e Gestão de frotas (SIGAGFR) | https://tdn.totvs.com/pages/viewpage.action?pageId=447091814
+MultiClubes - Protheus 12 | https://tdn.totvs.com/display/PROT/MultiClubes+-+Protheus+12
+Gestão de Concessionárias - DMS - Protheus 12 | https://tdn.totvs.com/pages/viewpage.action?pageId=556374086
+Distribuição de Combustíveis e Lubrificantes - DCL | https://tdn.totvs.com/pages/viewpage.action?pageId=558244097
+Desenvolvedor de Produtos (SIGADPR) - Protheus 12 | https://tdn.totvs.com/display/PROT/Desenvolvedor+de+Produtos+%28SIGADPR%29+-+Protheus+12
+Faturamento - Protheus 12 | https://tdn.totvs.com/display/PROT/Faturamento+-+Protheus+12
+Aplicativos Móveis - Protheus 12 | https://tdn.totvs.com/pages/viewpage.action?pageId=273313626
+EFD-REINF | https://tdn.totvs.com/display/PROT/EFD-REINF
+TOTVS RENTAL - Protheus 12 | https://tdn.totvs.com/display/PROT/TOTVS+RENTAL+-+Protheus+12
+Techfin ERP Finance - Protheus 12 | https://tdn.totvs.com/display/PROT/Techfin+ERP+Finance+-+Protheus+12
+TSS - TOTVS SERVICE SOA | https://tdn.totvs.com/display/PROT/TSS+-+TOTVS+SERVICE+SOA
+TOTVSPDV - Protheus12 | https://tdn.totvs.com/display/PROT/TOTVSPDV+-+Protheus12
+Gestão de Receitas | https://tdn.totvs.com/pages/viewpage.action?pageId=626926607
+AdvPL | https://tdn.totvs.com/display/PROT/AdvPL
+Campo_Telefone_no_arquivo_magnético_da_DIRF | https://tdn.totvs.com/pages/viewpage.action?pageId=255263517
+Parâmetros - Protheus 12 | https://tdn.totvs.com/pages/viewpage.action?pageId=811253122
+Pontos de Entrada - Protheus 12 | https://tdn.totvs.com/display/PROT/Pontos+de+Entrada+-+Protheus+12
+TOTVS Smart NIP - Release notes | https://tdn.totvs.com/display/PROT/TOTVS+Smart+NIP+-+Release+notes
+TOTVS Smart NIP - Pesquisa Avançada | https://tdn.totvs.com/pages/viewpage.action?pageId=645235729
+TOTVS Smart NIP - Meus indicadores | https://tdn.totvs.com/display/PROT/TOTVS+Smart+NIP+-+Meus+indicadores
+TOTVS SMART NIP - Importação e cadastro de NIPS | https://tdn.totvs.com/pages/viewpage.action?pageId=641852675
+TOTVS Smart NIP - Dashboard NIP | https://tdn.totvs.com/display/PROT/TOTVS+Smart+NIP+-+Dashboard+NIP
+Field Services | https://tdn.totvs.com/display/PROT/Field+Services
+FSM - Field Services Management - Protheus 12 | https://tdn.totvs.com/display/PROT/FSM+-+Field+Services+Management+-+Protheus+12
+Activo Fijo (SIGAATF) - Protheus 12 | https://tdn.totvs.com/display/PROT/Activo+Fijo+%28SIGAATF%29+-+Protheus+12
+Suíte BPO (Business Process Outsourcing) - O andamento do documento está interrompido | https://tdn.totvs.com/pages/viewpage.action?pageId=893438739
+Agro Distribuidor - Protheus 12 | https://tdn.totvs.com/display/PROT/Agro+Distribuidor+-+Protheus+12
+Gestão de Postos de Combustível - Protheus 12 | https://tdn.totvs.com/pages/viewpage.action?pageId=921656854
+Categorização e caracterização de produtos | https://tdn.totvs.com/pages/viewpage.action?pageId=1037980215
+DT PE WMSFIMPV Finalização separação convergência - Pedido de Venda | https://tdn.totvs.com/pages/viewpage.action?pageId=982930695
+SmartERP Protheus | https://tdn.totvs.com/display/PROT/SmartERP+Protheus
+Engenharia Protheus | https://tdn.totvs.com/display/PROT/Engenharia+Protheus
+Séries T® e 3® - Protheus | https://tdn.totvs.com/pages/viewpage.action?pageId=544716904
+Engenharia Protheus - Acesso Interno | https://tdn.totvs.com/display/PROT/Engenharia+Protheus+-+Acesso+Interno
+Expediçao Contínua Protheus - Documentações | https://tdn.totvs.com/pages/viewpage.action?pageId=587835098
+Projeto Piloto - Melhoria de performance das rotinas do BackOffice Protheus realizados em 2020. | https://tdn.totvs.com/pages/viewpage.action?pageId=556373905
+Suporte Plataforma | https://tdn.totvs.com/display/PROT/Suporte+Plataforma
+Países Localizados  - Mercado Internacional | https://tdn.totvs.com/pages/viewpage.action?pageId=699183598
+Termo de uso - TOTVS LINHA Protheus | https://tdn.totvs.com/display/PROT/Termo+de+uso+-+TOTVS+LINHA+Protheus
+Template teste PE | https://tdn.totvs.com/display/PROT/Template+teste+PE
+HUB Setup BackOffice - Onboarding de Implantação | https://tdn.totvs.com/pages/viewpage.action?pageId=921660430
+Legal Services | https://tdn.totvs.com/display/PROT/Legal+Services
+Guia de Planilhas RBC | https://tdn.totvs.com/display/PROT/Guia+de+Planilhas+RBC
+Especificação de Requisito | https://tdn.totvs.com/pages/viewpage.action?pageId=210051084
+Novidades do Release | https://tdn.totvs.com/display/PROT/Novidades+do+Release
+Registro do DACI | https://tdn.totvs.com/display/PROT/Registro+do+DACI
+Proceso de Atención Soporte Mercado Internacional | https://tdn.totvs.com/pages/viewpage.action?pageId=574365909
+Macros Avançadas | https://tdn.totvs.com/pages/viewpage.action?pageId=557339994
+Integration+Shopify+(SIGAFAT)+-+Version+Ingles (1) | https://tdn.totvs.com/pages/viewpage.action?pageId=572728147
+12427791 DRHROTPRT-1652 DT RDMake RecItau gera error log na geração do arquivo de Holerite | https://tdn.totvs.com/pages/viewpage.action?pageId=641677186
+12330727 DSAUBE-16083 DT Cobrança de Mensalidade Retroativa | https://tdn.totvs.com/pages/viewpage.action?pageId=640688752
+11996448 DLOGWMSMSP-12522 DT Leitura do parâmetro MV_WMSUMI na Conferência de Separação (WMSV001) | https://tdn.totvs.com/pages/viewpage.action?pageId=639933888
+CONTEÚDO INTERNO TOTVS - Sistema não classifica as marcações na virada do período pela schedule | https://tdn.totvs.com/pages/viewpage.action?pageId=636948447
+11684710 DSAUPC-15022 DT Error Log rotina DPS (PLSDPS1) | https://tdn.totvs.com/pages/viewpage.action?pageId=621394367
+10986583 DMANMAT02-33282 DT Mediciones Contrato cantidad cero | https://tdn.totvs.com/display/PROT/10986583+DMANMAT02-33282+DT+Mediciones+Contrato+cantidad+cero
+DMANMAT02-33248 DT Fontes não compilados no RPO - 12.1.33 | https://tdn.totvs.com/pages/viewpage.action?pageId=619772378
+11315866 DMANMAT02-33051 DT Falta Informações da SC no Contrato gerado pela Ata de Registro de Preço | https://tdn.totvs.com/pages/viewpage.action?pageId=619140052
+11266401 DMANMAT02-32541 DT Inconsistência ao realizar a cópia de um edital por lote | https://tdn.totvs.com/pages/viewpage.action?pageId=616925316
+CONTEÚDO INTERNO TOTVS - Sistema não gera o ID 1723 após alteração do campo RV_INCIRF | https://tdn.totvs.com/pages/viewpage.action?pageId=611021448
+10956272 DMINA-11579 DT D2_USERLGI no es informado en la rutina MATA462AN COL | https://tdn.totvs.com/display/PROT/10956272+DMINA-11579+DT+D2_USERLGI+no+es+informado+en+la+rutina+MATA462AN+COL
+CONTEÚDO INTERNO TOTVS - TOP Error -19 - DROP ERROR : TABLE PN090LOCK01 STILL IN USE no DBAccess | https://tdn.totvs.com/pages/viewpage.action?pageId=601686082
+CONTEÚDO INTERNO TOTVS - S-2206 - Alteração para o dissídio para funcionário demitido | https://tdn.totvs.com/pages/viewpage.action?pageId=572194974
+10848508 DRHGCH-23726 DT DIRF Rendimento Tributável incorreto quando existe redução | https://tdn.totvs.com/pages/viewpage.action?pageId=600143556
+10830627 DNG-12599 DT Inconsistência na alteração da multa utilizando o P.E. MNTA765E | https://tdn.totvs.com/pages/viewpage.action?pageId=598668782
+10800016 DNG-12570 DT Inconsistência de De/Para de produto ao liberar O.S. | https://tdn.totvs.com/pages/viewpage.action?pageId=599365135
+10660671 DMINA-11045 DT Factura Electrónica con Impuesto Local de Retención MEX | https://tdn.totvs.com/pages/viewpage.action?pageId=594170942
+CONTEÚDO INTERNO TOTVS - SIGAPON -  Apontamento em lopping infinito quando existe abono #3 | https://tdn.totvs.com/pages/viewpage.action?pageId=676588225
+13794246 DNG-16346 DT Não muda a legenda no Retorno Mod. 2 ao aplicar insumo via Documento de Entrada | https://tdn.totvs.com/pages/viewpage.action?pageId=677042104
+CONTEÚDO INTERNO TOTVS - 12.1.27 - #14179700-Funcionários com Turno com Mais de uma Sequência ao Acessar a Tela de Manutenção de Marcações Retorna a Mensagem: "HELP:TPADNCAD-Tabela de Horário Padrão não cadastrada para o turno corrente" | https://tdn.totvs.com/pages/viewpage.action?pageId=686469070
+CONTEÚDO INTERNO TOTVS - 12.1.27 - #14217062-Quando a SP0 é exclusiva e o código dos relógios que integram com o Clock In são diferentes entre as filiais, o sistema só faz a leitura para a primeira filial | https://tdn.totvs.com/pages/viewpage.action?pageId=686470334
+CONTEÚDO INTERNO TOTVS - 12.1.33 - #14310168-Funcionários com Turno com Campo Apon Tip Mar Sim e Utilizando Código de Evento Informado o Sistema se Perde na Qtade Informada | https://tdn.totvs.com/pages/viewpage.action?pageId=687167858
+14315446 DVARMIL-604 DT - Correção error.log ao alterar data de entrega pela rotina Controle Ent. Veic (VEICC610) | https://tdn.totvs.com/pages/viewpage.action?pageId=687753146
+13535863 DSERTSS2-10185 DT NFS-e Santarém - Alteração de URL's | https://tdn.totvs.com/pages/viewpage.action?pageId=687763461
+CONTEÚDO INTERNO TOTVS - 12.1.33 - #14423278 - Sistema só aponta as horas de Interjornada em evento vinculado ao ID 029A, mesmo configurando no Turno para gerar em outro tipo de Hora Extra | https://tdn.totvs.com/pages/viewpage.action?pageId=691442366
+CONTEÚDO INTERNO TOTVS - Cálculo e compilação de roteiros/fórmulas com o MV_RPOFIL = .T. | https://tdn.totvs.com/pages/viewpage.action?pageId=695622314
+CONTEÚDO INTERNO TOTVS - 12.1.33 - #14537123-Quando Utilizando Parâmetro MV_APHEDTM Quando o Funcionário Realiza Horas Extras Ultrapassando a Saída para o Dia Posterior Gera Horas Extras Noturnas e Adicional Noturno Sobre HE em Quantidade Dobrada | https://tdn.totvs.com/pages/viewpage.action?pageId=696112505
+CONTEÚDO INTERNO TOTVS - 12.1.33 - #14611690-Integração do Ponto com a Folha Quando o Funcionário Possui Lançamento de Verba Informada na RGB e ao Tentar Integrar a Mesma Verba e Valor Retorna ErrorLog de Chave Duplicada na RGB | https://tdn.totvs.com/pages/viewpage.action?pageId=697254693
+CONTEÚDO INTERNO TOTVS - 12.1.33 - #14616240-Restrição de Usuário Por Filtro de Relatório não Aplica no Relatório de Banco de Horas(PONR100) | https://tdn.totvs.com/pages/viewpage.action?pageId=697725438
+CONTEÚDO INTERNO TOTVS - 12.1.33 - #14349727 - Quando a SP0 é exclusiva, no log da leitura/apontamento de marcações de refeição é exibida mensagem de "O fechamento da filial XXX  esta sendo efetuado em outro processo. Tente novamente mais tarde." | https://tdn.totvs.com/pages/viewpage.action?pageId=699173440
+CONTEÚDO INTERNO TOTVS - 12.1.33 - #14625896 - ACJEF não imprime funcionários demitidos/múltiplos vínculos | https://tdn.totvs.com/pages/viewpage.action?pageId=699201475
+Pedido de Compra x Pagamento Comissão | https://tdn.totvs.com/pages/viewpage.action?pageId=700980662
+Transferência de Beneficiário de Contrato e/ou Subcontrato | https://tdn.totvs.com/pages/viewpage.action?pageId=700985959
+Complemento RN 319 Considerar Reembolso na Rotina Protocolo de Negativas | https://tdn.totvs.com/display/PROT/Complemento+RN+319+Considerar+Reembolso+na+Rotina+Protocolo+de+Negativas
+Cancelamento Protocolos de Reembolso | https://tdn.totvs.com/display/PROT/Cancelamento+Protocolos+de+Reembolso
+Registro de Comissões dos Vendedores | https://tdn.totvs.com/pages/viewpage.action?pageId=704911296
+Portaria 671 - O que muda no controle de ponto eletrônico? | https://tdn.totvs.com/pages/viewpage.action?pageId=704916521
+Requisitos de Produto | https://tdn.totvs.com/display/PROT/Requisitos+de+Produto
+Issue Medicina NG CONTEUDO INTERNO TOTVS - 12.1.33 Ao entrar na rotina MDTA076 o sistema da o erro “array out of bounds [1] of [0] on CHANGEMED(MDTA076.PRW) “ | https://tdn.totvs.com/pages/viewpage.action?pageId=721018114
+CONTEÚDO INTERNO TOTVS - 12.1.33 - 15762934 -  GPEM680 -GRRF - SISTEMA DEIXA DE LEVAR VERBA DE DISSIDIO QUANDO A DATA DE RECOLHIMENTO É SUPERIOR AO MES DE DEMISSÃO. | https://tdn.totvs.com/pages/viewpage.action?pageId=725725530
+Relatório de Conferência INSS Patronal | https://tdn.totvs.com/pages/viewpage.action?pageId=728635413
+Processo Trabalhista - Cadastros dos eventos S-2500 e S-2501 | https://tdn.totvs.com/display/PROT/Processo+Trabalhista+-+Cadastros+dos+eventos+S-2500+e+S-2501
+Melhorias e Oportunidades | https://tdn.totvs.com/display/PROT/Melhorias+e+Oportunidades
+Relatório de Sinistralidade - PLSR996 | https://tdn.totvs.com/pages/viewpage.action?pageId=743696799
+CONTEÚDO INTERNO TOTVS - 12.1.33 - 16728081-Ao incluir dependente o sistema aceita salvar utilizando no dependente cadastrado o mesmo CPF do funcionário. Com isso é gerado o 2205 ao fazer envio ao governo. | https://tdn.totvs.com/pages/viewpage.action?pageId=750401849
+TEMPORARIA - Politica de Peças | https://tdn.totvs.com/pages/viewpage.action?pageId=759934071
+CONTEÚDO INTERNO TOTVS - 12.1.33 - #16963632- AO RODAR A PONAPI01 ESTÃO SENDO CARREGADAS MARCAÇÕES NA TABELA RR1 COM CÓDIGO NSR NO CAMPO RR1_CODNSR= '0' E SUBINDO SEM NUMERAÇÃO NO CAMPO RR1_CODPIS | https://tdn.totvs.com/pages/viewpage.action?pageId=761006719
+Razão 2 Moedas. | https://tdn.totvs.com/pages/viewpage.action?pageId=761520904
+Cadatro de Ativo | https://tdn.totvs.com/display/PROT/Cadatro+de+Ativo
+Gestão de Estoque (Varejo) - Arquitetura | https://tdn.totvs.com/pages/viewpage.action?pageId=770964332
+17207761 DVARMIL-2165 DT - Validação de Condição de Pagamento bloqueada na Entrada por Compra Veículos, Máquinas e Equipamentos | https://tdn.totvs.com/pages/viewpage.action?pageId=773507132
+Migração de Dicionário de Dados - página centralizadora | https://tdn.totvs.com/pages/viewpage.action?pageId=773509913
+CONTEÚDO INTERNO TOTVS - 12.1.2210 - #17829957- Ao efetuar leitura das marcações de Funcionário com situação demitido mesmo utilizando pergunta situação demitido as marcações não são lidas e gravadas | https://tdn.totvs.com/pages/viewpage.action?pageId=785622153
+Leiaute Versão S-1.2 - Processo Trabalhista | https://tdn.totvs.com/pages/viewpage.action?pageId=795934077
+Cópia de CONTEÚDO INTERNO TOTVS - 12.1.33 - 16568526 - GRFC considera o valor do aviso indenizado na coluna Remuneração Mês para Rescisão Complementar | https://tdn.totvs.com/pages/viewpage.action?pageId=808457644
+CONTEÚDO INTERNO TOTVS - 12.1.33 - 18704611 - Não é possível utilizar a rotina de Cálculo de Múltiplo Vínculo quando existe rescisão - Cálculo não é realizado de acordo com IN RFB N° 2110/2022 | https://tdn.totvs.com/pages/viewpage.action?pageId=812155713
+DSAUPC-19669 DT Padrão TISS - Novembro/2023 - Vigência 01/12/2023 | https://tdn.totvs.com/pages/viewpage.action?pageId=817646813
+Transferência de tickets para analise ao HUB PLATAFORMAS | https://tdn.totvs.com/pages/viewpage.action?pageId=819511142
+18861852 DSAUPC-19872 DT Correção no Monitoramento TISS - Arquivo XTE | https://tdn.totvs.com/pages/viewpage.action?pageId=819515861
+18733579 DSAUREV-11067 DT Integração Demonstrativo de análise x PLS | https://tdn.totvs.com/pages/viewpage.action?pageId=821562168
+teste de tag dt | https://tdn.totvs.com/display/PROT/teste+de+tag+dt
+0001 teste documento tecnico | https://tdn.totvs.com/display/PROT/0001+teste+documento+tecnico
+CONTEÚDO INTERNO TOTVS - 12.1.2310 - 19817983- Horas de sobreaviso para dias não trabalhados não calcula corretamente | https://tdn.totvs.com/pages/viewpage.action?pageId=837871985
+CONTEÚDO INTERNO TOTVS - 12.1.2210 - 19829434 - Ao gerar o evento S-1210 o campo VT7_TPCR informações irrf por código da receita está gerando incorreto para a categoria 723.. | https://tdn.totvs.com/pages/viewpage.action?pageId=838684764
+CONTEÚDO INTERNO TOTVS - 12.1.2210 - 19863739- Leitura das Refeições - Turno Noturno não grava a virada do último dia do período quando o dia é não trabalhado | https://tdn.totvs.com/pages/viewpage.action?pageId=838946989
+DT DMS ARGENTINA Alteração dos dados de informações adicionais no Orçamento Por Fases (OFIXA011) e Painel Orçamento (OFIXA018) | https://tdn.totvs.com/pages/viewpage.action?pageId=842293865
+CONTEÚDO INTERNO TOTVS - 12.1.2210 - 20091143- Ao efetuar leitura/apontamento das marcações com a opção Período final com data futura o sistema despreza a data base de acesso gerando apontamentos com datas futuras a data base utilizada | https://tdn.totvs.com/pages/viewpage.action?pageId=842294082
+CONTEÚDO INTERNO TOTVS - 12.1.2210 - 19999551- Funcionário demitido em 16/04/2024 e com falta neste dia o sistema desconta DSR 21/04/2024 com data superior a demissão | https://tdn.totvs.com/pages/viewpage.action?pageId=842695837
+CONTEÚDO INTERNO TOTVS - 12.1.2210 - 20225278- Funcionário commobilidade no intervalo e com 6 batidas no dia o sistema se perde na segunda jornada gerando apontamentos indevidos | https://tdn.totvs.com/pages/viewpage.action?pageId=845770014
+DSERGTP-11016 DT (URBANO) Ajuste em validação de campo Código - Seções | https://tdn.totvs.com/pages/viewpage.action?pageId=853924603
+Instalação do Protheus com SIGALOJA e SIGAFRT | https://tdn.totvs.com/pages/viewpage.action?pageId=865428520
+20843236 DSERTSS1-24058 DT TSS NT 2020.001 - NFE - Rejeição 353 em notas de devolução com o CST 51 | https://tdn.totvs.com/pages/viewpage.action?pageId=866051122
+Escopo de atendimento - Reforma Tributária | https://tdn.totvs.com/pages/viewpage.action?pageId=876220090
+Guia de boas vindas time Calculos RH - Protheus | https://tdn.totvs.com/display/PROT/Guia+de+boas+vindas+time+Calculos+RH+-+Protheus
+DSERFDS-485 DT ajuste na transferencia da timeline - FSM | https://tdn.totvs.com/display/PROT/DSERFDS-485+DT+ajuste+na+transferencia+da+timeline+-+FSM
+CONTEÚDO INTERNO TOTVS - 12.1.2310 - 21769657- Escalonamento de horas extras não está efetuando corretamente | https://tdn.totvs.com/pages/viewpage.action?pageId=887734161
+Smart View - Tabela Dinâmica e Visões de Dados | https://tdn.totvs.com/pages/viewpage.action?pageId=892110012
+CONTEÚDO INTERNO TOTVS - 12.1.2310 - 21901805- Espelho de ponto com horas valorizadas indevidas quando se tem dois apontamentos de horas extras no mesmo dia | https://tdn.totvs.com/pages/viewpage.action?pageId=893911330
+CONTEÚDO INTERNO TOTVS - 12.1.2310 - 22180336- Funcionário sem eventos de descontos com desconto de DSR indevido subindo nos resultados | https://tdn.totvs.com/pages/viewpage.action?pageId=901944583
+CONTEÚDO INTERNO TOTVS - 12.1.2310 - 22152598- Troca de turno com integração ao Suricato apresentando error.log de chave duplicada na RR2 | https://tdn.totvs.com/pages/viewpage.action?pageId=901947823
+CONTEÚDO INTERNO TOTVS - 12.1.2310 - 22293616- Apontamento com multithread retorna error.log-'array out of bounds ( 1 of 0 )  on PNM010MULTPROC(PONM010.PRX)' | https://tdn.totvs.com/pages/viewpage.action?pageId=904623538
+CONTEÚDO INTERNO TOTVS - 12.1.2310 - 22316034- Error.log ao incluir um registro na manutenção de banco de horas de funcionário com hoistórico de transferência de filiais | https://tdn.totvs.com/pages/viewpage.action?pageId=905126650
+CONTEÚDO INTERNO TOTVS - 12.1.2310 - 22331590- Horário fixo com tolerância de 5 minutos por batida não está considerando quando possui saída expediente no dia | https://tdn.totvs.com/pages/viewpage.action?pageId=905614040
+CONTEÚDO INTERNO TOTVS - 12.1.2410 - 22279948- Ao utilizar o WEBAPP no cadastro de relógio apresenta a mensagem:Arquivo do Relogio nao Encontrado no Servidor: \SYSTEM\TP24_.TXT | https://tdn.totvs.com/pages/viewpage.action?pageId=905623627
+Processo Trabalhista - Cadastros dos eventos S-2500 e S-2501 (S-1.3) | https://tdn.totvs.com/pages/viewpage.action?pageId=906846966
+CONTEÚDO INTERNO TOTVS - 12.1.2310 - 22359350- Cadastro de visita permitindo cadastrar a mesma data e hora do visitante em duplicidade | https://tdn.totvs.com/pages/viewpage.action?pageId=908338806
+CONTEÚDO INTERNO TOTVS - 12.1.2310 - 22530515- Espelho de ponto com horas valorizadas em duplicidade quando se tem dois apontamentos de abono no mesmo dia | https://tdn.totvs.com/pages/viewpage.action?pageId=915173663
+DT Débitos técnico - Sugestões de relacionamento SX9 - release 12.1.2510 | https://tdn.totvs.com/pages/viewpage.action?pageId=916421119
+CONTEÚDO INTERNO TOTVS - 12.1.2310 - DRHCALCPRT-16083 - 22748635 - Dissídio não proporcionaliza percentual para funcionários admitidos antes da data base. | https://tdn.totvs.com/pages/viewpage.action?pageId=916884500
+CONTEÚDO INTERNO TOTVS - 12.1.2310 - DRHCALCPRT-16107 - 22730751 - Aplicação de reajuste Salarial não atualiza campos RA_SALARIO e RA_ANTEAUM, e não respeita filtro de faixas salariais selecionadas. | https://tdn.totvs.com/pages/viewpage.action?pageId=918394867
+Trilha de conhecimento - Reforma Tributária | https://tdn.totvs.com/pages/viewpage.action?pageId=922703518
+CONTEÚDO INTERNO TOTVS - 12.1.2310 - 22978087- Eventos de separação do acréscimo noturno quando paga intervalo em dias não trabalhados está gerando indevidamente para horas normais trabalhadas | https://tdn.totvs.com/pages/viewpage.action?pageId=928525646
+CONTEÚDO INTERNO TOTVS - 12.1.2310 - 23066351- Relatório de eventos apontados na pergunta de filtro de códigos de eventos apresentando em duplicidade | https://tdn.totvs.com/pages/viewpage.action?pageId=928952370
+CONTEÚDO INTERNO TOTVS - 12.1.2310 - 23080074- Funcionário horário fixo com falta 1/2 gera indevidamente a indenização da intrajornada da Sumula 437 | https://tdn.totvs.com/pages/viewpage.action?pageId=928966629
+Configurar o PayGo versão Windows | https://tdn.totvs.com/pages/viewpage.action?pageId=928972050
+CONTEÚDO INTERNO TOTVS - 12.1.2310 - DRHCALCPRT-16452 - 23202999 - Cálculo da folha em Fevereiro com afastamento, dias de salário e dias de afastamento ficam incorretos. | https://tdn.totvs.com/pages/viewpage.action?pageId=931615452
+Central PDV - Centralização de Documentação de Apoio | https://tdn.totvs.com/pages/viewpage.action?pageId=931615494
+CONTEÚDO INTERNO TOTVS - 12.1.2310 - DRHCALCPRT- - 23172707 - Cálculo de Provisão não efetuado com o parâmetro MV_PROVFEC=.T., período fechado. | https://tdn.totvs.com/pages/viewpage.action?pageId=932123325
+CONTEÚDO INTERNO TOTVS - 12.1.2310 - DRHCALCPRT-16459 - 23172707 - Cálculo de Provisão não efetuado com o parâmetro MV_PROVFEC=.T., período fechado. | https://tdn.totvs.com/pages/viewpage.action?pageId=932124734
+Cópia de CONTEÚDO INTERNO TOTVS - 12.1.2310 - DRHCALCPRT-16452 - 23202999 - Cálculo da folha em Fevereiro com afastamento, dias de salário e dias de afastamento ficam incorretos. | https://tdn.totvs.com/pages/viewpage.action?pageId=932124341
+CONTEÚDO INTERNO TOTVS - 12.1.2310 - DRHCALCPRT-16494 - 22848181 - Cálculo incorreto da folha para afastado, quando P_LDSRHRSP=.T. e P_HRSPONFO=.T.. | https://tdn.totvs.com/pages/viewpage.action?pageId=935625017
+CONTEÚDO INTERNO TOTVS - 12.1.2310 - DRHROTPRT-22241 - 23193163 - Contabilização incorreta do ID 0973 para empresa desonerada. | https://tdn.totvs.com/pages/viewpage.action?pageId=935628187
+CONTEÚDO INTERNO TOTVS - 12.1.2310 - 23347432- FECHAMENTO MENSAL DE PERÍODOS ANTERIORES APRESENTANDO INCONSISTÊNCIA NO MV_PONMES E NÃO INCLUINDO O REGISTRO NA TABELA SPO DE PERÍODO FECHADO | https://tdn.totvs.com/pages/viewpage.action?pageId=939234952
+CONTEÚDO INTERNO TOTVS - 12.1.2310 - 23380808- RELATÓRIO DE TROCA DE TURNO SMARTVIEW(PONRSV220) GERANDO EM BRANCO | https://tdn.totvs.com/pages/viewpage.action?pageId=942050276
+CONTEÚDO INTERNO TOTVS - 12.1.2310 - 23436035- SmartView – Problema no Filtro de Datas do Relatório de Resultados -PONRSV090 | https://tdn.totvs.com/pages/viewpage.action?pageId=942052741
+DT - Utilização do MSExecAuto nas rotinas de saída de veículos do módulo DMS. | https://tdn.totvs.com/pages/viewpage.action?pageId=943096034
+23200391 DVARMIL-8854 DT - Adicionado nova opção no filtro da tela de Histórico Agrega/Desagrega na rotina Agrega e Desagrega (VEIXA040) | https://tdn.totvs.com/pages/viewpage.action?pageId=944248068
+🧭 Central de Conteúdo | Reforma Tributária e Configurador de Tributos | https://tdn.totvs.com/pages/viewpage.action?pageId=945408020
+CONTEÚDO INTERNO TOTVS - 12.1.2310 - 23604292- Calculo indevido da intrajornada da Sumula 437 para funcionário com horário fixo | https://tdn.totvs.com/pages/viewpage.action?pageId=948261018
+CONTEÚDO INTERNO TOTVS - 12.1.2310 - 23563755- Horas Extras Devidas por Violação do Intervalo Interjornada em Jornada de 35h com Trabalho em Feriado não está sendo apontada | https://tdn.totvs.com/pages/viewpage.action?pageId=949432099
+CONTEÚDO INTERNO TOTVS - 12.1.2410 - 23764598- Ao executar o U_PONSCHEDULER Retorna o erro: "SYS_APP_PARAM: DBCreate error: DB driver not initialized on FWDBCREATE(FWDBCREATE.PRW)" | https://tdn.totvs.com/pages/viewpage.action?pageId=955506096
+CONTEÚDO INTERNO TOTVS - 12.1.2410 - 23768208- Ao utilizar bloqueio de período o sistema não aplica o bloqueio conforme o esperado | https://tdn.totvs.com/pages/viewpage.action?pageId=955508768
+Impressão do PDF DANFCOM | https://tdn.totvs.com/pages/viewpage.action?pageId=959029069
+23869724 DLOGGFE-22429 DT Error log ao aprovar Ocorrência do tipo Reentrega com Cálculo Adicional (GFEA032) | https://tdn.totvs.com/pages/viewpage.action?pageId=960004523
+Pacotes+de+Atualização+-+TOTVS+Business+Intelligence+Protheus Insights+Linha+Protheus | https://tdn.totvs.com/pages/viewpage.action?pageId=960987917
+Fluxo de Atendimento Suporte Varejo | https://tdn.totvs.com/display/PROT/Fluxo+de+Atendimento+Suporte+Varejo
+CONTEÚDO INTERNO TOTVS - 12.1.2410 - 24017620- Apontando Horas Extras por Violação do Intervalo Interjornada em Jornada de 35h com Trabalho em Feriado | https://tdn.totvs.com/pages/viewpage.action?pageId=967614231
+CONTEÚDO INTERNO TOTVS - 12.1.2410 - 24138142- Leitura não valida arquivo AFD quando a linha da marcação posição 35 à 46 está com conteúdo 9+CPF REP- Port 671 | https://tdn.totvs.com/pages/viewpage.action?pageId=967622544
+Compartilhamento das Tabelas SP4, SP9 e SX5 | https://tdn.totvs.com/display/PROT/Compartilhamento+das+Tabelas+SP4%2C+SP9+e+SX5
+CONTEÚDO INTERNO TOTVS - 12.1.2410 - 24544854- Na tela de integrados: o abono ou marcação lançada em um dia desaparece ao selecionar outro dia | https://tdn.totvs.com/pages/viewpage.action?pageId=979813523
+teste coluna | https://tdn.totvs.com/display/PROT/teste+coluna
+CONTEÚDO INTERNO TOTVS - 12.1.2310 - 24989612- RELATÓRIO DE TROCA DE TURNO SMARTVIEW(PONRSV220) APRESENTA ERRO: O ERP TOTVS teve um comportamento inesperado,verifique os detalhes | https://tdn.totvs.com/pages/viewpage.action?pageId=1005886676
+CONTEÚDO INTERNO TOTVS - 12.1.2310 - 25119388- RELATÓRIO DE AUTORIZAÇÕES SMARTVIEW(PONRSV110) APRESENTA ERRO: O ERP TOTVS teve um comportamento inesperado,verifique os detalhes | https://tdn.totvs.com/pages/viewpage.action?pageId=1005888419
+BSO | https://tdn.totvs.com/display/PROT/BSO
+FC0101FAT - Inclusão de Campos na Consulta Posição Cliente | https://tdn.totvs.com/pages/viewpage.action?pageId=1013633738
+FC010BXHE - Inclui campos adicionais no aHeader da consulta de Títulos Recebidos | https://tdn.totvs.com/pages/viewpage.action?pageId=1013635199
+F050ALT - Valida alteração | https://tdn.totvs.com/pages/viewpage.action?pageId=1013635517
+F401QRY2 Adiciona ou altera dados na seleção de títulos de impostos | https://tdn.totvs.com/pages/viewpage.action?pageId=1013636885
+F330EXCOMP - Valida exclusão estorno da compensação | https://tdn.totvs.com/pages/viewpage.action?pageId=1013640063
+PE STDescIt - Desconto lançamento do no item | https://tdn.totvs.com/pages/viewpage.action?pageId=1017425053
+PE OF544POS para que seja  permitindo a execução de rotinas complementares, notificações ou logs, sem impacto na continuidade da execução principal. | https://tdn.totvs.com/pages/viewpage.action?pageId=1020364912
+25642235 DLOGGFE-23335 DT Alguns botões da tela 'Aprovação de Documento de Frete' não aparecem quando acessa via WEB (GFEA066) | https://tdn.totvs.com/pages/viewpage.action?pageId=1022392327
+CONTEÚDO INTERNO TOTVS - 12.1.2410 - 27124079 - MDTA007 - Valor atribuído diferente do tam...(Tipo Def.) | https://tdn.totvs.com/pages/viewpage.action?pageId=1059297563
+Desconto da Previdência Oficial X eSocial | https://tdn.totvs.com/pages/viewpage.action?pageId=1060208641
+26849184 DSERFAT-33609 DT Alteração de Pedido de Venda | https://tdn.totvs.com/pages/viewpage.action?pageId=1067056171
+27643793 DENTRINO-6624 DT Meu Coletor de Dados - Volta para tela inicial de login na separação | https://tdn.totvs.com/pages/viewpage.action?pageId=1078601283
+29019282 DLOGGFE-24627 DT Erro de impressão das informações (GFER002) | https://tdn.totvs.com/pages/viewpage.action?pageId=1085975567
+DT QUEBRA ADVPR QUEBRAS 2610 CTBR116 CTBRXREL CTBS301 | https://tdn.totvs.com/display/PROT/DT+QUEBRA+ADVPR+QUEBRAS+2610+CTBR116+CTBRXREL+CTBS301
+28895392 DJOBRIG-2332 DT EFDPISCOF Código de contribuição obrigatório para registros de crédito no Facilitador | https://tdn.totvs.com/pages/viewpage.action?pageId=1094331889
+#2307269 - teste 2 | https://tdn.totvs.com/pages/viewpage.action?pageId=1101874942
+DLOGTMS02-31592 DT Atualização da tela de Encerrar CIOT adicionando ANTT e Contingência. | https://tdn.totvs.com/pages/viewpage.action?pageId=1103666902
+30222581 DVARPV-8170 DT Regra de Desconto Varejo - Inconsistência no Registro do Item no Orçamento do Venda Assistida | https://tdn.totvs.com/pages/viewpage.action?pageId=1105238938
+LOCW001+-+API+Resultado+de+Query | https://tdn.totvs.com/pages/viewpage.action?pageId=1109009024
+27291050 DVARPV-8241 DT TOTVS PDV -  Conferência de Caixa Soma da Sangria no Totalizador | https://tdn.totvs.com/pages/viewpage.action?pageId=1109013096

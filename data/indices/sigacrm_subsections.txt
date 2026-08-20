@@ -1,0 +1,4 @@
+CRM - Contas|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001549042-CRM-Contas
+CRM - Dúvidas Gerais|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001538021-CRM-D%C3%BAvidas-Gerais
+CRM - Negócio|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001549082-CRM-Neg%C3%B3cio
+CRM - Vendas|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001549102-CRM-Vendas

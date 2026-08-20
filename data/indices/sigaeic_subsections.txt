@@ -1,0 +1,13 @@
+Comércio Exterior - Easy Import Control - Cadastros|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001549382-Com%C3%A9rcio-Exterior-Easy-Import-Control-Cadastros
+Comércio Exterior - Easy Import Control - Desembaraço|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001549442-Com%C3%A9rcio-Exterior-Easy-Import-Control-Desembara%C3%A7o
+Comércio Exterior - Easy Import Control - Embarque|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001538381-Com%C3%A9rcio-Exterior-Easy-Import-Control-Embarque
+Comércio Exterior - Easy Import Control - Entreposto|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001549622-Com%C3%A9rcio-Exterior-Easy-Import-Control-Entreposto
+Comércio Exterior - Easy Import Control - Financeiro|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001549642-Com%C3%A9rcio-Exterior-Easy-Import-Control-Financeiro
+Comércio Exterior - Easy Import Control - Licença de Import|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001549682-Com%C3%A9rcio-Exterior-Easy-Import-Control-Licen%C3%A7a-de-Import
+Comércio Exterior - Easy Import Control - Miscelanea|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001549702-Com%C3%A9rcio-Exterior-Easy-Import-Control-Miscelanea
+Comércio Exterior - Easy Import Control - Portal Único|https://centraldeatendimento.totvs.com/hc/pt-br/sections/27387892471703-Com%C3%A9rcio-Exterior-Easy-Import-Control-Portal-%C3%9Anico
+Comércio Exterior - Easy Import Control - Purchase - Order|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001538481-Com%C3%A9rcio-Exterior-Easy-Import-Control-Purchase-Order
+Comércio Exterior - Easy Import Control - Relatórios|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001549662-Com%C3%A9rcio-Exterior-Easy-Import-Control-Relat%C3%B3rios
+Comércio Exterior - Easy Import Control - Siscomex|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001538441-Com%C3%A9rcio-Exterior-Easy-Import-Control-Siscomex
+Comércio Exterior - Easy Import Control - Solic. de Importação|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001538401-Com%C3%A9rcio-Exterior-Easy-Import-Control-Solic-de-Importa%C3%A7%C3%A3o
+Comércio Exterior - Easy Import Control - Tabelas|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001549562-Com%C3%A9rcio-Exterior-Easy-Import-Control-Tabelas

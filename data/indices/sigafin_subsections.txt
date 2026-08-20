@@ -1,0 +1,30 @@
+Financeiro|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001550522-Financeiro
+Financeiro - Análise de Crédito Financeiro|https://centraldeatendimento.totvs.com/hc/pt-br/sections/36607745462423-Financeiro-An%C3%A1lise-de-Cr%C3%A9dito-Financeiro
+Financeiro - Aplicação / Emprestimos|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001550542-Financeiro-Aplica%C3%A7%C3%A3o-Emprestimos
+Financeiro - Aprovação e Rejeição da Transferência|https://centraldeatendimento.totvs.com/hc/pt-br/sections/35057458871575-Financeiro-Aprova%C3%A7%C3%A3o-e-Rejei%C3%A7%C3%A3o-da-Transfer%C3%AAncia
+Financeiro - Baixas a Pagar|https://centraldeatendimento.totvs.com/hc/pt-br/sections/38295862957335-Financeiro-Baixas-a-Pagar
+Financeiro - Baixas a Receber|https://centraldeatendimento.totvs.com/hc/pt-br/sections/33820269506967-Financeiro-Baixas-a-Receber
+Financeiro - Baixas Automáticas a Pagar|https://centraldeatendimento.totvs.com/hc/pt-br/sections/35057495195543-Financeiro-Baixas-Autom%C3%A1ticas-a-Pagar
+Financeiro - Baixas Automáticas a Receber|https://centraldeatendimento.totvs.com/hc/pt-br/sections/35057325714199-Financeiro-Baixas-Autom%C3%A1ticas-a-Receber
+Financeiro - Borderô contas a Pagar|https://centraldeatendimento.totvs.com/hc/pt-br/sections/35057529029143-Financeiro-Border%C3%B4-contas-a-Pagar
+Financeiro - Borderô contas a Receber|https://centraldeatendimento.totvs.com/hc/pt-br/sections/35057237655191-Financeiro-Border%C3%B4-contas-a-Receber
+Financeiro - Cadastros|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001550722-Financeiro-Cadastros
+Financeiro - Caixinha|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001550702-Financeiro-Caixinha
+Financeiro - Carta de Cobrança|https://centraldeatendimento.totvs.com/hc/pt-br/sections/35058223754903-Financeiro-Carta-de-Cobran%C3%A7a
+Financeiro - Cheques|https://centraldeatendimento.totvs.com/hc/pt-br/sections/35057400818327-Financeiro-Cheques
+Financeiro - Comissão|https://centraldeatendimento.totvs.com/hc/pt-br/sections/26655771327895-Financeiro-Comiss%C3%A3o
+Financeiro - Compensação Contas a Pagar|https://centraldeatendimento.totvs.com/hc/pt-br/sections/35057559197335-Financeiro-Compensa%C3%A7%C3%A3o-Contas-a-Pagar
+Financeiro - Compensação Contas a Receber|https://centraldeatendimento.totvs.com/hc/pt-br/sections/35056224784407-Financeiro-Compensa%C3%A7%C3%A3o-Contas-a-Receber
+Financeiro - Compensação entre Carteiras|https://centraldeatendimento.totvs.com/hc/pt-br/sections/35058659965079-Financeiro-Compensa%C3%A7%C3%A3o-entre-Carteiras
+Financeiro - Conciliação de Vendas|https://centraldeatendimento.totvs.com/hc/pt-br/sections/35058743504791-Financeiro-Concilia%C3%A7%C3%A3o-de-Vendas
+Financeiro - Conciliador Backoffice|https://centraldeatendimento.totvs.com/hc/pt-br/sections/30769054561431-Financeiro-Conciliador-Backoffice
+Financeiro - Configurador|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001539601-Financeiro-Configurador
+Financeiro - Configurador de Tributos|https://centraldeatendimento.totvs.com/hc/pt-br/sections/30946086151959-Financeiro-Configurador-de-Tributos
+Financeiro - Consultas / Relatórios|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001539561-Financeiro-Consultas-Relat%C3%B3rios
+Financeiro - Consultas a Pagar|https://centraldeatendimento.totvs.com/hc/pt-br/sections/35057716924311-Financeiro-Consultas-a-Pagar
+Financeiro - Consultas a Receber|https://centraldeatendimento.totvs.com/hc/pt-br/sections/35057682944919-Financeiro-Consultas-a-Receber
+Financeiro - Contabilização|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001550502-Financeiro-Contabiliza%C3%A7%C3%A3o
+Financeiro - Contas a Pagar|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001539541-Financeiro-Contas-a-Pagar
+Financeiro - Contas a Pagar - Comunicação Bancária CNAB|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001550622-Financeiro-Contas-a-Pagar-Comunica%C3%A7%C3%A3o-Banc%C3%A1ria-CNAB
+Financeiro - Contas a Pagar - Comunicação Bancária Online|https://centraldeatendimento.totvs.com/hc/pt-br/sections/26656222001687-Financeiro-Contas-a-Pagar-Comunica%C3%A7%C3%A3o-Banc%C3%A1ria-Online
+Financeiro - Contas a Pagar - Dirf|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001550482-Financeiro-Contas-a-Pagar-Dirf

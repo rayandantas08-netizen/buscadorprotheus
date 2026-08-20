@@ -1,0 +1,7 @@
+MDe - Manifesto do Destinatario|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001549162-MDe-Manifesto-do-Destinatario
+MDFe - Manifesto de Carga|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001549242-MDFe-Manifesto-de-Carga
+NFCOM - Nota Fiscal Fatura de Serviço de Comunicação Eletrônica|https://centraldeatendimento.totvs.com/hc/pt-br/sections/33828030194199-NFCOM-Nota-Fiscal-Fatura-de-Servi%C3%A7o-de-Comunica%C3%A7%C3%A3o-Eletr%C3%B4nica
+NFe - Nota Fiscal Eletrônica|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001538141-NFe-Nota-Fiscal-Eletr%C3%B4nica
+NFSE - Nota Fiscal de Serviço Nacional|https://centraldeatendimento.totvs.com/hc/pt-br/sections/33955617231639-NFSE-Nota-Fiscal-de-Servi%C3%A7o-Nacional
+NFSE - Nota Fiscal de Serviços Eletrônica|https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001549262-NFSE-Nota-Fiscal-de-Servi%C3%A7os-Eletr%C3%B4nica
+Reforma Tributária|https://centraldeatendimento.totvs.com/hc/pt-br/sections/34900856700439-Reforma-Tribut%C3%A1ria

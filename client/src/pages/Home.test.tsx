@@ -7,6 +7,7 @@ import Home from "./Home";
 const knowledge = {
   total: 2,
   modules: ["Escrituração e Relatórios Fiscal", "Faturamento"],
+  linkTypes: ["Central TOTVS — Artigo", "TDN — Página"],
   records: [
     {
       id: 1,
@@ -15,6 +16,7 @@ const knowledge = {
       module: "Faturamento",
       moduleCode: "SIGAFAT",
       source: "TDN",
+      linkType: "TDN — Página",
       kind: "article",
       searchText: "configuração do parâmetro mv_atvevt na nfs-e nacional faturamento sigafat",
     },
@@ -25,6 +27,7 @@ const knowledge = {
       module: "Escrituração e Relatórios Fiscal",
       moduleCode: "SIGAFIS",
       source: "Central de Atendimento TOTVS",
+      linkType: "Central TOTVS — Artigo",
       kind: "article",
       searchText: "cross segmentos efd contribuições escrituração fiscal sigafis",
     },
@@ -60,6 +63,11 @@ describe("Home — busca live e filtro por módulo", () => {
 
     const moduleFilter = screen.getByRole("combobox", { name: "Filtrar por módulo" });
     await user.selectOptions(moduleFilter, "Escrituração e Relatórios Fiscal");
+    expect(screen.getByText(/Nenhum link correspondeu/)).not.toBeNull();
+
+    await user.selectOptions(moduleFilter, "all");
+    const linkTypeFilter = screen.getByRole("combobox", { name: "Filtrar por tipo de link" });
+    await user.selectOptions(linkTypeFilter, "Central TOTVS — Artigo");
     expect(screen.getByText(/Nenhum link correspondeu/)).not.toBeNull();
 
     await user.clear(input);

@@ -34,6 +34,7 @@ type Provider = "openai" | "gemini";
 type KnowledgePayload = {
   total: number;
   modules: string[];
+  linkTypes?: string[];
   records: KnowledgeRecord[];
 };
 
@@ -115,6 +116,7 @@ export default function Home() {
   const [loadError, setLoadError] = useState("");
   const [query, setQuery] = useState("");
   const [selectedModule, setSelectedModule] = useState("all");
+  const [selectedLinkType, setSelectedLinkType] = useState("all");
   const [settings, setSettings] = useState<AiSettings>(readStoredSettings);
   const [showAiPanel, setShowAiPanel] = useState(false);
   const [aiAnswer, setAiAnswer] = useState("");
@@ -145,14 +147,25 @@ export default function Home() {
     return [...knowledge.modules].sort((a, b) => a.localeCompare(b, "pt-BR"));
   }, [knowledge]);
 
+  const linkTypes = useMemo(() => {
+    if (!knowledge) return [];
+    return [...(knowledge.linkTypes ?? Array.from(new Set(knowledge.records.map((record) => record.linkType))))].sort((a, b) => a.localeCompare(b, "pt-BR"));
+  }, [knowledge]);
+
   const results = useMemo(
-    () => searchRecords(knowledge?.records ?? [], query, selectedModule),
-    [knowledge, selectedModule, query],
+    () => searchRecords(knowledge?.records ?? [], query, selectedModule, selectedLinkType),
+    [knowledge, selectedModule, selectedLinkType, query],
   );
 
   const moduleCounts = useMemo(() => {
     const counts = new Map<string, number>();
     for (const record of knowledge?.records ?? []) counts.set(record.module, (counts.get(record.module) ?? 0) + 1);
+    return counts;
+  }, [knowledge]);
+
+  const linkTypeCounts = useMemo(() => {
+    const counts = new Map<string, number>();
+    for (const record of knowledge?.records ?? []) counts.set(record.linkType, (counts.get(record.linkType) ?? 0) + 1);
     return counts;
   }, [knowledge]);
 
@@ -164,6 +177,7 @@ export default function Home() {
   const handleClear = () => {
     setQuery("");
     setSelectedModule("all");
+    setSelectedLinkType("all");
     setAiAnswer("");
     setAiError("");
   };
@@ -252,12 +266,16 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-7 flex flex-col gap-3 rounded-2xl border border-white/10 bg-[#0b1722] p-4 sm:flex-row sm:items-center sm:justify-between">
-            <div className="flex items-center gap-3 text-sm text-slate-300"><Filter size={17} className="text-cyan-200" /><span>Refinar resultados por módulo</span></div>
-            <div className="flex gap-2">
-              <select value={selectedModule} onChange={(event) => setSelectedModule(event.target.value)} aria-label="Filtrar por módulo" className="h-10 min-w-0 flex-1 rounded-lg border border-white/10 bg-[#071018] px-3 text-sm text-slate-200 outline-none focus:border-cyan-300/50 sm:min-w-[280px]">
+          <div className="mt-7 flex flex-col gap-3 rounded-2xl border border-white/10 bg-[#0b1722] p-4 lg:flex-row lg:items-center lg:justify-between">
+            <div className="flex items-center gap-3 text-sm text-slate-300"><Filter size={17} className="text-cyan-200" /><span>Refinar resultados</span></div>
+            <div className="grid gap-2 sm:grid-cols-2 lg:flex">
+              <select value={selectedModule} onChange={(event) => setSelectedModule(event.target.value)} aria-label="Filtrar por módulo" className="h-10 min-w-0 rounded-lg border border-white/10 bg-[#071018] px-3 text-sm text-slate-200 outline-none focus:border-cyan-300/50 sm:min-w-[260px]">
                 <option value="all">Todos os módulos</option>
                 {modules.map((module) => <option key={module} value={module}>{module} ({moduleCounts.get(module) ?? 0})</option>)}
+              </select>
+              <select value={selectedLinkType} onChange={(event) => setSelectedLinkType(event.target.value)} aria-label="Filtrar por tipo de link" className="h-10 min-w-0 rounded-lg border border-white/10 bg-[#071018] px-3 text-sm text-slate-200 outline-none focus:border-cyan-300/50 sm:min-w-[230px]">
+                <option value="all">Todos os tipos de link</option>
+                {linkTypes.map((linkType) => <option key={linkType} value={linkType}>{linkType} ({linkTypeCounts.get(linkType) ?? 0})</option>)}
               </select>
               <Button variant="outline" onClick={handleClear} className="h-10 border-white/10 bg-transparent text-slate-300 hover:bg-white/5 hover:text-white">Limpar</Button>
             </div>
@@ -278,7 +296,7 @@ export default function Home() {
           <div className="mt-5 space-y-3">
             {results.map((record) => (
               <article key={record.id} className="group rounded-2xl border border-white/10 bg-[#0b1722] p-5 transition hover:-translate-y-0.5 hover:border-cyan-300/30 hover:bg-[#0d1c29]">
-                <div className="flex flex-wrap items-center gap-2 text-[11px] font-mono uppercase tracking-wide text-slate-500"><Badge variant="outline" className="border-cyan-300/20 bg-cyan-300/5 text-cyan-100">{record.moduleCode}</Badge><span>{record.kind === "section" ? "Seção" : "Artigo"}</span><span>{record.source}</span></div>
+                <div className="flex flex-wrap items-center gap-2 text-[11px] font-mono uppercase tracking-wide text-slate-500"><Badge variant="outline" className="border-cyan-300/20 bg-cyan-300/5 text-cyan-100">{record.moduleCode}</Badge><span>{record.kind === "section" ? "Seção" : "Artigo"}</span><span>{record.source}</span><span>{record.linkType}</span></div>
                 <h4 className="mt-3 text-base font-medium leading-6 text-slate-100 group-hover:text-cyan-100">{record.title}</h4>
                 <a href={record.url} target="_blank" rel="noreferrer" className="mt-3 flex items-start gap-2 break-all text-xs leading-5 text-slate-500 transition hover:text-cyan-200"><Link2 size={14} className="mt-0.5 shrink-0" />{record.url}<ExternalLink size={13} className="mt-0.5 shrink-0 opacity-60" /></a>
               </article>

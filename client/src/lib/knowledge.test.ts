@@ -17,6 +17,15 @@ describe("índice estático do Fiscal - Protheus 12", () => {
     expect(fiscalRecords.some(record => record.title.includes("ICMS-ST"))).toBe(true);
   });
 
+  it("inclui o TAF do TDN e classifica seu formato de URL", () => {
+    const taf = knowledge.records.find(record => record.url.includes("/pages/releaseview.action?pageId=464958325"));
+    expect(taf?.title).toContain("TAF");
+    expect(taf?.moduleCode).toBe("SIGATAF");
+    expect(taf?.linkType).toBe("TDN — Release");
+    expect(knowledge.linkTypes).toContain("TDN — Release");
+    expect(knowledge.records.every(record => record.linkType.length > 0)).toBe(true);
+  });
+
   it("mantém o total declarado consistente com o número de registros", () => {
     expect(knowledge.total).toBe(knowledge.records.length);
   });

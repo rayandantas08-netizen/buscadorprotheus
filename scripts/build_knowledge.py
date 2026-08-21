@@ -73,6 +73,7 @@ MODULES = {
     'advpl_subsections.txt': ('Customizações', 'ADVPL'),
     'tdn_fiscal_recursive.txt': ('Fiscal - Protheus 12', 'SIGAFIS'),
     'tdn_protheus12_root.txt': ('Catálogo TDN Protheus 12', 'PROTHEUS-TDN'),
+    'tdn_taf_links.txt': ('TAF - TOTVS Automação Fiscal', 'SIGATAF'),
 }
 
 MODULE_HINTS = [
@@ -120,6 +121,27 @@ def source_name(url: str) -> str:
 def record_kind(url: str) -> str:
     return 'section' if '/sections/' in url else 'article'
 
+
+def link_type(url: str) -> str:
+    parsed = urlparse(url)
+    host = parsed.netloc.lower()
+    path = parsed.path.lower()
+    if 'centraldeatendimento.totvs.com' in host:
+        if '/sections/' in path:
+            return 'Central TOTVS — Seção'
+        if '/articles/' in path:
+            return 'Central TOTVS — Artigo'
+        return 'Central TOTVS — Outro'
+    if 'tdn.totvs.com' in host:
+        if '/pages/releaseview.action' in path:
+            return 'TDN — Release'
+        if '/pages/viewpage.action' in path:
+            return 'TDN — Página'
+        if '/display/' in path:
+            return 'TDN — Display'
+        return 'TDN — Outro'
+    return 'Outro domínio'
+
 def main() -> None:
     records: list[dict[str, object]] = []
     seen: set[str] = set()
@@ -149,8 +171,9 @@ def main() -> None:
                 'module': module,
                 'moduleCode': module_code,
                 'source': source_name(url),
+                'linkType': link_type(url),
                 'kind': record_kind(url),
-                'searchText': clean(f'{title} {url} {module} {module_code}').lower(),
+                'searchText': clean(f'{title} {url} {module} {module_code} {link_type(url)}').lower(),
             })
 
     records.sort(key=lambda item: (str(item['module']), str(item['title']).lower(), str(item['url'])))
@@ -158,12 +181,14 @@ def main() -> None:
         record['id'] = index
 
     modules = sorted({str(item['module']) for item in records})
+    link_types = sorted({str(item['linkType']) for item in records})
     payload = {
         'version': 1,
         'generatedAt': '2026-08-20',
         'description': 'Índice local de documentação TOTVS Protheus coletada do TDN e da Central de Atendimento TOTVS.',
         'total': len(records),
         'modules': modules,
+        'linkTypes': link_types,
         'records': records,
     }
 

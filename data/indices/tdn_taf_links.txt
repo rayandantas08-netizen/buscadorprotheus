@@ -1,0 +1,8 @@
+TAF Totvs Automação Fiscal - Protheus 12 | https://tdn.totvs.com/pages/releaseview.action?pageId=464958325
+Conceitos - TAF - TOTVS Automação Fiscal - P12 | https://tdn.totvs.com/pages/viewpage.action?pageId=514741631
+Configurações - TAF - TOTVS Automação Fiscal - P12 | https://tdn.totvs.com/pages/viewpage.action?pageId=496806364
+Integrações - TAF - TOTVS Automação Fiscal - P12 | https://tdn.totvs.com/pages/viewpage.action?pageId=514741848
+LGPD - Onda 1 - Controle de dados protegidos - TAF TOTVS Automação Fiscal - P12 | https://tdn.totvs.com/pages/viewpage.action?pageId=525797274
+LGPD - Onda 2 - Mapeamento dos papéis de trabalho - TAF TOTVS Automação Fiscal - P12 | https://tdn.totvs.com/pages/viewpage.action?pageId=624983290
+Menu do Módulo - TAF - TOTVS Automação Fiscal - P12 | https://tdn.totvs.com/pages/viewpage.action?pageId=514741474
+Pontos de Entrada - TAF - TOTVS Automação Fiscal - P12 | https://tdn.totvs.com/pages/viewpage.action?pageId=514741853

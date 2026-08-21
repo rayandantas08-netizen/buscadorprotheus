@@ -19,3 +19,4 @@
 - [x] Consolidar o índice geral dos módulos Protheus 12 já coletados para o buscador estático (https://tdn.totvs.com/display/public/PROT/Protheus++12) — cobertura geral existente preservada; aprofundamentos futuros ficam registrados separadamente
 - [x] Consolidar e indexar as páginas recursivamente confirmadas do módulo Fiscal do TDN Protheus 12 (https://tdn.totvs.com/display/public/PROT/Fiscal+-+Protheus+12) — 576 páginas únicas, 410 relações e teste de integridade do índice
 - [x] Auditar a cobertura do TDN Fiscal e documentar os limites de CAPTCHA/paginação — 576 páginas confirmadas, 410 relações e relatório de cobertura salvo em `data/tdn_fiscal_coverage_report.md`
+- [x] Adicionar filtro por tipo de link/fonte na interface e incluir o TAF do TDN (https://tdn.totvs.com/pages/releaseview.action?pageId=464958325) — 2.502 links indexados, novos seletores por tipo de URL e testes validados

@@ -9,6 +9,7 @@ const records: KnowledgeRecord[] = [
     module: "Faturamento",
     moduleCode: "SIGAFAT",
     source: "TDN",
+    linkType: "TDN — Página",
     kind: "article",
     searchText: "como configurar o parâmetro mv_atvevt na nfs-e nacional sigafat faturamento",
   },
@@ -19,6 +20,7 @@ const records: KnowledgeRecord[] = [
     module: "Escrituração e Relatórios Fiscal",
     moduleCode: "SIGAFIS",
     source: "Central de Atendimento TOTVS",
+    linkType: "Central TOTVS — Artigo",
     kind: "article",
     searchText: "pontos de entrada tes mata080 sigafis escrituração fiscal",
   },
@@ -38,6 +40,12 @@ describe("busca local do Buscador Protheus", () => {
     const result = searchRecords(records, "TES", "Escrituração e Relatórios Fiscal");
     expect(result).toHaveLength(1);
     expect(result[0]?.moduleCode).toBe("SIGAFIS");
+  });
+
+  it("filtra por tipo de link depois do módulo", () => {
+    const result = searchRecords(records, "", "all", "TDN — Página");
+    expect(result).toHaveLength(1);
+    expect(result[0]?.id).toBe(1);
   });
 
   it("retorna os primeiros registros quando a consulta está vazia", () => {

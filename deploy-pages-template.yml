@@ -13,10 +13,11 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
+    name: Construir site
     runs-on: ubuntu-latest
 
     steps:
@@ -36,8 +37,18 @@ jobs:
 
       - name: Construir site estático
         env:
-          VITE_BASE_PATH: /${{ github.event.repository.name }}/
-        run: pnpm build
+          PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          REPO_BASE_PATH: /${{ github.event.repository.name }}/
+        run: |
+          BASE_PATH="${PAGES_BASE_PATH:-$REPO_BASE_PATH}"
+          [ -n "$BASE_PATH" ] || BASE_PATH="$REPO_BASE_PATH"
+          case "$BASE_PATH" in
+            */) ;;
+            *) BASE_PATH="${BASE_PATH}/" ;;
+          esac
+          export VITE_BASE_PATH="$BASE_PATH"
+          echo "VITE_BASE_PATH=$VITE_BASE_PATH"
+          pnpm build
 
       - name: Enviar artefato para o GitHub Pages
         uses: actions/upload-pages-artifact@v3
@@ -45,6 +56,7 @@ jobs:
           path: dist/public
 
   deploy:
+    name: Publicar site
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

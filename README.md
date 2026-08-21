@@ -49,7 +49,9 @@ O artefato final fica em `dist/public`.
 
 ## Publicar no GitHub Pages
 
-O projeto inclui o template de workflow em `deploy-pages-template.yml` na raiz do repositório. Para ativar a publicação automática via GitHub Actions, basta criar a pasta `.github/workflows/` no próprio GitHub (clicando em *Add file → Create new file*, digitando `.github/workflows/deploy-pages.yml` e colando o conteúdo do arquivo `deploy-pages-template.yml`). Em seguida, vá em **Settings → Pages** e selecione **GitHub Actions** como fonte.
+O workflow em `.github/workflows/deploy-pages.yml` publica automaticamente quando há um push na branch `main`. No GitHub, abra **Settings → Pages**, selecione **GitHub Actions** como fonte e faça o primeiro push. O workflow instala o pnpm via npm depois do Node.js e ajusta `VITE_BASE_PATH` para que o arquivo `knowledge.json` funcione tanto na raiz quanto no subdiretório do projeto.
+
+> O `package.json` **não** declara `packageManager`. O `actions/setup-node@v5` lê esse campo e tenta cachear o pnpm antes de o binário existir, o que derruba o job com `Unable to locate executable file: pnpm`. A versão usada no CI é a do `npm install --global pnpm@10.4.1` no workflow.
 
 Se o repositório for `usuario/buscadorprotheus`, a URL normalmente terá o formato `https://usuario.github.io/buscadorprotheus/`. O endereço exato depende do nome da conta e das configurações do GitHub Pages.
 

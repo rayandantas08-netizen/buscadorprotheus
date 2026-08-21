@@ -24,13 +24,23 @@ jobs:
       - name: Baixar código do repositório
         uses: actions/checkout@v5
 
+      # Referência: se o package.json tiver packageManager=pnpm, instale o pnpm
+      # ANTES do setup-node. O setup-node@v5 cacheia o gerenciador e falha com
+      # "Unable to locate executable file: pnpm" caso o binário ainda não exista.
+      # Este repositório omite packageManager de propósito; o workflow ativo
+      # instala pnpm com npm install --global pnpm@10.4.1.
+      - name: Instalar pnpm
+        uses: pnpm/action-setup@v4
+
       - name: Configurar Node.js
         uses: actions/setup-node@v5
         with:
           node-version: 22
+          cache: pnpm
 
-      - name: Instalar pnpm globalmente
-        run: npm install -g pnpm@10.4.1
+      - name: Configurar GitHub Pages
+        id: pages
+        uses: actions/configure-pages@v5
 
       - name: Instalar dependências
         run: pnpm install --frozen-lockfile
@@ -50,6 +60,9 @@ jobs:
           echo "VITE_BASE_PATH=$VITE_BASE_PATH"
           pnpm build
 
+      - name: Preparar fallback SPA
+        run: cp dist/public/index.html dist/public/404.html
+
       - name: Enviar artefato para o GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
@@ -60,10 +73,8 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     runs-on: ubuntu-latest
     needs: build
-
     steps:
       - name: Publicar no GitHub Pages
         id: deployment

@@ -14,4 +14,4 @@
 - [x] Instruir a ativação do GitHub Pages no painel do repositório usando a fonte GitHub Actions
 - [x] Remover chave de versão conflitante do pnpm e padronizar o setup no template de workflow
 - [x] Corrigir método de instalação do pnpm no workflow do GitHub Pages para garantir presença no PATH
-- [ ] Recriar e sincronizar o arquivo `deploy-pages-template.yml` no repositório
+- [x] Recriar e sincronizar o arquivo `deploy-pages-template.yml` no repositório

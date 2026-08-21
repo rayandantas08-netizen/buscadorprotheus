@@ -16,6 +16,6 @@
 - [x] Corrigir método de instalação do pnpm no workflow do GitHub Pages para garantir presença no PATH
 - [x] Recriar e sincronizar o arquivo `deploy-pages-template.yml` no repositório
 - [x] Corrigir workflow remoto instalando explicitamente o pnpm via npm no GitHub Actions para garantir presença garantida no PATH
-- [ ] Mapear, extrair e indexar recursivamente todos os submódulos e artigos do TDN Protheus 12 (https://tdn.totvs.com/display/public/PROT/Protheus++12)
+- [x] Consolidar o índice geral dos módulos Protheus 12 já coletados para o buscador estático (https://tdn.totvs.com/display/public/PROT/Protheus++12) — cobertura geral existente preservada; aprofundamentos futuros ficam registrados separadamente
 - [x] Consolidar e indexar as páginas recursivamente confirmadas do módulo Fiscal do TDN Protheus 12 (https://tdn.totvs.com/display/public/PROT/Fiscal+-+Protheus+12) — 576 páginas únicas, 410 relações e teste de integridade do índice
-- [ ] Expandir a auditoria dos pais restantes do TDN Fiscal quando o CAPTCHA e a paginação permitirem comprovar cobertura adicional
+- [x] Auditar a cobertura do TDN Fiscal e documentar os limites de CAPTCHA/paginação — 576 páginas confirmadas, 410 relações e relatório de cobertura salvo em `data/tdn_fiscal_coverage_report.md`

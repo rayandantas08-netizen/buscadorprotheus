@@ -72,6 +72,7 @@ MODULES = {
     'doc_eletronicos_subsections.txt': ('Documentos Eletrônicos Protheus', 'NFE/NFSE'),
     'advpl_subsections.txt': ('Customizações', 'ADVPL'),
     'tdn_fiscal_recursive.txt': ('Fiscal - Protheus 12', 'SIGAFIS'),
+    'tdn_protheus12_root.txt': ('Catálogo TDN Protheus 12', 'PROTHEUS-TDN'),
 }
 
 MODULE_HINTS = [

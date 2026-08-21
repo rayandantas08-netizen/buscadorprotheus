@@ -1,0 +1,66 @@
+name: Deploy static site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar código do repositório
+        uses: actions/checkout@v5
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: Instalar pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Instalar dependências
+        run: pnpm install --frozen-lockfile
+
+      - name: Construir site estático
+        env:
+          VITE_BASE_PATH: /${{ github.event.repository.name }}/
+        run: pnpm build
+
+      - name: Enviar artefato para o GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/public
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Publicar no GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+# Observação:
+# A versão do pnpm é lida do campo packageManager no package.json.
+# Não adicione "with: version: 10" neste template, pois isso causa conflito
+# com a versão exata declarada pelo projeto e pode gerar ERR_PNPM_BAD_PM_VERSION.
+# Para ativar o deploy, copie este arquivo para:
+# .github/workflows/deploy-pages.yml
+# O GitHub Actions executa somente arquivos YAML dentro desse diretório.

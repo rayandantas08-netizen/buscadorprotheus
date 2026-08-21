@@ -71,6 +71,7 @@ MODULES = {
     'sigafis_mag_subsections.txt': ('Arquivos Magnéticos', 'SIGAFIS'),
     'doc_eletronicos_subsections.txt': ('Documentos Eletrônicos Protheus', 'NFE/NFSE'),
     'advpl_subsections.txt': ('Customizações', 'ADVPL'),
+    'tdn_fiscal_recursive.txt': ('Fiscal - Protheus 12', 'SIGAFIS'),
 }
 
 MODULE_HINTS = [

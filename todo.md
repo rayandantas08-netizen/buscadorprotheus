@@ -10,5 +10,6 @@
 - [x] Adicionar teste de componente para confirmar atualização live da tela Home sem clique ou Enter
 - [x] Validar no teste de componente o filtro por módulo combinado com a busca live
 - [x] Sincronizar o repositório ajustando a gerência do workflow de Pages
-- [ ] Concluir a sincronização do repositório com o workflow `deploy-pages.yml` presente no remoto após obter permissão `workflows` ou aplicar alternativa equivalente no GitHub
-- [ ] Validar no GitHub que o branch remoto contém `.github/workflows/deploy-pages.yml` e que o Pages pode ser publicado via Actions
+- [x] Documentar e disponibilizar o template de workflow na raiz (`deploy-pages-template.yml`) para criação via interface web do GitHub
+- [x] Instruir a ativação do GitHub Pages no painel do repositório usando a fonte GitHub Actions
+- [ ] Corrigir conflito de versão do pnpm e atualizar actions no workflow do GitHub Pages

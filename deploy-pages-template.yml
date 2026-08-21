@@ -56,3 +56,11 @@ jobs:
       - name: Publicar no GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+# Observação:
+# A versão do pnpm é lida do campo packageManager no package.json.
+# Não adicione "with: version: 10" neste template, pois isso causa conflito
+# com a versão exata declarada pelo projeto e pode gerar ERR_PNPM_BAD_PM_VERSION.
+# Para ativar o deploy, copie este arquivo para:
+# .github/workflows/deploy-pages.yml
+# O GitHub Actions executa somente arquivos YAML dentro desse diretório.

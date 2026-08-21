@@ -4,6 +4,7 @@
 - [x] Construção e compactação da base de conhecimento com 1.929 links deduplicados de documentação TOTVS
 - [x] Desenvolvimento da interface de busca local instantânea com filtros por módulo (SIGA...)
 - [x] Integração do assistente de IA cliente-side (suporte a chaves OpenAI/Gemini informadas pelo usuário)
+- [x] Adicionar provedor Groq (gratuito, API compatível com OpenAI) ao assistente de IA
 - [x] Estilização profissional com tema escuro técnico e design responsivo
 - [x] Documentação de publicação no GitHub Pages
 - [x] Atualizar resultados em tempo real durante a digitação e cobrir esse comportamento nos testes

@@ -6,9 +6,9 @@ O **Buscador Protheus** é uma aplicação estática para consulta técnica da d
 
 A interface carrega um índice JSON local com **1.929 links deduplicados** do TDN e da Central de Atendimento TOTVS, incluindo artigos e seções/subseções mapeadas. A busca acontece inteiramente no navegador e considera títulos, URLs, códigos de módulo e termos técnicos. Os resultados exibem o título, a origem, o módulo e o link clicável para a documentação original.
 
-A aplicação também oferece uma camada opcional de análise com OpenAI ou Google Gemini. Nesse modo, o usuário escolhe o provedor, informa a própria chave e envia a pergunta junto com os resultados encontrados diretamente ao provedor escolhido. A chave não está no repositório e não passa por servidor intermediário do projeto.
+A aplicação também oferece uma camada opcional de análise com OpenAI, Google Gemini ou Groq. Nesse modo, o usuário escolhe o provedor, informa a própria chave e envia a pergunta junto com os resultados encontrados diretamente ao provedor escolhido. A chave não está no repositório e não passa por servidor intermediário do projeto.
 
-> A busca local é gratuita. O uso de OpenAI ou Gemini depende da conta, da chave e da política de cobrança do próprio provedor escolhido pelo usuário.
+> A busca local é gratuita. O uso de OpenAI, Gemini ou Groq depende da conta, da chave e da política de cobrança do próprio provedor escolhido pelo usuário. O Groq oferece um nível gratuito (sem cartão) com modelos como o Llama 3.3 70B, útil para testes.
 
 ## Estrutura principal
 

@@ -29,7 +29,7 @@ import { searchRecords, type KnowledgeRecord } from "@/lib/search";
 
 const STORAGE_KEY = "buscadorprotheus.ai-settings";
 
-type Provider = "openai" | "gemini";
+type Provider = "openai" | "gemini" | "groq";
 
 type KnowledgePayload = {
   total: number;
@@ -51,8 +51,10 @@ function readStoredSettings(): AiSettings {
     const saved = window.localStorage.getItem(STORAGE_KEY);
     if (!saved) return DEFAULT_SETTINGS;
     const parsed = JSON.parse(saved) as Partial<AiSettings>;
+    const provider: Provider =
+      parsed.provider === "gemini" || parsed.provider === "groq" ? parsed.provider : "openai";
     return {
-      provider: parsed.provider === "gemini" ? "gemini" : "openai",
+      provider,
       key: parsed.remember ? parsed.key ?? "" : "",
       remember: parsed.remember === true,
     };
@@ -90,6 +92,31 @@ async function askOpenAi(key: string, question: string, records: KnowledgeRecord
   });
   const data = (await response.json()) as { choices?: Array<{ message?: { content?: string } }>; error?: { message?: string } };
   if (!response.ok) throw new Error(data.error?.message || "A API OpenAI recusou a solicitação.");
+  return data.choices?.[0]?.message?.content || "A API não retornou uma resposta textual.";
+}
+
+async function askGroq(key: string, question: string, records: KnowledgeRecord[]) {
+  const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+    method: "POST",
+    headers: { "Content-Type": "application/json", Authorization: `Bearer ${key}` },
+    body: JSON.stringify({
+      model: "llama-3.3-70b-versatile",
+      temperature: 0.1,
+      messages: [
+        {
+          role: "system",
+          content:
+            "Você é um consultor técnico de TOTVS Protheus. Responda em português do Brasil, seja objetivo e não invente procedimentos. Use somente as fontes fornecidas, indique quando a evidência não for suficiente e preserve os links no texto.",
+        },
+        {
+          role: "user",
+          content: `Pergunta do usuário:\n${question}\n\nFontes locais encontradas:\n${buildSourcesPrompt(records)}`,
+        },
+      ],
+    }),
+  });
+  const data = (await response.json()) as { choices?: Array<{ message?: { content?: string } }>; error?: { message?: string } };
+  if (!response.ok) throw new Error(data.error?.message || "A API Groq recusou a solicitação.");
   return data.choices?.[0]?.message?.content || "A API não retornou uma resposta textual.";
 }
 
@@ -194,9 +221,14 @@ export default function Home() {
     setAiAnswer("");
     setAiError("");
     try {
-      const answer = settings.provider === "openai"
-        ? await askOpenAi(settings.key.trim(), query.trim(), results)
-        : await askGemini(settings.key.trim(), query.trim(), results);
+      let answer: string;
+      if (settings.provider === "openai") {
+        answer = await askOpenAi(settings.key.trim(), query.trim(), results);
+      } else if (settings.provider === "groq") {
+        answer = await askGroq(settings.key.trim(), query.trim(), results);
+      } else {
+        answer = await askGemini(settings.key.trim(), query.trim(), results);
+      }
       setAiAnswer(answer);
     } catch (error) {
       setAiError(error instanceof Error ? error.message : "Não foi possível consultar o provedor de IA.");
@@ -303,9 +335,9 @@ export default function Home() {
 
         <aside className="space-y-5">
           <Card className="border-white/10 bg-[#0b1722] text-slate-100 shadow-xl shadow-black/10">
-            <CardHeader><div className="flex items-center justify-between"><div className="flex size-10 items-center justify-center rounded-xl bg-violet-300/10 text-violet-200"><Sparkles size={19} /></div><Badge className="border-amber-300/20 bg-amber-300/10 text-amber-100 hover:bg-amber-300/10">Opcional</Badge></div><CardTitle className="mt-4 text-lg text-white">Analisar com sua IA</CardTitle><CardDescription className="leading-6 text-slate-400">Envie a pergunta e os links encontrados diretamente do navegador para OpenAI ou Gemini.</CardDescription></CardHeader>
+            <CardHeader><div className="flex items-center justify-between"><div className="flex size-10 items-center justify-center rounded-xl bg-violet-300/10 text-violet-200"><Sparkles size={19} /></div><Badge className="border-amber-300/20 bg-amber-300/10 text-amber-100 hover:bg-amber-300/10">Opcional</Badge></div><CardTitle className="mt-4 text-lg text-white">Analisar com sua IA</CardTitle><CardDescription className="leading-6 text-slate-400">Envie a pergunta e os links encontrados diretamente do navegador para OpenAI, Gemini ou Groq.</CardDescription></CardHeader>
             <CardContent><Button onClick={() => setShowAiPanel((value) => !value)} variant="outline" className="w-full border-white/10 bg-transparent text-slate-200 hover:bg-white/5 hover:text-white">{showAiPanel ? "Ocultar configuração" : "Configurar provedor"}<ChevronDown size={16} className={showAiPanel ? "rotate-180 transition" : "transition"} /></Button>
-              {showAiPanel && <div className="mt-5 space-y-4 border-t border-white/10 pt-5"><div><Label htmlFor="provider" className="text-xs text-slate-300">Provedor</Label><select id="provider" value={settings.provider} onChange={(event) => setSettings((current) => ({ ...current, provider: event.target.value as Provider }))} className="mt-2 h-10 w-full rounded-lg border border-white/10 bg-[#071018] px-3 text-sm text-slate-200 outline-none focus:border-violet-300/50"><option value="openai">OpenAI · gpt-4o-mini</option><option value="gemini">Google Gemini · 2.0 Flash</option></select></div><div><Label htmlFor="api-key" className="text-xs text-slate-300">Sua chave de API</Label><div className="relative mt-2"><KeyRound size={15} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500" /><Input id="api-key" type="password" value={settings.key} onChange={(event) => setSettings((current) => ({ ...current, key: event.target.value, remember: current.remember }))} placeholder={settings.provider === "openai" ? "sk-..." : "AIza..."} className="border-white/10 bg-[#071018] pl-9 text-slate-100" /></div></div><label className="flex items-center gap-2 text-xs text-slate-400"><input type="checkbox" checked={settings.remember} onChange={(event) => setSettings((current) => ({ ...current, remember: event.target.checked }))} className="accent-violet-300" /> Lembrar somente neste navegador</label><p className="text-[11px] leading-5 text-slate-500">A chave fica no estado da página ou no localStorage se você marcar a opção. Nunca há chave embutida no código e nenhuma chamada passa por servidor intermediário.</p><Button onClick={handleAiAnswer} disabled={isAsking} className="w-full bg-violet-300 text-slate-950 hover:bg-violet-200">{isAsking ? <Loader2 className="animate-spin" size={16} /> : <MessageSquareText size={16} />} {isAsking ? "Analisando..." : "Gerar análise"}</Button></div>}
+              {showAiPanel && <div className="mt-5 space-y-4 border-t border-white/10 pt-5"><div><Label htmlFor="provider" className="text-xs text-slate-300">Provedor</Label><select id="provider" value={settings.provider} onChange={(event) => setSettings((current) => ({ ...current, provider: event.target.value as Provider }))} className="mt-2 h-10 w-full rounded-lg border border-white/10 bg-[#071018] px-3 text-sm text-slate-200 outline-none focus:border-violet-300/50"><option value="openai">OpenAI · gpt-4o-mini</option><option value="gemini">Google Gemini · 2.0 Flash</option><option value="groq">Groq · Llama 3.3 70B (grátis)</option></select></div><div><Label htmlFor="api-key" className="text-xs text-slate-300">Sua chave de API</Label><div className="relative mt-2"><KeyRound size={15} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500" /><Input id="api-key" type="password" value={settings.key} onChange={(event) => setSettings((current) => ({ ...current, key: event.target.value, remember: current.remember }))} placeholder={settings.provider === "openai" ? "sk-..." : settings.provider === "groq" ? "gsk_..." : "AIza..."} className="border-white/10 bg-[#071018] pl-9 text-slate-100" /></div></div><label className="flex items-center gap-2 text-xs text-slate-400"><input type="checkbox" checked={settings.remember} onChange={(event) => setSettings((current) => ({ ...current, remember: event.target.checked }))} className="accent-violet-300" /> Lembrar somente neste navegador</label><p className="text-[11px] leading-5 text-slate-500">A chave fica no estado da página ou no localStorage se você marcar a opção. Nunca há chave embutida no código e nenhuma chamada passa por servidor intermediário.</p><Button onClick={handleAiAnswer} disabled={isAsking} className="w-full bg-violet-300 text-slate-950 hover:bg-violet-200">{isAsking ? <Loader2 className="animate-spin" size={16} /> : <MessageSquareText size={16} />} {isAsking ? "Analisando..." : "Gerar análise"}</Button></div>}
               {aiError && <p className="mt-4 rounded-lg border border-rose-300/20 bg-rose-400/10 p-3 text-xs leading-5 text-rose-100">{aiError}</p>}
             </CardContent>
           </Card>

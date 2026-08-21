@@ -12,4 +12,4 @@
 - [x] Sincronizar o repositório ajustando a gerência do workflow de Pages
 - [x] Documentar e disponibilizar o template de workflow na raiz (`deploy-pages-template.yml`) para criação via interface web do GitHub
 - [x] Instruir a ativação do GitHub Pages no painel do repositório usando a fonte GitHub Actions
-- [ ] Corrigir conflito de versão do pnpm e atualizar actions no workflow do GitHub Pages
+- [x] Remover chave de versão conflitante do pnpm e padronizar o setup no template de workflow

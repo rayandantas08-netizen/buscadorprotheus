@@ -116,7 +116,7 @@ export default function Home() {
   const [loadError, setLoadError] = useState("");
   const [query, setQuery] = useState("");
   const [selectedModule, setSelectedModule] = useState("all");
-  const [selectedLinkType, setSelectedLinkType] = useState("all");
+  const [selectedSource, setSelectedSource] = useState("all");
   const [settings, setSettings] = useState<AiSettings>(readStoredSettings);
   const [showAiPanel, setShowAiPanel] = useState(false);
   const [aiAnswer, setAiAnswer] = useState("");
@@ -147,14 +147,11 @@ export default function Home() {
     return [...knowledge.modules].sort((a, b) => a.localeCompare(b, "pt-BR"));
   }, [knowledge]);
 
-  const linkTypes = useMemo(() => {
-    if (!knowledge) return [];
-    return [...(knowledge.linkTypes ?? Array.from(new Set(knowledge.records.map((record) => record.linkType))))].sort((a, b) => a.localeCompare(b, "pt-BR"));
-  }, [knowledge]);
+  const sources = ["TDN", "Central de Atendimento TOTVS"];
 
   const results = useMemo(
-    () => searchRecords(knowledge?.records ?? [], query, selectedModule, selectedLinkType),
-    [knowledge, selectedModule, selectedLinkType, query],
+    () => searchRecords(knowledge?.records ?? [], query, selectedModule, selectedSource),
+    [knowledge, selectedModule, selectedSource, query],
   );
 
   const moduleCounts = useMemo(() => {
@@ -163,9 +160,9 @@ export default function Home() {
     return counts;
   }, [knowledge]);
 
-  const linkTypeCounts = useMemo(() => {
+  const sourceCounts = useMemo(() => {
     const counts = new Map<string, number>();
-    for (const record of knowledge?.records ?? []) counts.set(record.linkType, (counts.get(record.linkType) ?? 0) + 1);
+    for (const record of knowledge?.records ?? []) counts.set(record.source, (counts.get(record.source) ?? 0) + 1);
     return counts;
   }, [knowledge]);
 
@@ -177,7 +174,7 @@ export default function Home() {
   const handleClear = () => {
     setQuery("");
     setSelectedModule("all");
-    setSelectedLinkType("all");
+    setSelectedSource("all");
     setAiAnswer("");
     setAiError("");
   };
@@ -267,15 +264,15 @@ export default function Home() {
           </div>
 
           <div className="mt-7 flex flex-col gap-3 rounded-2xl border border-white/10 bg-[#0b1722] p-4 lg:flex-row lg:items-center lg:justify-between">
-            <div className="flex items-center gap-3 text-sm text-slate-300"><Filter size={17} className="text-cyan-200" /><span>Refinar resultados</span></div>
+            <div className="flex items-center gap-3 text-sm text-slate-300"><Filter size={17} className="text-cyan-200" /><span>Refinar por</span></div>
             <div className="grid gap-2 sm:grid-cols-2 lg:flex">
               <select value={selectedModule} onChange={(event) => setSelectedModule(event.target.value)} aria-label="Filtrar por módulo" className="h-10 min-w-0 rounded-lg border border-white/10 bg-[#071018] px-3 text-sm text-slate-200 outline-none focus:border-cyan-300/50 sm:min-w-[260px]">
                 <option value="all">Todos os módulos</option>
                 {modules.map((module) => <option key={module} value={module}>{module} ({moduleCounts.get(module) ?? 0})</option>)}
               </select>
-              <select value={selectedLinkType} onChange={(event) => setSelectedLinkType(event.target.value)} aria-label="Filtrar por tipo de link" className="h-10 min-w-0 rounded-lg border border-white/10 bg-[#071018] px-3 text-sm text-slate-200 outline-none focus:border-cyan-300/50 sm:min-w-[230px]">
-                <option value="all">Todos os tipos de link</option>
-                {linkTypes.map((linkType) => <option key={linkType} value={linkType}>{linkType} ({linkTypeCounts.get(linkType) ?? 0})</option>)}
+              <select value={selectedSource} onChange={(event) => setSelectedSource(event.target.value)} aria-label="Filtrar por origem" className="h-10 min-w-0 rounded-lg border border-white/10 bg-[#071018] px-3 text-sm text-slate-200 outline-none focus:border-cyan-300/50 sm:min-w-[230px]">
+                <option value="all">Todas as origens</option>
+                {sources.map((source) => <option key={source} value={source}>{source} ({sourceCounts.get(source) ?? 0})</option>)}
               </select>
               <Button variant="outline" onClick={handleClear} className="h-10 border-white/10 bg-transparent text-slate-300 hover:bg-white/5 hover:text-white">Limpar</Button>
             </div>

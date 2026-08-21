@@ -35,9 +35,9 @@ function scoreRecord(record: KnowledgeRecord, query: string) {
   return score;
 }
 
-export function searchRecords(records: KnowledgeRecord[], query: string, module: string, linkType = "all", limit = 40) {
+export function searchRecords(records: KnowledgeRecord[], query: string, module: string, source = "all", limit = 40) {
   const byModule = module === "all" ? records : records.filter((record) => record.module === module);
-  const base = linkType === "all" ? byModule : byModule.filter((record) => record.linkType === linkType);
+  const base = source === "all" ? byModule : byModule.filter((record) => record.source === source);
   if (!query.trim()) return base.slice(0, limit);
 
   return base

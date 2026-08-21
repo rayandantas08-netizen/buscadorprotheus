@@ -66,8 +66,8 @@ describe("Home — busca live e filtro por módulo", () => {
     expect(screen.getByText(/Nenhum link correspondeu/)).not.toBeNull();
 
     await user.selectOptions(moduleFilter, "all");
-    const linkTypeFilter = screen.getByRole("combobox", { name: "Filtrar por tipo de link" });
-    await user.selectOptions(linkTypeFilter, "Central TOTVS — Artigo");
+    const sourceFilter = screen.getByRole("combobox", { name: "Filtrar por origem" });
+    await user.selectOptions(sourceFilter, "Central de Atendimento TOTVS");
     expect(screen.getByText(/Nenhum link correspondeu/)).not.toBeNull();
 
     await user.clear(input);

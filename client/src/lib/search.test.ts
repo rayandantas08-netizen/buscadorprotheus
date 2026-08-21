@@ -42,8 +42,8 @@ describe("busca local do Buscador Protheus", () => {
     expect(result[0]?.moduleCode).toBe("SIGAFIS");
   });
 
-  it("filtra por tipo de link depois do módulo", () => {
-    const result = searchRecords(records, "", "all", "TDN — Página");
+  it("filtra por origem depois do módulo", () => {
+    const result = searchRecords(records, "", "all", "TDN");
     expect(result).toHaveLength(1);
     expect(result[0]?.id).toBe(1);
   });

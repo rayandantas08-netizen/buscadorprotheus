@@ -13,31 +13,55 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
+    name: Construir site
     runs-on: ubuntu-latest
 
     steps:
       - name: Baixar código do repositório
         uses: actions/checkout@v5
 
+      # Referência: se o package.json tiver packageManager=pnpm, instale o pnpm
+      # ANTES do setup-node. O setup-node@v5 cacheia o gerenciador e falha com
+      # "Unable to locate executable file: pnpm" caso o binário ainda não exista.
+      # Este repositório omite packageManager de propósito; o workflow ativo
+      # instala pnpm com npm install --global pnpm@10.4.1.
+      - name: Instalar pnpm
+        uses: pnpm/action-setup@v4
+
       - name: Configurar Node.js
         uses: actions/setup-node@v5
         with:
           node-version: 22
+          cache: pnpm
 
-      - name: Instalar pnpm
-        uses: pnpm/action-setup@v4
+      - name: Configurar GitHub Pages
+        id: pages
+        uses: actions/configure-pages@v5
 
       - name: Instalar dependências
         run: pnpm install --frozen-lockfile
 
       - name: Construir site estático
         env:
-          VITE_BASE_PATH: /${{ github.event.repository.name }}/
-        run: pnpm build
+          PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          REPO_BASE_PATH: /${{ github.event.repository.name }}/
+        run: |
+          BASE_PATH="${PAGES_BASE_PATH:-$REPO_BASE_PATH}"
+          [ -n "$BASE_PATH" ] || BASE_PATH="$REPO_BASE_PATH"
+          case "$BASE_PATH" in
+            */) ;;
+            *) BASE_PATH="${BASE_PATH}/" ;;
+          esac
+          export VITE_BASE_PATH="$BASE_PATH"
+          echo "VITE_BASE_PATH=$VITE_BASE_PATH"
+          pnpm build
+
+      - name: Preparar fallback SPA
+        run: cp dist/public/index.html dist/public/404.html
 
       - name: Enviar artefato para o GitHub Pages
         uses: actions/upload-pages-artifact@v3
@@ -45,22 +69,13 @@ jobs:
           path: dist/public
 
   deploy:
+    name: Publicar site
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     runs-on: ubuntu-latest
     needs: build
-
     steps:
       - name: Publicar no GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-# Observação:
-# A versão do pnpm é lida do campo packageManager no package.json.
-# Não adicione "with: version: 10" neste template, pois isso causa conflito
-# com a versão exata declarada pelo projeto e pode gerar ERR_PNPM_BAD_PM_VERSION.
-# Para ativar o deploy, copie este arquivo para:
-# .github/workflows/deploy-pages.yml
-# O GitHub Actions executa somente arquivos YAML dentro desse diretório.

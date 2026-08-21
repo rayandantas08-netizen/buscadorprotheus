@@ -49,7 +49,7 @@ O artefato final fica em `dist/public`.
 
 ## Publicar no GitHub Pages
 
-O workflow incluído publica automaticamente quando há um push na branch `main`. No GitHub, abra **Settings → Pages**, selecione **GitHub Actions** como fonte e faça o primeiro push. O workflow ajusta `VITE_BASE_PATH` para que o arquivo `knowledge.json` funcione tanto na raiz quanto no subdiretório do projeto.
+O projeto inclui o template de workflow em `deploy-pages-template.yml` na raiz do repositório. Para ativar a publicação automática via GitHub Actions, basta criar a pasta `.github/workflows/` no próprio GitHub (clicando em *Add file → Create new file*, digitando `.github/workflows/deploy-pages.yml` e colando o conteúdo do arquivo `deploy-pages-template.yml`). Em seguida, vá em **Settings → Pages** e selecione **GitHub Actions** como fonte.
 
 Se o repositório for `usuario/buscadorprotheus`, a URL normalmente terá o formato `https://usuario.github.io/buscadorprotheus/`. O endereço exato depende do nome da conta e das configurações do GitHub Pages.
 

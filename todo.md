@@ -9,4 +9,6 @@
 - [x] Atualizar resultados em tempo real durante a digitação e cobrir esse comportamento nos testes
 - [x] Adicionar teste de componente para confirmar atualização live da tela Home sem clique ou Enter
 - [x] Validar no teste de componente o filtro por módulo combinado com a busca live
-- [ ] Sincronizar o repositório ajustando a gerência do workflow de Pages
+- [x] Sincronizar o repositório ajustando a gerência do workflow de Pages
+- [ ] Concluir a sincronização do repositório com o workflow `deploy-pages.yml` presente no remoto após obter permissão `workflows` ou aplicar alternativa equivalente no GitHub
+- [ ] Validar no GitHub que o branch remoto contém `.github/workflows/deploy-pages.yml` e que o Pages pode ser publicado via Actions

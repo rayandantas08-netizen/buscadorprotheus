@@ -33,6 +33,12 @@ errado depois vira discussão sobre o que foi combinado.
 | 3 | Transmissão da propriedade (venda ao portador/representante) | a definir (tipicamente CFOP de venda) | idem | **faltando** |
 | 4 | Retorno simbólico após a venda | a definir | idem | **faltando** |
 
+> Este mesmo formato foi expandido para **18 ciclos de operação** (64 movimentos: demonstração,
+> consignação, industrialização, conserto, comodato, armazém geral, feira, venda fora do estabelecimento,
+> entrega futura, venda à ordem, transferência, devolução, exportação com fim específico, brinde/amostra,
+> vasilhame e ativo imobilizado) na planilha `gerado/ciclos-operacoes-fisa170.xlsx`, regerada por
+> `python3 scripts/gerar_ciclos_operacoes_xlsx.py`.
+
 Se a linha 1 sai com o imposto suspenso, as linhas 2 a 4 têm de ser configuradas juntas: é a saída da
 demonstração que fecha (ou não) o imposto. Levantar só o envio deixa o cliente com a nota de retorno sem
 regra — o sintoma clássico é o retorno sair tributando de novo.

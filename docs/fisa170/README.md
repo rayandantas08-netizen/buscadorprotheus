@@ -17,6 +17,7 @@ escrituração + ajuste de lançamento + vigência**. Este pacote cobre essa dif
 | `03-caso-demonstracao-sp.md` | Caso concreto: CFOP 5.912/6.912, CST ICMS 50, IPI 53, PIS/COFINS 49, ClassTrib 410/410999, cBenef SP053190, TES 704. |
 | `04-checklist-validacao.md` | Teste, homologação, evidências e riscos. |
 | `modelos/matriz-operacoes.csv` | Matriz de coleta: uma linha por operação, 91 colunas organizadas em 11 blocos. |
+| `gerado/ciclos-operacoes-fisa170.xlsx` | Planilha Excel com **18 ciclos de operação** (64 movimentos) no formato da tabela "a operação não é uma, é um ciclo": CFOP de saída × CFOP de entrada, CST, cBenef, TES e status na matriz. |
 | `gerado/` | Saída do gerador: resumo, lacunas, fichas por operação e mapa de fontes TOTVS. |
 
 ## Fluxo de trabalho

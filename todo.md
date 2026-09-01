@@ -21,3 +21,4 @@
 - [x] Auditar a cobertura do TDN Fiscal e documentar os limites de CAPTCHA/paginação — 576 páginas confirmadas, 410 relações e relatório de cobertura salvo em `data/tdn_fiscal_coverage_report.md`
 - [x] Adicionar filtro por tipo de link/fonte na interface e incluir o TAF do TDN (https://tdn.totvs.com/pages/releaseview.action?pageId=464958325) — 2.502 links indexados, novos seletores por tipo de URL e testes validados
 - [x] Restringir o filtro de tipo de link para apenas TDN e Central de Atendimento TOTVS, regenerar a base completa e sincronizar as alterações com o GitHub
+- [ ] Estruturar levantamento de necessidades do Configurador de Tributos (FISA170) para cliente — pacote em `docs/fisa170/` com método, matriz de 91 colunas, caso de remessa para demonstração (CFOP 5912/6912, CST ICMS 50, IPI 53, PIS/COFINS 49, ClassTrib 410/410999, cBenef SP053190, TES 704) e validador `scripts/gerar_pacote_fisa170.py` ancorado nos índices locais

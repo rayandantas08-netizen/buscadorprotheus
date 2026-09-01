@@ -61,6 +61,22 @@ Por padrão, a chave é mantida apenas no estado da página e desaparece ao reca
 
 As chamadas client-side utilizam os endpoints oficiais dos provedores. Alguns ambientes, extensões ou políticas do provedor podem bloquear requisições feitas diretamente do navegador por CORS; nesse caso, a busca local continuará funcionando normalmente, mas a análise de IA não estará disponível naquele ambiente.
 
+## Pacote de levantamento para o Configurador de Tributos (FISA170)
+
+O índice indexado não serve só para buscar artigo: ele é a base do material de levantamento de
+necessidades do módulo Fiscal. Em `docs/fisa170/` está o pacote pronto para uso em projeto: método de
+coleta, matriz de informações (o que cada dado do cliente decide no configurador), caso concreto de
+remessa para demonstração com cBenef, checklist de validação e a matriz CSV de coleta.
+
+```bash
+python3 scripts/gerar_pacote_fisa170.py --init-csv   # cria/reatualiza a matriz de coleta
+python3 scripts/gerar_pacote_fisa170.py             # gera resumo, lacunas, fichas e mapa de fontes
+python3 scripts/gerar_pacote_fisa170.py --check      # falha se houver bloqueio de levantamento
+```
+
+As fontes citadas nas fichas são sempre links já versionados em `data/indices/`, o que mantém o pacote
+ancorado na documentação oficial em vez de citar páginas soltas.
+
 ## Limitações deliberadas
 
 A aplicação pesquisa os títulos e URLs disponíveis no índice; ela não baixa automaticamente o conteúdo completo de cada artigo. Isso mantém o projeto gratuito, rápido e compatível com hospedagem puramente estática. Para obter uma resposta da IA, os links relevantes encontrados são enviados como contexto, e o usuário deve abrir a fonte oficial para confirmar a versão, o pacote e os detalhes de implantação.

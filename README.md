@@ -4,7 +4,9 @@ O **Buscador Protheus** é uma aplicação estática para consulta técnica da d
 
 ## O que a aplicação faz
 
-A interface carrega um índice JSON local com **1.929 links deduplicados** do TDN e da Central de Atendimento TOTVS, incluindo artigos e seções/subseções mapeadas. A busca acontece inteiramente no navegador e considera títulos, URLs, códigos de módulo e termos técnicos. Os resultados exibem o título, a origem, o módulo e o link clicável para a documentação original.
+A interface carrega um índice JSON local com **2.382 links deduplicados** do TDN e da Central de Atendimento TOTVS, incluindo artigos e seções/subseções mapeadas. A busca acontece inteiramente no navegador e considera títulos, URLs, códigos de módulo e termos técnicos. Os resultados exibem o título, a origem, o módulo e o link clicável para a documentação original.
+
+Além da busca, a aplicação tem a aba **Trilha de treinamento**: um dossiê de implantação e capacitação do escopo fiscal (projeto Minérios Gerais) com 18 tópicos, cada um com o que implantar, o que treinar, como validar e as fontes oficiais selecionadas automaticamente a partir do próprio índice local.
 
 A aplicação também oferece uma camada opcional de análise com OpenAI ou Google Gemini. Nesse modo, o usuário escolhe o provedor, informa a própria chave e envia a pergunta junto com os resultados encontrados diretamente ao provedor escolhido. A chave não está no repositório e não passa por servidor intermediário do projeto.
 
@@ -14,9 +16,15 @@ A aplicação também oferece uma camada opcional de análise com OpenAI ou Goog
 
 | Caminho | Finalidade |
 | --- | --- |
-| `client/src/pages/Home.tsx` | Interface, busca local, filtros e chamadas opcionais às APIs de IA. |
+| `client/src/pages/Home.tsx` | Interface, alternância Busca/Trilha, filtros e chamadas opcionais às APIs de IA. |
+| `client/src/components/TrilhaPanel.tsx` | Aba **Trilha de treinamento**: grupos da agenda, tópicos expansíveis e links por intenção. |
+| `client/src/lib/trilhas.ts` | Tipos, validação e filtros (status/busca) da trilha consumida pelo navegador. |
 | `client/public/knowledge.json` | Base estática de links consumida pelo navegador. |
+| `client/public/trilhas.json` | Trilha de implantação e treinamento gerada a partir da base estática. |
+| `docs/trilha-minerios-gerais/` | Dossiê em Markdown da trilha (agendas 09/09 e 11/09, treinamento e cobertura). |
 | `scripts/build_knowledge.py` | Regeneração da base JSON a partir dos índices `.txt` versionados em `data/indices/`. |
+| `scripts/gerar_trilha_treinamento.py` | Seleção dos links por tópico e geração de `trilhas.json` + dossiê Markdown. |
+| `data/indices/Indice_Trilha_Complementos.txt` | Complementos oficiais (TDN/Central) usados para cobrir lacunas da trilha. |
 | `.github/workflows/deploy-pages.yml` | Build e publicação automática no GitHub Pages. |
 | `vite.config.ts` | Configuração do caminho-base para preview local e subdiretório do GitHub Pages. |
 
@@ -28,7 +36,26 @@ Os arquivos de origem estão versionados em `data/indices/` e incluem os índice
 python3 scripts/build_knowledge.py
 ```
 
-O resultado será gravado em `client/public/knowledge.json`. O gerador remove URLs duplicadas, identifica a origem pelo domínio e organiza os registros por módulo quando o código SIGA aparece no título ou na URL.
+O resultado será gravado em `client/public/knowledge.json`. O gerador remove URLs duplicadas (mantendo o melhor título encontrado para cada URL), corrige URLs concatenadas dos índices acumulados, identifica a origem pelo domínio e organiza os registros por módulo quando o código SIGA aparece no título ou na URL.
+
+## Trilha de implantação e treinamento
+
+A trilha responde, por tópico do escopo fiscal, **como implantar**, **como treinar**, **como validar** e **quais fontes oficiais consultar**. Os tópicos seguem a agenda do cliente Minérios Gerais:
+
+- **Já validados** (revisão e reforço de treinamento): cadastros fiscais, TES de entrada/saída, configuração de tributos legados + Configurador de Tributos, DIFAL, apuração de impostos e impostos retidos (com a observação do PCC com data de vencimento incorreta).
+- **Agenda 09/09**: EFD-ICMS/IPI, EFD Contribuições, Registro de Apuração de ICMS-P9, CIAP, Bloco K e registro de inventário (Bloco H/MATR460).
+- **Agenda 11/09**: validação das rotinas fiscais (NF manual e acertos), TAF/Extrator Fiscal/EFD-REINF, revisão das parametrizações conforme o escopo, quebra de estoque e exportação.
+- **Apoio transversal**: materiais oficiais de treinamento (webinars do FISA170, eventos tira-dúvidas, Banco de Conhecimento, guias e dashboards).
+
+Cada link é classificado por intenção — implantar/parametrizar, treinar, ponto de entrada (ADVPL) e suporte/FAQ — e a seleção aplica limites por intenção, cotas por família de documento (por exemplo, no máximo 5 pontos de entrada por tópico) e remoção de duplicatas por título normalizado.
+
+```bash
+python3 scripts/build_knowledge.py                    # 1. reconstrói o índice local
+python3 scripts/gerar_trilha_treinamento.py           # 2. regenera trilhas.json + dossiê
+python3 scripts/gerar_trilha_treinamento.py --check   # 3. falha se algum tópico ficar sem fonte
+```
+
+Os artefatos são `client/public/trilhas.json` (consumido pela aba **Trilha**) e `docs/trilha-minerios-gerais/` (Markdown para levar à reunião). O arquivo `05-cobertura-e-lacunas.md` registra quantos candidatos a base tem por tópico, quais precisaram de complemento externo e as lacunas que continuam abertas (por exemplo, conteúdo fiscal específico de mineração/CFEM, que não existe na documentação oficial indexada).
 
 ## Executar localmente
 

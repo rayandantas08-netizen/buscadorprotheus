@@ -13,6 +13,7 @@ import {
   Link2,
   Loader2,
   MessageSquareText,
+  Route,
   Search,
   ShieldCheck,
   Sparkles,
@@ -21,11 +22,13 @@ import {
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import TrilhaPanel from "@/components/TrilhaPanel";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 import { searchRecords, type KnowledgeRecord } from "@/lib/search";
+import { cn } from "@/lib/utils";
 
 const STORAGE_KEY = "buscadorprotheus.ai-settings";
 
@@ -112,6 +115,7 @@ async function askGemini(key: string, question: string, records: KnowledgeRecord
 }
 
 export default function Home() {
+  const [view, setView] = useState<"busca" | "trilha">("busca");
   const [knowledge, setKnowledge] = useState<KnowledgePayload | null>(null);
   const [loadError, setLoadError] = useState("");
   const [query, setQuery] = useState("");
@@ -230,6 +234,33 @@ export default function Home() {
         </div>
       </header>
 
+      <div className="mx-auto flex max-w-[1500px] flex-wrap items-center gap-2 px-5 pt-6 lg:px-10">
+        {[
+          { id: "busca" as const, label: "Busca na base", icon: Search, hint: "Pesquisar rotinas, parâmetros, helps e mensagens de erro" },
+          { id: "trilha" as const, label: "Trilha de treinamento", icon: Route, hint: "Como implantar e treinar cada tópico do escopo fiscal" },
+        ].map((item) => (
+          <button
+            key={item.id}
+            type="button"
+            onClick={() => setView(item.id)}
+            aria-pressed={view === item.id}
+            title={item.hint}
+            className={cn(
+              "inline-flex cursor-pointer items-center gap-2 rounded-full border px-4 py-2 text-xs font-medium transition",
+              view === item.id
+                ? "border-cyan-300/40 bg-cyan-300/10 text-cyan-100 shadow-[0_0_25px_rgba(34,211,238,0.12)]"
+                : "border-white/10 bg-[#0b1722] text-slate-400 hover:border-cyan-300/25 hover:text-slate-200",
+            )}
+          >
+            <item.icon size={15} />
+            {item.label}
+          </button>
+        ))}
+      </div>
+
+      {view === "trilha" ? (
+        <TrilhaPanel />
+      ) : (
       <main className="mx-auto grid max-w-[1500px] gap-7 px-5 py-8 lg:grid-cols-[minmax(0,1fr)_350px] lg:px-10 lg:py-11">
         <section className="min-w-0">
           <div className="relative overflow-hidden rounded-3xl border border-cyan-300/15 bg-[radial-gradient(circle_at_80%_0%,rgba(34,211,238,0.14),transparent_35%),linear-gradient(135deg,#0b1823,#0a121b)] px-6 py-8 shadow-2xl shadow-black/20 sm:px-10 sm:py-11">
@@ -317,6 +348,7 @@ export default function Home() {
           <div className="rounded-2xl border border-white/10 bg-[#09131d] p-5"><div className="flex items-center gap-2 text-cyan-200"><BookOpen size={16} /><p className="text-sm font-medium text-white">Como consultar</p></div><ol className="mt-3 space-y-3 text-xs leading-5 text-slate-400"><li><span className="mr-2 font-mono text-cyan-200">01</span>Digite uma rotina, parâmetro, help ou mensagem de rejeição.</li><li><span className="mr-2 font-mono text-cyan-200">02</span>Filtre pelo módulo e abra a fonte oficial mais relevante.</li><li><span className="mr-2 font-mono text-cyan-200">03</span>Se desejar, forneça sua própria chave para obter uma síntese contextual.</li></ol></div>
         </aside>
       </main>
+      )}
 
       <footer className="mx-auto flex max-w-[1500px] flex-col gap-2 border-t border-white/10 px-5 py-7 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between lg:px-10"><span>Buscador Protheus · índice estático para consulta técnica</span><span className="flex items-center gap-2"><ShieldCheck size={13} /> A chave de IA, quando usada, permanece sob controle do usuário</span></footer>
     </div>

@@ -1,0 +1,3541 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-11",
+  "projeto": "Minérios Gerais — implantação e treinamento do Fiscal Protheus 12",
+  "descricao": "Trilha de implantação e treinamento fiscal montada a partir do índice local de links (TDN e Central de Atendimento TOTVS). Cada tópico traz o que implantar, o que treinar, como validar e as fontes oficiais encontradas na base.",
+  "totalLinksBase": 2382,
+  "grupos": [
+    {
+      "id": "concluidos",
+      "titulo": "Tópicos concluídos — revisão e reforço de treinamento",
+      "status": "concluido",
+      "descricao": "Itens já implantados no cliente. A trilha serve para revisar a parametrização feita, padronizar o discurso do treinamento e registrar evidências de validação."
+    },
+    {
+      "id": "agenda-09-09",
+      "titulo": "Agenda 09/09 — Minérios Gerais",
+      "status": "pendente",
+      "descricao": "Obrigações acessórias e apurações pendentes de implantação e treinamento."
+    },
+    {
+      "id": "agenda-11-09",
+      "titulo": "Agenda 11/09 — Minérios Gerais",
+      "status": "pendente",
+      "descricao": "Validação operacional das rotinas fiscais, integração TAF/Extrator/REINF, revisão do escopo de parametrização e temas de fronteira com Estoque, Faturamento e Comércio Exterior."
+    },
+    {
+      "id": "transversal",
+      "titulo": "Apoio transversal — capacitação e referência oficial",
+      "status": "apoio",
+      "descricao": "Materiais de treinamento, guias de referência e bancos de conhecimento usados em todos os tópicos."
+    }
+  ],
+  "intencoes": [
+    {
+      "id": "implantar",
+      "titulo": "Para implantar / parametrizar"
+    },
+    {
+      "id": "treinar",
+      "titulo": "Para treinar (conceito, guia e material oficial)"
+    },
+    {
+      "id": "customizar",
+      "titulo": "Pontos de entrada e customizações (ADVPL)"
+    },
+    {
+      "id": "suportar",
+      "titulo": "Suporte, FAQ e resolução de erros"
+    }
+  ],
+  "topicos": [
+    {
+      "id": "cadastros-fiscais",
+      "grupo": "concluidos",
+      "titulo": "Cadastros fiscais: produtos, fornecedores e clientes",
+      "status": "concluido",
+      "entrega": "",
+      "resumo": "Base de tudo: SB1 (produto), SA1 (cliente) e SA2 (fornecedor) carregam os atributos que alimentam TES, Configurador de Tributos, livros fiscais e SPED (registros 0150, 0200 e 0205).",
+      "rotinas": [
+        "MATA010 / Cadastro de Produtos (SB1)",
+        "MATA030 / Cadastro de Clientes (SA1)",
+        "MATA020 / Cadastro de Fornecedores (SA2)",
+        "FISA164 — Perfil tributário de participantes",
+        "FISA166 — Perfil tributário de produtos",
+        "Atualização de Dicionário da Classificação Tributária (cClassTrib)"
+      ],
+      "implantar": [
+        "Conferir nos produtos: tipo (B1_TIPO), NCM, CEST, unidade de medida, origem da mercadoria, alíquotas de ICMS/IPI/PIS/COFINS e, quando usado o Configurador de Tributos, a classificação tributária (cClassTrib) e o cBenef.",
+        "Conferir nos participantes: inscrição estadual (validação de IE), indicador de contribuinte, município/UF, regime de tributação e os campos de retenção (A1_RECPIS/A1_RECCOFI, A2_RECPIS/A2_RECCOFI/A2_RECCSLL, A2_RECISS).",
+        "Vincular os perfis tributários (FISA164/FISA166) aos participantes e produtos que exigem tratamento diferenciado.",
+        "Definir quem mantém cada atributo após o go-live (governança de cadastro) e como será feita a carga/atualização em massa."
+      ],
+      "treinar": [
+        "Mostrar onde cada campo fiscal do cadastro impacta: TES, cálculo do imposto, livro fiscal (SF3/SFT) e SPED.",
+        "Exercitar a inclusão de um produto novo completo e a validação do alerta de IE inválida no cliente/fornecedor.",
+        "Treinar a rotina de atualização da classificação tributária e o conceito de pacote do Configurador de Tributos."
+      ],
+      "validar": [
+        "Amostra de produtos e participantes escriturados corretamente no registro 0200/0150 do SPED Fiscal.",
+        "Sem helps de IE, NCM ou classificação tributária na emissão de notas de teste."
+      ],
+      "observacoes": [],
+      "totalCandidatos": 109,
+      "links": [
+        {
+          "id": 1395,
+          "title": "[CFGTRIB] - FISA164 - Cadastro de perfil tributário de participantes",
+          "label": "[CFGTRIB] - FISA164 - Cadastro de perfil tributário de participantes",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=788607214",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1396,
+          "title": "[CFGTRIB] - FISA166 - Cadastro de perfil tributário de produtos",
+          "label": "[CFGTRIB] - FISA166 - Cadastro de perfil tributário de produtos",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=788614355",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1417,
+          "title": "Atualização de Dicionário Classificação Tributária - Fiscal - P12",
+          "label": "Atualização de Dicionário Classificação Tributária - Fiscal - P12",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=784782300",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1430,
+          "title": "Cadastros - Fiscal - P12",
+          "label": "Cadastros - Fiscal - P12",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=606084833",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 2151,
+          "title": "CLASSTRIB- Classificação Tributária by Systax",
+          "label": "CLASSTRIB- Classificação Tributária by Systax",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=727362166",
+          "module": "Referências gerais TDN",
+          "moduleCode": "TDN",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1436,
+          "title": "Configurações - Cadastros e Parâmetros - Fiscal - P12",
+          "label": "Configurações - Cadastros e Parâmetros - Fiscal - P12",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=653144946",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1014,
+          "title": "Faturamento - Cadastros > Cross Segmentos - Backoffice Protheus - SIGAFAT - Manutenção no Cadastro NCM (Clientes que não utilizam o módulo SIGAEIC)",
+          "label": "Cross Segmentos - Backoffice Protheus - SIGAFAT - Manutenção no Cadastro NCM (Clientes que não utilizam o módulo SIGAEIC)",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/10545950391703-Cross-Segmentos-Backoffice-Protheus-SIGAFAT-Manuten%C3%A7%C3%A3o-no-Cadastro-NCM-Clientes-que-n%C3%A3o-utilizam-o-m%C3%B3dulo-SIGAEIC",
+          "module": "Faturamento",
+          "moduleCode": "SIGAFAT",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 170,
+          "title": "Materiais - Compras > Cross Segmentos - TOTVS Backoffice (Linha Protheus) - SIGACOM - Facilitador do Cadastro de Fornecedores",
+          "label": "Cross Segmentos - TOTVS Backoffice (Linha Protheus) - SIGACOM - Facilitador do Cadastro de Fornecedores",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/33660892155671-Cross-Segmentos-TOTVS-Backoffice-Linha-Protheus-SIGACOM-Facilitador-do-Cadastro-de-Fornecedores",
+          "module": "Compras",
+          "moduleCode": "SIGACOM",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 1036,
+          "title": "Faturamento - Cadastros > Cross Segmentos - TOTVS Backoffice (Linha Protheus) - SIGAFAT (Faturamento) - Configurar campos que não aparecem no facilitador de cadastro de clientes",
+          "label": "Cross Segmentos - TOTVS Backoffice (Linha Protheus) - SIGAFAT (Faturamento) - Configurar campos que não aparecem no facilitador de cadastro de clientes",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/4414663139863-Cross-Segmentos-TOTVS-Backoffice-Linha-Protheus-SIGAFAT-Faturamento-Configurar-campos-que-n%C3%A3o-aparecem-no-facilitador-de-cadastro-de-clientes",
+          "module": "Faturamento",
+          "moduleCode": "SIGAFAT",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 1046,
+          "title": "Faturamento - Cadastros > Cross Segmentos - TOTVS Backoffice (Linha Protheus) - SIGAFAT - Facilitador do Cadastro de Clientes",
+          "label": "Cross Segmentos - TOTVS Backoffice (Linha Protheus) - SIGAFAT - Facilitador do Cadastro de Clientes",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/4403166262167-Cross-Segmentos-TOTVS-Backoffice-Linha-Protheus-SIGAFAT-Facilitador-do-Cadastro-de-Clientes",
+          "module": "Faturamento",
+          "moduleCode": "SIGAFAT",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 1433,
+          "title": "Como resolver alerta ao informar Inscrição Estadual no Cadastro de Cliente/Fornecedor?",
+          "label": "Como resolver alerta ao informar Inscrição Estadual no Cadastro de Cliente/Fornecedor?",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=706135215",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "suportar"
+        },
+        {
+          "id": 616,
+          "title": "Escrita Fiscal - Impostos - Cálculos > CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS - Alerta ao informar Inscrição Estadual de MG no cadastro de Cliente/Fornecedor",
+          "label": "CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS - Alerta ao informar Inscrição Estadual de MG no cadastro de Cliente/Fornecedor",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/8442235970839-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-Alerta-ao-informar-Inscri%C3%A7%C3%A3o-Estadual-de-MG-no-cadastro-de-Cliente-Fornecedor",
+          "module": "Escrituração e Relatórios Fiscal",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "suportar"
+        }
+      ]
+    },
+    {
+      "id": "tes-entrada-saida",
+      "grupo": "concluidos",
+      "titulo": "TES: entrada e saída",
+      "status": "concluido",
+      "entrega": "",
+      "resumo": "Tipo de Entrada e Saída (SF4) define CFOP, atualização de estoque/financeiro, cálculo e escrituração de cada imposto. É o ponto que mais gera retrabalho quando fica mal configurado.",
+      "rotinas": [
+        "MATA080 — Cadastro de TES (SF4)",
+        "TES Inteligente / Réplica de TES",
+        "Pontos de entrada da TES (MATA080)"
+      ],
+      "implantar": [
+        "Para cada cenário de operação (compra, venda, devolução, remessa, retorno, transferência, uso/consumo, ativo imobilizado, industrialização em terceiros) definir TES de entrada e de saída.",
+        "Conferir campo a campo: CFOP, calcula ICMS/IPI/PIS/COFINS/ISS, livro fiscal de cada imposto, material de consumo, credita ICMS, atualiza estoque, gera duplicata, poder de terceiros (F4_PODER3) e agrega valor (F4_AGREG).",
+        "Definir a convivência entre TES legado e Configurador de Tributos (híbrido) e quais campos passam a ser decididos pelo FISA170.",
+        "Documentar a matriz CFOP x TES x CST/CSOSN x classificação tributária usada no projeto."
+      ],
+      "treinar": [
+        "Explicar a leitura da TES em conjunto com o cadastro do produto e do participante (o imposto sai da combinação dos três).",
+        "Exercitar a cópia de TES e a montagem de uma TES nova para um cenário inexistente.",
+        "Mostrar os helps mais comuns (A900CPO, validações de CFOP) e como diagnosticá-los."
+      ],
+      "validar": [
+        "Notas de teste de entrada e saída gravando SF3/SFT com CFOP, base e imposto coerentes.",
+        "Matriz de operações do projeto coberta por TES homologadas."
+      ],
+      "observacoes": [],
+      "totalCandidatos": 75,
+      "links": [
+        {
+          "id": 1583,
+          "title": "MATA080 - Rotina automática para cadastro de TES",
+          "label": "MATA080 - Rotina automática para cadastro de TES",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=706121236",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1926,
+          "title": "TES - Base de ICMS sobre o valor produto com desconto condicional",
+          "label": "TES - Base de ICMS sobre o valor produto com desconto condicional",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=706119416",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1927,
+          "title": "TES - Calcular Diferencial de Alíquota sem Reduzir a Base de Cálculo",
+          "label": "TES - Calcular Diferencial de Alíquota sem Reduzir a Base de Cálculo",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=705462168",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1928,
+          "title": "TES - Campo Agrega Valor F4_AGREG",
+          "label": "TES - Campo Agrega Valor F4_AGREG",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=705461928",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1929,
+          "title": "TES - Cenários de composição do ICMS com IBS e CBS",
+          "label": "TES - Cenários de composição do ICMS com IBS e CBS",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=1076455560",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1930,
+          "title": "TES - Comportamento campo F4_DESCOND sobre a Base do ISS quando existir desconto",
+          "label": "TES - Comportamento campo F4_DESCOND sobre a Base do ISS quando existir desconto",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=706119992",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1931,
+          "title": "TES - Configuração de TES para Uso/Consumo (CFOP 1556)",
+          "label": "TES - Configuração de TES para Uso/Consumo (CFOP 1556)",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=706118700",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1932,
+          "title": "TES - Configuração para ICMS Dispensado",
+          "label": "TES - Configuração para ICMS Dispensado",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=706118422",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1935,
+          "title": "TES - Cópia de TES - MATA080",
+          "label": "TES - Cópia de TES - MATA080",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=705461414",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1943,
+          "title": "TES - Situação Trib. do ICMS F4_SITTRIB",
+          "label": "TES - Situação Trib. do ICMS F4_SITTRIB",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=706120657",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 525,
+          "title": "Escrita Fiscal - CFOP > CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS - Pontos de Entrada TES (MATA080)",
+          "label": "CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS - Pontos de Entrada TES (MATA080)",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/4404850575767-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-Pontos-de-Entrada-TES-MATA080",
+          "module": "Escrituração e Relatórios Fiscal",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "customizar"
+        },
+        {
+          "id": 1735,
+          "title": "PE - MT089TES - Seleção do TES",
+          "label": "PE - MT089TES - Seleção do TES",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=658234488",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "customizar"
+        }
+      ]
+    },
+    {
+      "id": "conf-tributos-legado",
+      "grupo": "concluidos",
+      "titulo": "Configuração de tributos (impostos legados) e Configurador de Tributos",
+      "status": "concluido",
+      "entrega": "",
+      "resumo": "Duas camadas convivem: os impostos legados (TES, exceção fiscal, alíquotas em cadastro) e o Configurador de Tributos (FISA170), que passa a ser obrigatório para novas legislações e para IBS/CBS.",
+      "rotinas": [
+        "FISA170 — Configurador de Tributos",
+        "FISA080 — UF x UF (FECP e interestadual)",
+        "SF7 — Exceção Fiscal",
+        "TaxOpJson / Operando — recepção de tributos cadastrados"
+      ],
+      "implantar": [
+        "Mapear o escopo: quais tributos e operações ficam no Configurador e quais permanecem no legado.",
+        "Cadastrar regras de tributação (operadores, vigências, cBenef, ClassTrib) por UF e por cenário de operação.",
+        "Configurar exceções fiscais (SF7) para MVA/pauta/redução de base por produto ou NCM.",
+        "Definir rotina de atualização dos pacotes de classificação tributária e quem aprova cada alteração."
+      ],
+      "treinar": [
+        "Usar os webinars e treinamentos oficiais do Configurador de Tributos como material base da capacitação.",
+        "Exercitar a criação de uma regra completa (tributo, vigência, entidade, produto) e a leitura do resultado na nota.",
+        "Mostrar a diferença prática entre calcular pela TES e calcular pelo FISA170 no mesmo documento."
+      ],
+      "validar": [
+        "Comparativo de cálculo legado x Configurador nos cenários críticos (DIFAL, ST, benefício fiscal).",
+        "Notas de teste autorizadas com as tags de IBS/CBS corretas quando aplicável."
+      ],
+      "observacoes": [
+        "A partir de 03/08/2026 o IBS/CBS é obrigatório: revisar se o escopo do projeto já prevê o cenário híbrido (legado + Configurador)."
+      ],
+      "totalCandidatos": 220,
+      "links": [
+        {
+          "id": 191,
+          "title": "CFGTRIB - Adequação do Configurador de Tributos aos Códigos de Classificação Tributária do IBS, CBS e IS",
+          "label": "CFGTRIB - Adequação do Configurador de Tributos aos Códigos de Classificação Tributária do IBS, CBS e IS",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=962623217",
+          "module": "Configurador de Tributos",
+          "moduleCode": "FISA",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 770,
+          "title": "Escrita Fiscal - Reforma Tributária - CBS e IBS > Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - Como calcular IBS/CBS cClasstrib 000001 na venda Hibrida ?",
+          "label": "Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - Como calcular IBS/CBS cClasstrib 000001 na venda Hibrida ?",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/36147453667095-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-Como-calcular-IBS-CBS-cClasstrib-000001-na-venda-Hibrida",
+          "module": "Escrituração e Relatórios Fiscal",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 771,
+          "title": "Escrita Fiscal - Reforma Tributária - CBS e IBS > Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - Como calcular IBS/CBS cClasstrib 515001 Diferimento 100% forma Hibrida?",
+          "label": "Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - Como calcular IBS/CBS cClasstrib 515001 Diferimento 100% forma Hibrida?",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/36628367724567-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-Como-calcular-IBS-CBS-cClasstrib-515001-Diferimento-100-forma-Hibrida",
+          "module": "Escrituração e Relatórios Fiscal",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 773,
+          "title": "Escrita Fiscal - Reforma Tributária - CBS e IBS > Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - Como configurar IBS/CBS no cClasstrib 550001 de forma Hibrida?",
+          "label": "Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - Como configurar IBS/CBS no cClasstrib 550001 de forma Hibrida?",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/36447138801175-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-Como-configurar-IBS-CBS-no-cClasstrib-550001-de-forma-Hibrida",
+          "module": "Escrituração e Relatórios Fiscal",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 271,
+          "title": "Cross Segmento - TOTVS Backoffice (Linha Protheus) - TOTVS Gestão Fiscal - FIS - Como calcular Suframa de forma Hibrida com cBenef ?",
+          "label": "Cross Segmento - TOTVS Backoffice (Linha Protheus) - TOTVS Gestão Fiscal - FIS - Como calcular Suframa de forma Hibrida com cBenef ?",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/40300010845975-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-TOTVS-Gest%C3%A3o-Fiscal-FIS-Como-calcular-Suframa-de-forma-Hibrida-com-cBenef",
+          "module": "Configurador de Tributos",
+          "moduleCode": "FISA",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 272,
+          "title": "Cross Segmento - TOTVS Backoffice (Linha Protheus) - TOTVS Gestão Fiscal - FIS - Como fazer a devolução de compra com IBS/CBS forma Hibrida?",
+          "label": "Cross Segmento - TOTVS Backoffice (Linha Protheus) - TOTVS Gestão Fiscal - FIS - Como fazer a devolução de compra com IBS/CBS forma Hibrida?",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/38656780729623-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-TOTVS-Gest%C3%A3o-Fiscal-FIS-Como-fazer-a-devolu%C3%A7%C3%A3o-de-compra-com-IBS-CBS-forma-Hibrida",
+          "module": "Configurador de Tributos",
+          "moduleCode": "FISA",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 273,
+          "title": "Cross Segmento - TOTVS Backoffice (Linha Protheus) - TOTVS Gestão Fiscal - FIS Como fazer devolução de Saidas com calculo IBS/CBS forma Hibrida ?",
+          "label": "Cross Segmento - TOTVS Backoffice (Linha Protheus) - TOTVS Gestão Fiscal - FIS Como fazer devolução de Saidas com calculo IBS/CBS forma Hibrida ?",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/38604180935447-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-TOTVS-Gest%C3%A3o-Fiscal-FIS-Como-fazer-devolu%C3%A7%C3%A3o-de-Saidas-com-calculo-IBS-CBS-forma-Hibrida",
+          "module": "Configurador de Tributos",
+          "moduleCode": "FISA",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 786,
+          "title": "Escrita Fiscal - Reforma Tributária - CBS e IBS > CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS - Como configurar o cClasstrib 410 para operações Isentas no fisa170 forma Hibrida?",
+          "label": "CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS - Como configurar o cClasstrib 410 para operações Isentas no fisa170 forma Hibrida?",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/36312155068823-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-Como-configurar-o-cClasstrib-410-para-opera%C3%A7%C3%B5es-Isentas-no-fisa170-forma-Hibrida",
+          "module": "Escrituração e Relatórios Fiscal",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 790,
+          "title": "Escrita Fiscal - Reforma Tributária - CBS e IBS > CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS - Como importar a tabela cClassTrib-IBS/CBS no Configurador de Tributos?",
+          "label": "CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS - Como importar a tabela cClassTrib-IBS/CBS no Configurador de Tributos?",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/34662420522391-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-Como-importar-a-tabela-cClassTrib-IBS-CBS-no-Configurador-de-Tributos",
+          "module": "Escrituração e Relatórios Fiscal",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 1484,
+          "title": "Escopo de atendimento do Configurador de Tributos",
+          "label": "Escopo de atendimento do Configurador de Tributos",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=863302293",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 2353,
+          "title": "🧭 Central de Conteúdo | Reforma Tributária e Configurador de Tributos",
+          "label": "🧭 Central de Conteúdo | Reforma Tributária e Configurador de Tributos",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=945408020",
+          "module": "Referências gerais TDN",
+          "moduleCode": "TDN",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1490,
+          "title": "FAQ - Boas praticas na utilização híbrida da ferramenta Configurador de Tributos e Tes (Legado)",
+          "label": "FAQ - Boas praticas na utilização híbrida da ferramenta Configurador de Tributos e Tes (Legado)",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=1018568875",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "suportar"
+        }
+      ]
+    },
+    {
+      "id": "diferencial-aliquota",
+      "grupo": "concluidos",
+      "titulo": "Diferencial de alíquota (DIFAL)",
+      "status": "concluido",
+      "entrega": "",
+      "resumo": "DIFAL de aquisição (uso/consumo e ativo imobilizado) e DIFAL EC 87/2015 para não contribuinte, com ou sem base dupla, FECP e GNRE.",
+      "rotinas": [
+        "ICMSDIFAL — Cálculo e apuração de DIFAL (EC 87/2015)",
+        "SEICMS — Base dupla de ICMS diferencial de alíquota",
+        "IEDIFAL — Cadastro de IE para diferencial de alíquota",
+        "MV_ESTICM / FISA080 — alíquotas internas por UF"
+      ],
+      "implantar": [
+        "Definir a matriz de DIFAL por operação: entrada de uso/consumo, entrada para ativo imobilizado, saída para não contribuinte (EC 87) e saída interestadual com FECP.",
+        "Configurar base simples x base dupla (conv. 52/91), redução de base e reflexos no Configurador de Tributos.",
+        "Configurar a geração de guia (GNRE/DIFAL) e o título financeiro correspondente, incluindo a natureza do título.",
+        "Cadastrar as IE de DIFAL quando houver recolhimento por operação em outra UF."
+      ],
+      "treinar": [
+        "Exercitar uma compra interestadual de uso/consumo com e sem base dupla e conferir o valor na nota e no livro fiscal.",
+        "Mostrar onde o DIFAL aparece na apuração, na guia e no financeiro.",
+        "Discutir os erros mais comuns: alíquota interna desatualizada, FECP não configurado, cliente contribuinte marcado errado."
+      ],
+      "validar": [
+        "Notas de teste com DIFAL calculado e destacado conforme a UF de destino.",
+        "Guias e títulos gerados com natureza e vencimento corretos."
+      ],
+      "observacoes": [],
+      "totalCandidatos": 115,
+      "links": [
+        {
+          "id": 2081,
+          "title": "Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - Como calcular o Difal ec/87 base dupla no fisa170 com IBS/CBS ?",
+          "label": "Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - Como calcular o Difal ec/87 base dupla no fisa170 com IBS/CBS ?",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/39473914475159-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-Como-calcular-o-Difal-ec-87-base-dupla-no-fisa170-com-IBS-CBS",
+          "module": "Referências gerais Central TOTVS",
+          "moduleCode": "CENTRAL",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 2084,
+          "title": "Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - Como Configurar Difal da EC/87 com Base dupla no fisa170?",
+          "label": "Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - Como Configurar Difal da EC/87 com Base dupla no fisa170?",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/14193357628823-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-Como-Configurar-Difal-da-EC-87-com-Base-dupla-no-fisa170",
+          "module": "Referências gerais Central TOTVS",
+          "moduleCode": "CENTRAL",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 2085,
+          "title": "Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - Como configurar Diferencial de alíquotas base dupla sem deduzir o ICMS próprio no FISA170?",
+          "label": "Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - Como configurar Diferencial de alíquotas base dupla sem deduzir o ICMS próprio no FISA170?",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/31231115455127-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-Como-configurar-Diferencial-de-al%C3%ADquotas-base-dupla-sem-deduzir-o-ICMS-pr%C3%B3prio-no-FISA170",
+          "module": "Referências gerais Central TOTVS",
+          "moduleCode": "CENTRAL",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 2091,
+          "title": "Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - Como configurar o DIFAL EC/87 com FECP no FISA170 base simples?",
+          "label": "Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - Como configurar o DIFAL EC/87 com FECP no FISA170 base simples?",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/33254267433751-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-Como-configurar-o-DIFAL-EC-87-com-FECP-no-FISA170-base-simples",
+          "module": "Referências gerais Central TOTVS",
+          "moduleCode": "CENTRAL",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 1547,
+          "title": "ICMS - Cálculo do DIFAL Aquisição de Mercadoria",
+          "label": "ICMS - Cálculo do DIFAL Aquisição de Mercadoria",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=567740017",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1550,
+          "title": "ICMSDIFAL - Cálculo e Apuração de DIFAL conforme Emenda Constitucional 87/2015",
+          "label": "ICMSDIFAL - Cálculo e Apuração de DIFAL conforme Emenda Constitucional 87/2015",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=699815598",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1552,
+          "title": "ICMSST Base dupla de ICMS-ST recolhida por diferencial de alíquota",
+          "label": "ICMSST Base dupla de ICMS-ST recolhida por diferencial de alíquota",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=517127259",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1555,
+          "title": "IEDIFAL - Cadastro de Inscrição Estadual para Diferencial de Alíquota",
+          "label": "IEDIFAL - Cadastro de Inscrição Estadual para Diferencial de Alíquota",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=695190614",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 755,
+          "title": "Escrita Fiscal - Impostos - ICMS - ICMS ST > MP - FIS - Como Configurar uma Saída de Difal ICMS ST para Contribuinte com Base Dupla ?",
+          "label": "MP - FIS - Como Configurar uma Saída de Difal ICMS ST para Contribuinte com Base Dupla ?",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360023833311-MP-FIS-Como-Configurar-uma-Sa%C3%ADda-de-Difal-ICMS-ST-para-Contribuinte-com-Base-Dupla",
+          "module": "Escrituração e Relatórios Fiscal",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 1893,
+          "title": "SEICMS - Cálculo de Base Dupla de ICMS Diferencial de Alíquota",
+          "label": "SEICMS - Cálculo de Base Dupla de ICMS Diferencial de Alíquota",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=699818895",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1604,
+          "title": "MV_UNIFST - Geração de guia de ICMS ST e FECP (GNRE) unificada",
+          "label": "MV_UNIFST - Geração de guia de ICMS ST e FECP (GNRE) unificada",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=1104710810",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "treinar"
+        },
+        {
+          "id": 1492,
+          "title": "FAQ - Como funciona o campo GNRE DIFAL F2_GNRDIF?",
+          "label": "FAQ - Como funciona o campo GNRE DIFAL F2_GNRDIF?",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=733199209",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "suportar"
+        }
+      ]
+    },
+    {
+      "id": "apuracao-impostos",
+      "grupo": "concluidos",
+      "titulo": "Apuração de impostos",
+      "status": "concluido",
+      "entrega": "",
+      "resumo": "Apurações de ICMS, IPI, ISS, PIS/COFINS e ST: fechamento do período, geração de guias e títulos, contabilização e conferência contra os livros fiscais.",
+      "rotinas": [
+        "MATA953 — Apuração de ICMS (APUICM)",
+        "Apuração de IPI (APUIPI) e MATR943 — Registro de apuração do IPI",
+        "APUISS — Apuração de ISS",
+        "APURESST / FISA302 — Ressarcimento ou complemento de ICMS-ST",
+        "FISA001 — Apuração EFD Contribuições",
+        "MATA930 — Reprocessamento dos livros fiscais"
+      ],
+      "implantar": [
+        "Definir a ordem de fechamento: livros fiscais -> acertos -> apuração -> guias/títulos -> contabilização -> SPED.",
+        "Configurar regime de apuração, períodos, filiais centralizadoras e parâmetros de cada imposto.",
+        "Cadastrar os lançamentos padrão (LANPAD) para contabilização das apurações.",
+        "Configurar geração de guias e títulos (naturezas, códigos de recolhimento, datas de vencimento por UF)."
+      ],
+      "treinar": [
+        "Executar uma apuração completa em ambiente de treino e conferir os valores contra MATR930/MATRAPR.",
+        "Mostrar reprocessamento, estorno e bloqueio de reprocessamento (PROCAPUR).",
+        "Explicar a leitura das abas de outros créditos/outros débitos e como justificar cada ajuste."
+      ],
+      "validar": [
+        "Apuração do período fechada sem divergência entre livro, apuração e contabilidade.",
+        "Guias e títulos gerados e conferidos pelo cliente."
+      ],
+      "observacoes": [],
+      "totalCandidatos": 94,
+      "links": [
+        {
+          "id": 1408,
+          "title": "APUICM - Apuração de ICMS - MATA953 - Fiscal - P12",
+          "label": "APUICM - Apuração de ICMS - MATA953 - Fiscal - P12",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=270894388",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1409,
+          "title": "APUIPI - Apuração de IPI - Fiscal - P12",
+          "label": "APUIPI - Apuração de IPI - Fiscal - P12",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=270093976",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1410,
+          "title": "APUISS - Apuração de ISS",
+          "label": "APUISS - Apuração de ISS",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=654295834",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1411,
+          "title": "APUISSBLB - Apuração de ISS - EFD ICMS/IPI - Bloco B",
+          "label": "APUISSBLB - Apuração de ISS - EFD ICMS/IPI - Bloco B",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=500292737",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1412,
+          "title": "Apurações - Fiscal - P12",
+          "label": "Apurações - Fiscal - P12",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=627111872",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 678,
+          "title": "Escrita Fiscal - Impostos - ICMS - Apuração > CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS- Coluna código de lançamento não é exibida na apuração de ICMS(MATA953)",
+          "label": "CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS- Coluna código de lançamento não é exibida na apuração de ICMS(MATA953)",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360024706793-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-Coluna-c%C3%B3digo-de-lan%C3%A7amento-n%C3%A3o-%C3%A9-exibida-na-apura%C3%A7%C3%A3o-de-ICMS-MATA953",
+          "module": "Escrituração e Relatórios Fiscal",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 679,
+          "title": "Escrita Fiscal - Impostos - ICMS - Apuração > CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS- Como gerar o relatório Registro de Apuração do ICMS P9 (MATR940) de forma anual",
+          "label": "CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS- Como gerar o relatório Registro de Apuração do ICMS P9 (MATR940) de forma anual",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360027673011-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-Como-gerar-o-relat%C3%B3rio-Registro-de-Apura%C3%A7%C3%A3o-do-ICMS-P9-MATR940-de-forma-anual",
+          "module": "Escrituração e Relatórios Fiscal",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 695,
+          "title": "Escrita Fiscal - Impostos - ICMS - Apuração > MP - FIS - MATA953 - Conferência dos códigos de ajuste na apuração de ICMS",
+          "label": "MP - FIS - MATA953 - Conferência dos códigos de ajuste na apuração de ICMS",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/1500012793801-MP-FIS-MATA953-Confer%C3%AAncia-dos-c%C3%B3digos-de-ajuste-na-apura%C3%A7%C3%A3o-de-ICMS",
+          "module": "Escrituração e Relatórios Fiscal",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 1610,
+          "title": "Novas Apurações",
+          "label": "Novas Apurações",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=991865200",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1880,
+          "title": "RESUMEF3 - Apuração do ICMS, ISS e IPI através de Multi-Thread",
+          "label": "RESUMEF3 - Apuração do ICMS, ISS e IPI através de Multi-Thread",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=706120371",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 731,
+          "title": "Escrita Fiscal - Impostos - ICMS - ICMS ST > CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS - Conceito da pergunta \"Imprime Crédito ST\" na Apuração de ICMS (MATA953)",
+          "label": "CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS - Conceito da pergunta \"Imprime Crédito ST\" na Apuração de ICMS (MATA953)",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360020388031-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-Conceito-da-pergunta-Imprime-Cr%C3%A9dito-ST-na-Apura%C3%A7%C3%A3o-de-ICMS-MATA953",
+          "module": "Escrituração e Relatórios Fiscal",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "treinar"
+        },
+        {
+          "id": 1654,
+          "title": "PE - CPAPUICMS - Atualiza campos de Títulos a Pagar na Apuração de ICMS",
+          "label": "PE - CPAPUICMS - Atualiza campos de Títulos a Pagar na Apuração de ICMS",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=655875804",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "customizar"
+        },
+        {
+          "id": 1858,
+          "title": "PE-MATR941 - Registro de apuração do ICMS",
+          "label": "PE-MATR941 - Registro de apuração do ICMS",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=793212524",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "customizar"
+        },
+        {
+          "id": 683,
+          "title": "Escrita Fiscal - Impostos - ICMS - Apuração > CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS- Código de lançamento inválido ao inserir código de ajuste na Apuração do ICMS (MATA953)",
+          "label": "CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS- Código de lançamento inválido ao inserir código de ajuste na Apuração do ICMS (MATA953)",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360018836892-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-C%C3%B3digo-de-lan%C3%A7amento-inv%C3%A1lido-ao-inserir-c%C3%B3digo-de-ajuste-na-Apura%C3%A7%C3%A3o-do-ICMS-MATA953",
+          "module": "Escrituração e Relatórios Fiscal",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "suportar"
+        }
+      ]
+    },
+    {
+      "id": "impostos-retidos",
+      "grupo": "concluidos",
+      "titulo": "Impostos retidos (PCC, IRRF, INSS, ISS)",
+      "status": "concluido",
+      "entrega": "",
+      "resumo": "Retenções na entrada e na saída, geração de títulos de imposto, cumulatividade do PCC e obrigações acessórias (DIRF/DCTFWeb).",
+      "rotinas": [
+        "PARÂMETROS - PIS-COFINS-CSLL / ISS / IRRF / INSS",
+        "MV_BX10925, MV_VCPCCP, MV_VL13137, MV_PISNAT/MV_COFINS/MV_CSLL",
+        "Configurador de Tributos — Regras Financeiras (FISA170)",
+        "FINA378/FINA381 — Aglutinação de títulos de PIS/COFINS/CSLL"
+      ],
+      "implantar": [
+        "Definir o momento da retenção (na emissão ou na baixa do título) por imposto e por tipo de operação.",
+        "Configurar naturezas financeiras de imposto, valores mínimos de retenção e cumulatividade do PCC.",
+        "Configurar as regras financeiras no Configurador de Tributos: vigência, tipo de entidade, fator gerador e \"data base para vencimento do imposto\".",
+        "Ajustar cadastros de clientes/fornecedores (rec. PIS/COFINS/CSLL/ISS, órgão público, MEI, autônomo)."
+      ],
+      "treinar": [
+        "Exercitar uma nota de entrada de serviço com retenção de PCC e IRRF e acompanhar o título gerado no financeiro.",
+        "Mostrar a diferença entre retenção na emissão e na baixa, e o efeito na cumulatividade.",
+        "Revisar o roteiro oficial de cálculo e apuração de PIS/COFINS/CSLL com o time."
+      ],
+      "validar": [
+        "Títulos de imposto com natureza, valor e data de vencimento conferidos pelo cliente.",
+        "DIRF/DCTFWeb alimentados corretamente a partir das retenções."
+      ],
+      "observacoes": [
+        "PENDÊNCIA REPORTADA: PCC gerando data de vencimento incorreta. Tratar como item de revisão de parametrização: a data de vencimento do PCC depende do momento da retenção (MV_BX10925), da data considerada para cumulatividade (MV_VCPCCP: 1=Emissão, 2=Venc. Real, 3=Dt. Contábil), do valor mínimo (MV_VL13137 = R$ 10,00) e, no Configurador de Tributos, da \"Data base p/ vencto. do imposto (Emissão)\" e da \"Data Cumulat\" da regra financeira. Pela Lei 13.137/15 o vencimento é no segundo decêndio do mês subsequente ao fato gerador.",
+        "Se a aglutinação de títulos estiver em uso, verificar se é FINA378 (aglutina por data de EMISSÃO) ou FINA381 (por data de VENCIMENTO)."
+      ],
+      "totalCandidatos": 38,
+      "links": [
+        {
+          "id": 1442,
+          "title": "Configurações - INSS - Fiscal - P12",
+          "label": "Configurações - INSS - Fiscal - P12",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=654102732",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1444,
+          "title": "Configurações - IRRF - Fiscal - P12",
+          "label": "Configurações - IRRF - Fiscal - P12",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=653143855",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1367,
+          "title": "Financeiro - Cadastros > Cross Segmentos - Backoffice Linha Protheus - SIGAFIN - Natureza utilizada nos titulos de retenção de impostos",
+          "label": "Cross Segmentos - Backoffice Linha Protheus - SIGAFIN - Natureza utilizada nos titulos de retenção de impostos",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/39270216649495-Cross-Segmentos-Backoffice-Linha-Protheus-SIGAFIN-Natureza-utilizada-nos-titulos-de-reten%C3%A7%C3%A3o-de-impostos",
+          "module": "Financeiro",
+          "moduleCode": "SIGAFIN",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 623,
+          "title": "Escrita Fiscal - Impostos - Cálculos > CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS - Como habilitar a opção Modalidade de retenção do PIS, COFINS e CSLL localizado na aba Duplicatas na rotina MATA103 - Documento de Entrada?",
+          "label": "CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS - Como habilitar a opção Modalidade de retenção do PIS, COFINS e CSLL localizado na aba Duplicatas na rotina MATA103 - Documento de Entrada?",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/4409524481047-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-Como-habilitar-a-op%C3%A7%C3%A3o-Modalidade-de-reten%C3%A7%C3%A3o-do-PIS-COFINS-e-CSLL-localizado-na-aba-Duplicatas-na-rotina-MATA103-Documento-de-Entrada",
+          "module": "Escrituração e Relatórios Fiscal",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 629,
+          "title": "Escrita Fiscal - Impostos - Cálculos > CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS - Cumulatividade do INSS",
+          "label": "CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS - Cumulatividade do INSS",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/4411045344919-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-Cumulatividade-do-INSS",
+          "module": "Escrituração e Relatórios Fiscal",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 312,
+          "title": "CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – FISA170 – Como calcular PIS/COFINS/CSLL retenção utilizando o Configurador de Tributos para notas de entrada e saída.",
+          "label": "CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – FISA170 – Como calcular PIS/COFINS/CSLL retenção utilizando o Configurador de Tributos para notas de entrada e saída.",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/28271950709399-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-calcular-PIS-COFINS-CSLL-reten%C3%A7%C3%A3o-utilizando-o-Configurador-de-Tributos-para-notas-de-entrada-e-sa%C3%ADda",
+          "module": "Configurador de Tributos",
+          "moduleCode": "FISA",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 2372,
+          "title": "Impostos Retidos (trilha fiscal) - Configurador de Tributos - Regras Financeiras (data base para vencimento do imposto e cumulatividade)",
+          "label": "Impostos Retidos (trilha fiscal) - Configurador de Tributos - Regras Financeiras (data base para vencimento do imposto e cumulatividade)",
+          "url": "https://tdn.totvs.com/display/public/PROT/Configurador+de+Tributos+-+Regras+Financeiras",
+          "module": "Trilha Fiscal — Complementos",
+          "moduleCode": "TRILHA",
+          "source": "TDN",
+          "linkType": "TDN — Display",
+          "intent": "implantar"
+        },
+        {
+          "id": 2373,
+          "title": "Impostos Retidos (trilha fiscal) - MP - FIS - Cumulatividade PIS, COFINS e CSLL (Lei 13.137/15 e vencimento no 2º decêndio)",
+          "label": "Impostos Retidos (trilha fiscal) - MP - FIS - Cumulatividade PIS, COFINS e CSLL (Lei 13.137/15 e vencimento no 2º decêndio)",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360053516414-MP-FIS-Cumulatividade-Pis-Cofins-e-CSLL",
+          "module": "Trilha Fiscal — Complementos",
+          "moduleCode": "TRILHA",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 2374,
+          "title": "Impostos Retidos (trilha fiscal) - MP - FIS - Retenção de PIS, COFINS e CSLL (MV_BX10925, MV_VCPCCP, MV_VL13137, MV_PISNAT)",
+          "label": "Impostos Retidos (trilha fiscal) - MP - FIS - Retenção de PIS, COFINS e CSLL (MV_BX10925, MV_VCPCCP, MV_VL13137, MV_PISNAT)",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360056887693-MP-FIS-Reten%C3%A7%C3%A3o-de-PIS-COFINS-e-CSLL",
+          "module": "Trilha Fiscal — Complementos",
+          "moduleCode": "TRILHA",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 1320,
+          "title": "Impostos Retidos (trilha fiscal) - Roteiro Proc. Cálc. Retenção e Ap. PIS/Cofins/CSLL (SIGAFAT)",
+          "label": "Impostos Retidos (trilha fiscal) - Roteiro Proc. Cálc. Retenção e Ap. PIS/Cofins/CSLL (SIGAFAT)",
+          "url": "https://tdn.totvs.com/pages/releaseview.action?pageId=312163918",
+          "module": "Faturamento",
+          "moduleCode": "SIGAFAT",
+          "source": "TDN",
+          "linkType": "TDN — Release",
+          "intent": "implantar"
+        },
+        {
+          "id": 1389,
+          "title": "Impostos Retidos (trilha fiscal) - SIGAFIN - FINA378 - É possível aglutinar títulos dos impostos PIS/COFINS/CSLL pela data de vencimento?",
+          "label": "Impostos Retidos (trilha fiscal) - SIGAFIN - FINA378 - É possível aglutinar títulos dos impostos PIS/COFINS/CSLL pela data de vencimento?",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360022030252-Cross-Segmento-Backoffice-Linha-Protheus-SIGAFIN-FINA378-%C3%89-poss%C3%ADvel-aglutinar-t%C3%ADtulos-dos-impostos-PIS-COFINS-CSLL-pela-data-de-vencimento",
+          "module": "Financeiro",
+          "moduleCode": "SIGAFIN",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 1560,
+          "title": "INSS - Configurações para Retenção de INSS",
+          "label": "INSS - Configurações para Retenção de INSS",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=697252452",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1568,
+          "title": "IRRF - Retenção de Imposto de Renda Pessoa Jurídica ou Física",
+          "label": "IRRF - Retenção de Imposto de Renda Pessoa Jurídica ou Física",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=531009057",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1631,
+          "title": "PARÂMETROS - PIS-COFINS-CSLL - Como configurar os parâmetros para Operações Fiscais",
+          "label": "PARÂMETROS - PIS-COFINS-CSLL - Como configurar os parâmetros para Operações Fiscais",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=701693213",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1634,
+          "title": "PCORGPUB - Retenção Diferenciada de PIS e COFINS para Órgão Público",
+          "label": "PCORGPUB - Retenção Diferenciada de PIS e COFINS para Órgão Público",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=697251410",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1855,
+          "title": "PE - VLCODRET - Valida código de retenção dos impostos da DIRF",
+          "label": "PE - VLCODRET - Valida código de retenção dos impostos da DIRF",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=655865917",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "customizar"
+        }
+      ]
+    },
+    {
+      "id": "efd-icms-ipi",
+      "grupo": "agenda-09-09",
+      "titulo": "Geração do EFD-ICMS/IPI (SPED Fiscal)",
+      "status": "pendente",
+      "entrega": "",
+      "resumo": "Arquivo digital que consolida documentos fiscais, livros de apuração, CIAP, inventário e Bloco K. É o principal termômetro de qualidade da parametrização fiscal.",
+      "rotinas": [
+        "SPEDFISCAL — geração do arquivo (wizard)",
+        "MATXSPED / PCPXSPED / SPEDXFUN — fontes dos registros",
+        "MATR941/MATR943 — registros de apuração de ICMS e IPI (Bloco E)",
+        "PVA — validador da Receita"
+      ],
+      "implantar": [
+        "Instalar/atualizar os fontes do SPED (SPEDFISCAL, MATXSPED, SPEDXFUN) e conferir o pacote de expedição contínua do Fiscal.",
+        "Configurar o wizard: período, livro, filiais, tipo de escrituração, geração de blocos opcionais (H, K, 1600, G) e caminho do arquivo.",
+        "Garantir a ordem de execução: livros fiscais reprocessados (MATA930) -> acertos fiscais -> apurações -> SPED.",
+        "Definir os pontos de entrada necessários (SPDFIS03, SPDFIS06, SPED0150, SPED0205, SPEDREGD etc.) somente onde houver exigência específica.",
+        "Criar rotina de agendamento (schedule) para geração mensal e responsável pela validação no PVA."
+      ],
+      "treinar": [
+        "Treinar a geração passo a passo no ambiente de homologação e a leitura do arquivo no PVA.",
+        "Ensinar a investigação das rejeições mais comuns: 0150 (participante), 0200/0205 (item), C100/C170 (documento), C197 (ajustes), E110 (apuração).",
+        "Mostrar o uso dos pontos de entrada e dos relatórios de conferência (MATRAPR, MATR930).",
+        "Fechar com o cliente o calendário mensal de entrega e o checklist de conferência antes da transmissão."
+      ],
+      "validar": [
+        "Arquivo gerado e validado no PVA sem erros (avisos justificados).",
+        "Bloco E conferido contra a apuração de ICMS/IPI do mês.",
+        "Registros 0150/0200 conferidos contra cadastros de participantes e produtos."
+      ],
+      "observacoes": [
+        "O Bloco K, o Bloco H (inventário) e o Bloco G (CIAP) têm trilhas próprias abaixo — o SPED Fiscal é o guarda-chuva dos três."
+      ],
+      "totalCandidatos": 96,
+      "links": [
+        {
+          "id": 1415,
+          "title": "Arquivos Magnéticos - Fiscal - P12",
+          "label": "Arquivos Magnéticos - Fiscal - P12",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=464972771",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 4,
+          "title": "Cross Segmentos - Backoffice Protheus - FIS - Arq. Magnéticos - Livro Fiscal - Como preencher o campo 9 COD_CONS do registro C500 no Sped Fiscal",
+          "label": "Cross Segmentos - Backoffice Protheus - FIS - Arq. Magnéticos - Livro Fiscal - Como preencher o campo 9 COD_CONS do registro C500 no Sped Fiscal",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360041783513-Cross-Segmentos-Backoffice-Protheus-FIS-Arq-Magn%C3%A9ticos-Livro-Fiscal-Como-preencher-o-campo-9-COD-CONS-do-registro-C500-no-Sped-Fiscal",
+          "module": "Arquivos Magnéticos",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 30,
+          "title": "Cross Segmentos - Backoffice Protheus - FIS - Arq. Magnéticos - SPED FISCAL - Portaria CAT66/2018 - Registros C197 e D197 - códigos de ajustes SP90090104 e SP90090278",
+          "label": "Cross Segmentos - Backoffice Protheus - FIS - Arq. Magnéticos - SPED FISCAL - Portaria CAT66/2018 - Registros C197 e D197 - códigos de ajustes SP90090104 e SP90090278",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360056056593-Cross-Segmentos-Backoffice-Protheus-FIS-Arq-Magn%C3%A9ticos-SPED-FISCAL-Portaria-CAT66-2018-Registros-C197-e-D197-c%C3%B3digos-de-ajustes-SP90090104-e-SP90090278",
+          "module": "Arquivos Magnéticos",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 31,
+          "title": "Fiscal Arquivos Magneticos - SPED Fiscal",
+          "label": "Fiscal Arquivos Magneticos - SPED Fiscal",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001535141-Fiscal-Arquivos-Magneticos-SPED-Fiscal",
+          "module": "Arquivos Magnéticos",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Seção",
+          "intent": "implantar"
+        },
+        {
+          "id": 1913,
+          "title": "SPDFIS11 - SPEDFISCAL - Altera serie do documento fiscal",
+          "label": "SPDFIS11 - SPEDFISCAL - Altera serie do documento fiscal",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=552098661",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1916,
+          "title": "Sped - Fiscal - P12",
+          "label": "Sped - Fiscal - P12",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=634514052",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1906,
+          "title": "SPDFIS- Manual de utilização Sped Fiscal",
+          "label": "SPDFIS- Manual de utilização Sped Fiscal",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=695203229",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "treinar"
+        },
+        {
+          "id": 17,
+          "title": "Cross Segmentos - Backoffice Protheus - FIS - Arq. Magnéticos - SPED Fiscal - Boletim do Ponto de Entrada MATUCOMP",
+          "label": "Cross Segmentos - Backoffice Protheus - FIS - Arq. Magnéticos - SPED Fiscal - Boletim do Ponto de Entrada MATUCOMP",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/14429391794199-Cross-Segmentos-Backoffice-Protheus-FIS-Arq-Magn%C3%A9ticos-SPED-Fiscal-Boletim-do-Ponto-de-Entrada-MATUCOMP",
+          "module": "Arquivos Magnéticos",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "customizar"
+        },
+        {
+          "id": 18,
+          "title": "Cross Segmentos - Backoffice Protheus - FIS - Arq. Magnéticos - SPED Fiscal - Boletim do Ponto de Entrada SPDFIS03",
+          "label": "Cross Segmentos - Backoffice Protheus - FIS - Arq. Magnéticos - SPED Fiscal - Boletim do Ponto de Entrada SPDFIS03",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/14131703335063-Cross-Segmentos-Backoffice-Protheus-FIS-Arq-Magn%C3%A9ticos-SPED-Fiscal-Boletim-do-Ponto-de-Entrada-SPDFIS03",
+          "module": "Arquivos Magnéticos",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "customizar"
+        },
+        {
+          "id": 1811,
+          "title": "PE - SPDFIS08 - SPEDFISCAL - Grava Informação no Registro C100",
+          "label": "PE - SPDFIS08 - SPEDFISCAL - Grava Informação no Registro C100",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=706923173",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "customizar"
+        },
+        {
+          "id": 1835,
+          "title": "PE - SPED0150 - SPEDFISCAL - Alterar informações do registro 0150",
+          "label": "PE - SPED0150 - SPEDFISCAL - Alterar informações do registro 0150",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=706922521",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "customizar"
+        },
+        {
+          "id": 1838,
+          "title": "PE - SPED1390 - SPEDFISCAL - Registro 1390 e 1391",
+          "label": "PE - SPED1390 - SPEDFISCAL - Registro 1390 e 1391",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=645917977",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "customizar"
+        },
+        {
+          "id": 6,
+          "title": "Cross Segmentos - Backoffice Protheus - FIS - Arq. Magnéticos - Por que a base e alíquota de ICMS não são geradas no Registro C197 do Sped Fiscal para o código de ajuste GO40000029?",
+          "label": "Cross Segmentos - Backoffice Protheus - FIS - Arq. Magnéticos - Por que a base e alíquota de ICMS não são geradas no Registro C197 do Sped Fiscal para o código de ajuste GO40000029?",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/9077019110423-Cross-Segmentos-Backoffice-Protheus-FIS-Arq-Magn%C3%A9ticos-Por-que-a-base-e-al%C3%ADquota-de-ICMS-n%C3%A3o-s%C3%A3o-geradas-no-Registro-C197-do-Sped-Fiscal-para-o-c%C3%B3digo-de-ajuste-GO40000029",
+          "module": "Arquivos Magnéticos",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "suportar"
+        },
+        {
+          "id": 8,
+          "title": "Cross Segmentos - Backoffice Protheus - FIS - Arq. Magnéticos - Por que o campo 5 do G125 gera com valor zerado no Sped Fiscal?",
+          "label": "Cross Segmentos - Backoffice Protheus - FIS - Arq. Magnéticos - Por que o campo 5 do G125 gera com valor zerado no Sped Fiscal?",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/9025076827927-Cross-Segmentos-Backoffice-Protheus-FIS-Arq-Magn%C3%A9ticos-Por-que-o-campo-5-do-G125-gera-com-valor-zerado-no-Sped-Fiscal",
+          "module": "Arquivos Magnéticos",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "suportar"
+        },
+        {
+          "id": 11,
+          "title": "Cross Segmentos - Backoffice Protheus - FIS - Arq. Magnéticos - Registro 1100 não gerado no Sped Fiscal",
+          "label": "Cross Segmentos - Backoffice Protheus - FIS - Arq. Magnéticos - Registro 1100 não gerado no Sped Fiscal",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/8998298766359-Cross-Segmentos-Backoffice-Protheus-FIS-Arq-Magn%C3%A9ticos-Registro-1100-n%C3%A3o-gerado-no-Sped-Fiscal",
+          "module": "Arquivos Magnéticos",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "suportar"
+        },
+        {
+          "id": 12,
+          "title": "Cross Segmentos - Backoffice Protheus - FIS - Arq. Magnéticos - Registro C115 não gera no Sped Fiscal",
+          "label": "Cross Segmentos - Backoffice Protheus - FIS - Arq. Magnéticos - Registro C115 não gera no Sped Fiscal",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/9987906027031-Cross-Segmentos-Backoffice-Protheus-FIS-Arq-Magn%C3%A9ticos-Registro-C115-n%C3%A3o-gera-no-Sped-Fiscal",
+          "module": "Arquivos Magnéticos",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "suportar"
+        }
+      ]
+    },
+    {
+      "id": "efd-contribuicoes",
+      "grupo": "agenda-09-09",
+      "titulo": "Geração da EFD Contribuições (PIS/COFINS)",
+      "status": "pendente",
+      "entrega": "",
+      "resumo": "Apuração de PIS/COFINS (e CPRB) pelas regras da EFD e geração do arquivo. A apuração nova (FISA001) substitui a antiga MATA996 e alimenta a geração FISA008 (antigo SPEDPISCOF).",
+      "rotinas": [
+        "FISA001 — Apuração EFD Contribuições",
+        "FISA008 — Geração do arquivo EFD Contribuições",
+        "FISA054 — Diferimento de PIS/COFINS",
+        "MATA996 / SPEDPISCOF — rotinas legadas (sem manutenção)"
+      ],
+      "implantar": [
+        "Processar primeiro a apuração (FISA001) e só depois gerar o arquivo (FISA008): a geração lê o que a apuração gravou.",
+        "Configurar regime (cumulativo/não cumulativo), diferimento, cupom fiscal, geração de títulos e lançamentos padrão (608/611).",
+        "Configurar contas contábeis por natureza/centro de custo para os registros 0500/0600 e F100.",
+        "Definir tratamento de receitas financeiras, exclusão do ICMS da base (MV_DICMISE/MV_EXICMPC) e deduções (MV_DEDBPIS/MV_DEDBCOF, A2_DEDBSPC).",
+        "Confirmar se há bloco P (CPRB), bloco I (imobilizado) e registros F200-F211 (incorporação) no escopo do cliente."
+      ],
+      "treinar": [
+        "Executar apuração e geração em homologação e validar o arquivo no PVA da EFD Contribuições.",
+        "Mostrar os registros M200/M400, M210/M410 e os ajustes M220/M615 usados para correções manuais.",
+        "Treinar a conferência de créditos do imobilizado e das aquisições com direito a crédito."
+      ],
+      "validar": [
+        "Apuração de PIS/COFINS do mês fechada e conciliada com contabilidade e financeiro.",
+        "Arquivo validado no PVA sem erros e títulos gerados com natureza e vencimento corretos."
+      ],
+      "observacoes": [
+        "Se o cliente ainda usa MATA996/SPEDPISCOF, planejar a migração: essas rotinas não recebem mais atualização de legislação."
+      ],
+      "totalCandidatos": 104,
+      "links": [
+        {
+          "id": 51,
+          "title": "Ativo Fixo - EFD Contribuições - Registros F120/F130",
+          "label": "Ativo Fixo - EFD Contribuições - Registros F120/F130",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/sections/31045161075991-Ativo-Fixo-EFD-Contribui%C3%A7%C3%B5es-Registros-F120-F130",
+          "module": "Ativo Fixo",
+          "moduleCode": "SIGAATF",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Seção",
+          "intent": "implantar"
+        },
+        {
+          "id": 1455,
+          "title": "DEDBPISCOF - Deduções da Base de Cálculo de PIS e COFINS (MV_DEDBPIS, MV_DEDBCOF e A2_DEDBSPC)",
+          "label": "DEDBPISCOF - Deduções da Base de Cálculo de PIS e COFINS (MV_DEDBPIS, MV_DEDBCOF e A2_DEDBSPC)",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=717693406",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1456,
+          "title": "DEDPISCOF - Exclusão de ICMS destacado da Base de Cálculo de PIS e COFINS (MV_DICMISE e MV_EXICMPC)",
+          "label": "DEDPISCOF - Exclusão de ICMS destacado da Base de Cálculo de PIS e COFINS (MV_DICMISE e MV_EXICMPC)",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=758489748",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 2365,
+          "title": "EFD Contribuições (trilha fiscal) - Apuração EFD Contribuições - Linha Microsiga Protheus (FISA001)",
+          "label": "EFD Contribuições (trilha fiscal) - Apuração EFD Contribuições - Linha Microsiga Protheus (FISA001)",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=270905514",
+          "module": "Trilha Fiscal — Complementos",
+          "moduleCode": "TRILHA",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 2366,
+          "title": "EFD Contribuições (trilha fiscal) - FIS - Arq. Magnéticos - EFD Contribuições - Nova Apuração e Geração do Arquivo (FISA001 e FISA008)",
+          "label": "EFD Contribuições (trilha fiscal) - FIS - Arq. Magnéticos - EFD Contribuições - Nova Apuração e Geração do Arquivo (FISA001 e FISA008)",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360028967531-Cross-Segmentos-Backoffice-Protheus-FIS-Arq-Magn%C3%A9ticos-EFD-Contribui%C3%A7%C3%B5es-Nova-Apura%C3%A7%C3%A3o-e-Gera%C3%A7%C3%A3o-do-Arquivo-FISA001-e-FISA008",
+          "module": "Trilha Fiscal — Complementos",
+          "moduleCode": "TRILHA",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 1480,
+          "title": "EFDCON - Apuração PIS/COFINS e Arquivo EFD Contribuições",
+          "label": "EFDCON - Apuração PIS/COFINS e Arquivo EFD Contribuições",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=212896468",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1481,
+          "title": "EFDPISCOF - Geração dos Registros 1100 e 1500 do EFD Contribuições",
+          "label": "EFDPISCOF - Geração dos Registros 1100 e 1500 do EFD Contribuições",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=606079669",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 36,
+          "title": "Fiscal Arquivos Magnéticos - SPED Contribuições",
+          "label": "Fiscal Arquivos Magnéticos - SPED Contribuições",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001535081-Fiscal-Arquivos-Magn%C3%A9ticos-SPED-Contribui%C3%A7%C3%B5es",
+          "module": "Arquivos Magnéticos",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Seção",
+          "intent": "implantar"
+        },
+        {
+          "id": 1914,
+          "title": "SPDPCANT - PIS e COFINS diferido em períodos anteriores -- 116618",
+          "label": "SPDPCANT - PIS e COFINS diferido em períodos anteriores -- 116618",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=6077219",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1819,
+          "title": "PE - SPDPC0140 - Registro 0140 do SPED Contribuições",
+          "label": "PE - SPDPC0140 - Registro 0140 do SPED Contribuições",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=706918402",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "customizar"
+        },
+        {
+          "id": 1822,
+          "title": "PE - SPDPCD - EFD Contribuições - Diferimento de PIS e COFINS",
+          "label": "PE - SPDPCD - EFD Contribuições - Diferimento de PIS e COFINS",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=706917552",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "customizar"
+        },
+        {
+          "id": 1826,
+          "title": "PE - SPDPIS07 - Registro 0500 Conta Contábil - EFD Contribuições",
+          "label": "PE - SPDPIS07 - Registro 0500 Conta Contábil - EFD Contribuições",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=656057151",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "customizar"
+        },
+        {
+          "id": 1833,
+          "title": "PE - SPDRECBRUT - Registro 0111 do SPED Contribuições",
+          "label": "PE - SPDRECBRUT - Registro 0111 do SPED Contribuições",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=706917512",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "customizar"
+        },
+        {
+          "id": 1834,
+          "title": "PE - SPED0035 - EFD Contribuições - Registro 0035 Identificação SCP",
+          "label": "PE - SPED0035 - EFD Contribuições - Registro 0035 Identificação SCP",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=706918451",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "customizar"
+        },
+        {
+          "id": 1493,
+          "title": "FAQ - Como gerar Bloco I com integração do Módulo PLS no EFD Contribuições?",
+          "label": "FAQ - Como gerar Bloco I com integração do Módulo PLS no EFD Contribuições?",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=663307806",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "suportar"
+        },
+        {
+          "id": 1499,
+          "title": "FAQ - EFD Contribuições",
+          "label": "FAQ - EFD Contribuições",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=663305650",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "suportar"
+        }
+      ]
+    },
+    {
+      "id": "apuracao-icms-p9",
+      "grupo": "agenda-09-09",
+      "titulo": "Registro de Apuração de ICMS — P9 (outros créditos e débitos)",
+      "status": "pendente",
+      "entrega": "",
+      "resumo": "P9 é a rotina/estrutura de outros créditos e outros débitos da apuração de ICMS (linhas além do registro padrão), com autopreenchimento por UF — no caso do cliente, o P9AUTOTEXT.MG.",
+      "rotinas": [
+        "MATA953 — Apuração de ICMS (abas de outros créditos/débitos)",
+        "P9AUTOTEXT.MG — autopreenchimento para Minas Gerais",
+        "PE-MATR941 — Registro de apuração do ICMS (Bloco E do SPED)",
+        "FIS0004 — preenchimento automático de outros débitos/créditos",
+        "PE GDEBESP / GIASCDEB — guias e linhas de ajuste por código de ajuste"
+      ],
+      "implantar": [
+        "Mapear com o cliente cada código de ajuste/outras obrigações usado na apuração de MG (créditos, estornos, incentivos, taxas).",
+        "Configurar o autopreenchimento P9AUTOTEXT.MG e os cadastros de códigos de ajuste (tabela 1.11/C197 e E111).",
+        "Definir geração de guias e títulos a partir das linhas de ajuste (código de receita, natureza, vencimento).",
+        "Garantir que as linhas apareçam corretamente no registro de apuração do ICMS (MATR941) e no Bloco E do SPED."
+      ],
+      "treinar": [
+        "Exercitar a inclusão manual de um outro crédito/débito e conferir o reflexo no total da apuração e no Bloco E.",
+        "Mostrar como o autopreenchimento monta as linhas e quando ele não deve ser usado.",
+        "Treinar a conferência mensal: apuração x livro x SPED x guia."
+      ],
+      "validar": [
+        "Registro de apuração do ICMS (Bloco E) batendo com a apuração MATA953 do período.",
+        "Linhas de ajuste (E111/C197) com códigos oficializados pela SEF/MG."
+      ],
+      "observacoes": [
+        "Priorizar os documentos específicos de Minas Gerais: P9AUTOTEXT.MG, MGREDICM (redução de base Decreto 43.080/2002) e MGIVAAJUS (IVA ajustado Conv. 198/2009)."
+      ],
+      "totalCandidatos": 80,
+      "links": [
+        {
+          "id": 212,
+          "title": "CFGTRIB - ICMS Complementar com Código de Ajuste de Lançamento",
+          "label": "CFGTRIB - ICMS Complementar com Código de Ajuste de Lançamento",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=847892777",
+          "module": "Configurador de Tributos",
+          "moduleCode": "FISA",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1451,
+          "title": "CREDPRES - Incentivo à Produção e Industrialização do Leite do Estado de Minas Gerais",
+          "label": "CREDPRES - Incentivo à Produção e Industrialização do Leite do Estado de Minas Gerais",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=672104303",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 679,
+          "title": "Escrita Fiscal - Impostos - ICMS - Apuração > CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS- Como gerar o relatório Registro de Apuração do ICMS P9 (MATR940) de forma anual",
+          "label": "CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS- Como gerar o relatório Registro de Apuração do ICMS P9 (MATR940) de forma anual",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360027673011-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-Como-gerar-o-relat%C3%B3rio-Registro-de-Apura%C3%A7%C3%A3o-do-ICMS-P9-MATR940-de-forma-anual",
+          "module": "Escrituração e Relatórios Fiscal",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 1597,
+          "title": "MGIVAAJUS - Cálculo de ICMS-ST com IVA Ajustado - Conv. 198/2009 do Estado de Minas Gerais",
+          "label": "MGIVAAJUS - Cálculo de ICMS-ST com IVA Ajustado - Conv. 198/2009 do Estado de Minas Gerais",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=699818523",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1598,
+          "title": "MGLEITE - Incentivo à Produção e Industrialização do Leite do Estado de Minas Gerais",
+          "label": "MGLEITE - Incentivo à Produção e Industrialização do Leite do Estado de Minas Gerais",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=672103021",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1599,
+          "title": "MGREDICM - Redução de Base de Cálculo de ICMS - Decreto 43.080/2002 de Minas Gerais",
+          "label": "MGREDICM - Redução de Base de Cálculo de ICMS - Decreto 43.080/2002 de Minas Gerais",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=672569600",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1600,
+          "title": "MGRESST - Ressarcimento de ICMS-ST do Estado de Minas Gerais",
+          "label": "MGRESST - Ressarcimento de ICMS-ST do Estado de Minas Gerais",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=698288943",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1614,
+          "title": "P9AUTOTEXT.AM - Autopreenchimento de Outros Créditos/Outros Débitos - Apuração de ICMS - Amazonas - P12",
+          "label": "P9AUTOTEXT.AM - Autopreenchimento de Outros Créditos/Outros Débitos - Apuração de ICMS - Amazonas - P12",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=191466487",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1615,
+          "title": "P9AUTOTEXT.AM - Autopreenchimento de Outros Créditos/Outros Débitos na Apuração de ICMS - Estado de Amazonas",
+          "label": "P9AUTOTEXT.AM - Autopreenchimento de Outros Créditos/Outros Débitos na Apuração de ICMS - Estado de Amazonas",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=185754652",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1617,
+          "title": "P9AUTOTEXT.MG - Auto-preenchimento de Outros CréditosOutros Débitos na Apuração do ICMS \\u2013 Minas Gerais - MP11 -- 110617",
+          "label": "P9AUTOTEXT.MG - Auto-preenchimento de Outros CréditosOutros Débitos na Apuração do ICMS \\u2013 Minas Gerais - MP11 -- 110617",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=6076348",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1618,
+          "title": "P9AUTOTEXT.MT - Auto-preenchimento de Outros Créditos Outros Débitos na Apuração do ICMS \\u2013 Mato Grosso - P10",
+          "label": "P9AUTOTEXT.MT - Auto-preenchimento de Outros Créditos Outros Débitos na Apuração do ICMS \\u2013 Mato Grosso - P10",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=36308664",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1681,
+          "title": "PE - M940GR88 - Gravação de Registro Tipo 88 do SINTEGRA-MG",
+          "label": "PE - M940GR88 - Gravação de Registro Tipo 88 do SINTEGRA-MG",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=655879217",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "customizar"
+        },
+        {
+          "id": 1682,
+          "title": "PE - M940TP88 - Retorna arquivo a ser utilizado no registro tipo 88 do SINTEGRA-MG.",
+          "label": "PE - M940TP88 - Retorna arquivo a ser utilizado no registro tipo 88 do SINTEGRA-MG.",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=655881641",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "customizar"
+        },
+        {
+          "id": 1858,
+          "title": "PE-MATR941 - Registro de apuração do ICMS",
+          "label": "PE-MATR941 - Registro de apuração do ICMS",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=793212524",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "customizar"
+        }
+      ]
+    },
+    {
+      "id": "ciap",
+      "grupo": "agenda-09-09",
+      "titulo": "CIAP — Controle de Crédito de ICMS do Ativo Permanente",
+      "status": "pendente",
+      "entrega": "",
+      "resumo": "Controle do crédito de ICMS de bens do ativo imobilizado em 48 (ou 60) parcelas, com apropriação mensal, baixa/estorno e reflexo no Bloco G do SPED Fiscal.",
+      "rotinas": [
+        "MATA905 — Manutenção CIAP (SF9)",
+        "MATA906 — Estorno/apropriação CIAP",
+        "MATR995 — Livro/Relatório CIAP",
+        "MV_FSNCIAP, MV_F9ITEM, MV_F9PL/MV_F9FRT/MV_F9ICMST/MV_F9DIF",
+        "Integração com SIGAATF (SN1/N1_CODCIAP)"
+      ],
+      "implantar": [
+        "Definir o modelo de CIAP usado (A, B, C ou D) e o tipo de numeração do bem (MV_FSNCIAP).",
+        "Configurar a TES de compra de ativo: credita ICMS, atualiza ativo, material de consumo, livro fiscal de ICMS = Outros e livro fiscal CIAP = Sim.",
+        "Cadastrar os bens existentes (inclusive os já apropriados em outro sistema, com parcelas residuais) na Manutenção CIAP.",
+        "Definir a integração com o Ativo Fixo: o bem é classificado no SIGAATF e apropriado no MATA906.",
+        "Configurar a geração do Bloco G do SPED (G125/G126/G130) a partir do CIAP."
+      ],
+      "treinar": [
+        "Exercitar a entrada de um bem pela nota (MATA103) e a conferência do registro criado no CIAP.",
+        "Executar a apropriação mensal no MATA906 e conferir o relatório MATR995.",
+        "Treinar baixa por venda/transferência/perda e o estorno do crédito remanescente."
+      ],
+      "validar": [
+        "Bloco G do SPED coerente com o relatório CIAP do mês.",
+        "Parcelas apropriadas conferindo com o valor de ICMS creditado na entrada do bem."
+      ],
+      "observacoes": [
+        "Divergência clássica: Bloco G diferente do Relatório CIAP — geralmente por bem não apropriado, baixa sem estorno ou campo N1_CODCIAP não preenchido."
+      ],
+      "totalCandidatos": 85,
+      "links": [
+        {
+          "id": 43,
+          "title": "Ativo Fixo - Ativo X ICMS / CIAP, Impostos, Seguro, Frete",
+          "label": "Ativo Fixo - Ativo X ICMS / CIAP, Impostos, Seguro, Frete",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001546982-Ativo-Fixo-Ativo-X-ICMS-CIAP-Impostos-Seguro-Frete",
+          "module": "Ativo Fixo",
+          "moduleCode": "SIGAATF",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Seção",
+          "intent": "implantar"
+        },
+        {
+          "id": 2363,
+          "title": "CIAP (trilha fiscal) - CIAP - Crédito de ICMS sobre o Ativo Permanente - Linha Microsiga Protheus",
+          "label": "CIAP (trilha fiscal) - CIAP - Crédito de ICMS sobre o Ativo Permanente - Linha Microsiga Protheus",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=708871751",
+          "module": "Trilha Fiscal — Complementos",
+          "moduleCode": "TRILHA",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 2364,
+          "title": "CIAP (trilha fiscal) - FIS - Processo de configuração do CIAP para gerar o SPED Fiscal (MATA905/MATA906)",
+          "label": "CIAP (trilha fiscal) - FIS - Processo de configuração do CIAP para gerar o SPED Fiscal (MATA905/MATA906)",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360035400914-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-Processo-de-configura%C3%A7%C3%A3o-do-CIAP-para-gerar-o-SPED-Fiscal",
+          "module": "Trilha Fiscal — Complementos",
+          "moduleCode": "TRILHA",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 114,
+          "title": "Cross Segmento - TOTVS Backoffice (Linha Protheus) - Ativo Fixo - ATFA251 - Preenchimento do motivo de baixa CIAP na aquisição por transferência",
+          "label": "Cross Segmento - TOTVS Backoffice (Linha Protheus) - Ativo Fixo - ATFA251 - Preenchimento do motivo de baixa CIAP na aquisição por transferência",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/38644615365783-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-Ativo-Fixo-ATFA251-Preenchimento-do-motivo-de-baixa-CIAP-na-aquisi%C3%A7%C3%A3o-por-transfer%C3%AAncia",
+          "module": "Ativo Fixo",
+          "moduleCode": "SIGAATF",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 532,
+          "title": "Escrita Fiscal - CIAP > CROSS Segmentos - TOTVS Backoffice Linha Protheus - Como Habilitar os campos Total Saídas e Prest. Tributadas, Total Todas as Saídas e Coeficiente de Apropriação na tela sugestão para coeficiente de apropriação CIAP?",
+          "label": "CROSS Segmentos - TOTVS Backoffice Linha Protheus - Como Habilitar os campos Total Saídas e Prest. Tributadas, Total Todas as Saídas e Coeficiente de Apropriação na tela sugestão para coeficiente de apropriação CIAP?",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/4407085215127-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-Como-Habilitar-os-campos-Total-Sa%C3%ADdas-e-Prest-Tributadas-Total-Todas-as-Sa%C3%ADdas-e-Coeficiente-de-Apropria%C3%A7%C3%A3o-na-tela-sugest%C3%A3o-para-coeficiente-de-apropria%C3%A7%C3%A3o-CIAP",
+          "module": "Escrituração e Relatórios Fiscal",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 536,
+          "title": "Escrita Fiscal - CIAP > CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS - CIAP - Crédito ICMS sobre ativo permanente/Relatório CIAP",
+          "label": "CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS - CIAP - Crédito ICMS sobre ativo permanente/Relatório CIAP",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360028514051-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-CIAP-Cr%C3%A9dito-ICMS-sobre-ativo-permanente-Relat%C3%B3rio-CIAP",
+          "module": "Escrituração e Relatórios Fiscal",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 558,
+          "title": "Escrita Fiscal - CIAP > CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS - MATR995 Livro CIAP",
+          "label": "CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS - MATR995 Livro CIAP",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360052030573-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-MATR995-Livro-CIAP",
+          "module": "Escrituração e Relatórios Fiscal",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 571,
+          "title": "Escrita Fiscal - CIAP > CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS- Por qual razão ao gerar a rotina ATUALIZA SF9 (M906SF9) as parcelas não são deduzidas com base na tabela M906SF9SFA (Estorno CIAP)?",
+          "label": "CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS- Por qual razão ao gerar a rotina ATUALIZA SF9 (M906SF9) as parcelas não são deduzidas com base na tabela M906SF9SFA (Estorno CIAP)?",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/4416749976599-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-Por-qual-raz%C3%A3o-ao-gerar-a-rotina-ATUALIZA-SF9-M906SF9-as-parcelas-n%C3%A3o-s%C3%A3o-deduzidas-com-base-na-tabela-M906SF9SFA-Estorno-CIAP",
+          "module": "Escrituração e Relatórios Fiscal",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 531,
+          "title": "Escrita Fiscal - CIAP",
+          "label": "Escrita Fiscal - CIAP",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001538561-Escrita-Fiscal-CIAP",
+          "module": "Escrituração e Relatórios Fiscal",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Seção",
+          "intent": "implantar"
+        },
+        {
+          "id": 534,
+          "title": "Escrita Fiscal - CIAP > CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS - A905TUDOK - Inclusão manual de ativo na rotina MATA905 - Manutenção do CIAP",
+          "label": "CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS - A905TUDOK - Inclusão manual de ativo na rotina MATA905 - Manutenção do CIAP",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360051732433-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-A905TUDOK-Inclus%C3%A3o-manual-de-ativo-na-rotina-MATA905-Manuten%C3%A7%C3%A3o-do-CIAP",
+          "module": "Escrituração e Relatórios Fiscal",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "treinar"
+        },
+        {
+          "id": 1745,
+          "title": "PE - MT905MNU - Adicionar rotinas no menu da Rotina Manutenção CIAP (MATA905)",
+          "label": "PE - MT905MNU - Adicionar rotinas no menu da Rotina Manutenção CIAP (MATA905)",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=642643551",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "customizar"
+        },
+        {
+          "id": 1747,
+          "title": "PE - MT906MNU - Adicionar rotinas no menu da Rotina Apropriação CIAP (MATA906)",
+          "label": "PE - MT906MNU - Adicionar rotinas no menu da Rotina Apropriação CIAP (MATA906)",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=642643651",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "customizar"
+        },
+        {
+          "id": 1422,
+          "title": "BC - FAQ - CIAP",
+          "label": "BC - FAQ - CIAP",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=6076087",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "suportar"
+        },
+        {
+          "id": 7,
+          "title": "Cross Segmentos - Backoffice Protheus - FIS - Arq. Magnéticos - Por que o Bloco G apresenta valores diferentes do Relatório CIAP?",
+          "label": "Cross Segmentos - Backoffice Protheus - FIS - Arq. Magnéticos - Por que o Bloco G apresenta valores diferentes do Relatório CIAP?",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/8998679574807-Cross-Segmentos-Backoffice-Protheus-FIS-Arq-Magn%C3%A9ticos-Por-que-o-Bloco-G-apresenta-valores-diferentes-do-Relat%C3%B3rio-CIAP",
+          "module": "Arquivos Magnéticos",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "suportar"
+        }
+      ]
+    },
+    {
+      "id": "bloco-k",
+      "grupo": "agenda-09-09",
+      "titulo": "Bloco K — controle da produção e do estoque",
+      "status": "pendente",
+      "entrega": "",
+      "resumo": "Bloco do SPED Fiscal que substitui o Livro de Controle de Produção e Estoque: K200 (estoque escriturado), K220 (outras movimentações internas), K230/K235 (produção e insumos), K250/K255 (industrialização em terceiros) e K280 (correções).",
+      "rotinas": [
+        "SPEDFISCAL — pergunta \"Gerar Bloco K?\"",
+        "MATXSPED / PCPXSPED — fontes dos registros K",
+        "MATR241 — Relação do Bloco K (analítico)",
+        "SC2 (ordens de produção), SG1 (estruturas), SD3 (movimentações internas), SB2/SB6 (saldos)",
+        "MV_BLKTP00 / MV_SDTESN3"
+      ],
+      "implantar": [
+        "Confirmar a obrigatoriedade e o perfil do contribuinte (IND_ATIV do registro 0000 = industrial ou equiparado) e a periodicidade exigida pela UF.",
+        "Revisar o cadastro de produtos: tipo do item (00 a 10) — só os tipos 00, 01, 02, 03, 04, 05 e 10 são enviados no K200; excluir fantasma.",
+        "Revisar as TES usadas nos movimentos de produção/requisição/devolução e os indicadores de estoque (0, 1 e 2) via F4_PODER3.",
+        "Garantir estruturas de produto (SG1) e ordens de produção (SC2) coerentes com o processo real, incluindo perdas declaradas na estrutura.",
+        "Atualizar os fontes MATXSPED, PCPXSPED, SPEDFISCAL e SPEDXFUN antes da primeira geração.",
+        "Definir como serão tratadas as perdas de processo (refugo/sucata): elas não vão no K235 e exigem documento fiscal no Bloco C."
+      ],
+      "treinar": [
+        "Gerar o Bloco K em homologação e conferir o MATR241 contra o estoque físico/contábil.",
+        "Treinar o ciclo completo: OP -> requisição de insumos (SD3) -> apontamento de produção -> K230/K235.",
+        "Mostrar o tratamento de industrialização em terceiros (K250/K255) e de desmontagem/reprocesso (K210/K215/K260/K265).",
+        "Revisar as correções de apontamento (K270/K275/K280) e quando usá-las."
+      ],
+      "validar": [
+        "K200 batendo com o saldo final do estoque (SB2 + terceiros) do período.",
+        "Arquivo validado no PVA sem erros no Bloco K e sem divergência com o Bloco C."
+      ],
+      "observacoes": [
+        "Lacuna do índice local preenchida com fontes oficiais: o guia geral do Bloco K no TDN e os artigos de K200 na Central de Atendimento.",
+        "Para mineração, validar com o cliente se há industrialização (beneficiamento) que caracterize obrigação do Bloco K ou apenas movimentação de mercadoria."
+      ],
+      "totalCandidatos": 14,
+      "links": [
+        {
+          "id": 2362,
+          "title": "Bloco K (trilha fiscal) - Bloco K: Informações Gerais sobre o Bloco - Linha Microsiga Protheus",
+          "label": "Bloco K (trilha fiscal) - Bloco K: Informações Gerais sobre o Bloco - Linha Microsiga Protheus",
+          "url": "https://tdn.totvs.com/pages/releaseview.action?pageId=259560649",
+          "module": "Trilha Fiscal — Complementos",
+          "moduleCode": "TRILHA",
+          "source": "TDN",
+          "linkType": "TDN — Release",
+          "intent": "implantar"
+        },
+        {
+          "id": 844,
+          "title": "Bloco K (trilha fiscal) - SIGAEST - Como definir um tipo de produto que não é padrão do Protheus para ser considerado no Registro K200?",
+          "label": "Bloco K (trilha fiscal) - SIGAEST - Como definir um tipo de produto que não é padrão do Protheus para ser considerado no Registro K200?",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360033136554",
+          "module": "Estoque e Custos",
+          "moduleCode": "SIGAEST",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 845,
+          "title": "Bloco K (trilha fiscal) - SIGAEST - Como o Protheus gera no SPED o Registro K200: Estoque Escriturado?",
+          "label": "Bloco K (trilha fiscal) - SIGAEST - Como o Protheus gera no SPED o Registro K200: Estoque Escriturado?",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360019502091-Cross-Segmento-Backoffice-Linha-Protheus-SIGAEST-Como-o-Protheus-gera-no-SPED-o-Registro-K200-Estoque-Escriturado",
+          "module": "Estoque e Custos",
+          "moduleCode": "SIGAEST",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 846,
+          "title": "Bloco K (trilha fiscal) - SIGAEST - Legais e Fiscais no Estoque (seção de artigos)",
+          "label": "Bloco K (trilha fiscal) - SIGAEST - Legais e Fiscais no Estoque (seção de artigos)",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001538941-SIGAEST-LEGAIS",
+          "module": "Estoque e Custos",
+          "moduleCode": "SIGAEST",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Seção",
+          "intent": "implantar"
+        },
+        {
+          "id": 847,
+          "title": "Bloco K (trilha fiscal) - SIGAEST - Quais são as tabelas relacionadas para composição do saldo do registro K200 no bloco K?",
+          "label": "Bloco K (trilha fiscal) - SIGAEST - Quais são as tabelas relacionadas para composição do saldo do registro K200 no bloco K?",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360021629091-Cross-Segmento-Backoffice-Linha-Protheus-SIGAEST-Quais-s%C3%A3o-as-tabelas-relacionadas-para-composi%C3%A7%C3%A3o-do-saldo-do-registro-K200-no-bloco-K",
+          "module": "Estoque e Custos",
+          "moduleCode": "SIGAEST",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 848,
+          "title": "Escrita Fiscal - Impostos - PIS/COFINS (MATR460) > Cross Segmento - Backoffice (Linha Protheus) - SIGAEST - Alguns produtos não estão sendo levados no registro K200",
+          "label": "Cross Segmento - Backoffice (Linha Protheus) - SIGAEST - Alguns produtos não estão sendo levados no registro K200",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/29958024820247-Cross-Segmento-Backoffice-Linha-Protheus-SIGAEST-Alguns-produtos-n%C3%A3o-est%C3%A3o-sendo-levados-no-registro-K200",
+          "module": "Estoque e Custos",
+          "moduleCode": "SIGAEST",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 853,
+          "title": "Escrita Fiscal - Impostos - PIS/COFINS (MATR460) > Cross Segmento - Backoffice (Linha Protheus) - SIGAEST - Bloco K deve considerar o armazém de trânsito?",
+          "label": "Cross Segmento - Backoffice (Linha Protheus) - SIGAEST - Bloco K deve considerar o armazém de trânsito?",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360020588711-Cross-Segmento-Backoffice-Linha-Protheus-SIGAEST-Bloco-K-deve-considerar-o-armaz%C3%A9m-de-tr%C3%A2nsito",
+          "module": "Estoque e Custos",
+          "moduleCode": "SIGAEST",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 854,
+          "title": "Escrita Fiscal - Impostos - PIS/COFINS (MATR460) > Cross Segmento - Backoffice (Linha Protheus) - SIGAEST - Bloco K Empresa com mais de um CNAE",
+          "label": "Cross Segmento - Backoffice (Linha Protheus) - SIGAEST - Bloco K Empresa com mais de um CNAE",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360023088971-Cross-Segmento-Backoffice-Linha-Protheus-SIGAEST-Bloco-K-Empresa-com-mais-de-um-CNAE",
+          "module": "Estoque e Custos",
+          "moduleCode": "SIGAEST",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 855,
+          "title": "Escrita Fiscal - Impostos - PIS/COFINS (MATR460) > Cross Segmento - Backoffice (Linha Protheus) - SIGAEST - Bloco K para empresas com dois CNAE's",
+          "label": "Cross Segmento - Backoffice (Linha Protheus) - SIGAEST - Bloco K para empresas com dois CNAE's",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360021743872-Cross-Segmento-Backoffice-Linha-Protheus-SIGAEST-Bloco-K-para-empresas-com-dois-CNAE-s",
+          "module": "Estoque e Custos",
+          "moduleCode": "SIGAEST",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 856,
+          "title": "Escrita Fiscal - Impostos - PIS/COFINS (MATR460) > Cross Segmento - Backoffice (Linha Protheus) - SIGAEST - Bloco K Registro K200 Filtro de armazém",
+          "label": "Cross Segmento - Backoffice (Linha Protheus) - SIGAEST - Bloco K Registro K200 Filtro de armazém",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360020325092-Cross-Segmento-Backoffice-Linha-Protheus-SIGAEST-Bloco-K-Registro-K200-Filtro-de-armaz%C3%A9m",
+          "module": "Estoque e Custos",
+          "moduleCode": "SIGAEST",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 857,
+          "title": "Escrita Fiscal - Impostos - PIS/COFINS (MATR460) > Cross Segmento - Backoffice (Linha Protheus) - SIGAEST - Bloco K Registro K300",
+          "label": "Cross Segmento - Backoffice (Linha Protheus) - SIGAEST - Bloco K Registro K300",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360022872952-Cross-Segmento-Backoffice-Linha-Protheus-SIGAEST-Bloco-K-Registro-K300",
+          "module": "Estoque e Custos",
+          "moduleCode": "SIGAEST",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 1299,
+          "title": "FATURAMENTO - PEDIDO DE VENDAS > Cross Segmento - TOTVS Backoffice (Linha Protheus) - SIGAFAT - Alteração do Pedido de Venda (MATA410) com ordem de produção vinculada",
+          "label": "Cross Segmento - TOTVS Backoffice (Linha Protheus) - SIGAFAT - Alteração do Pedido de Venda (MATA410) com ordem de produção vinculada",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360048218733-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-SIGAFAT-Altera%C3%A7%C3%A3o-do-Pedido-de-Venda-MATA410-com-ordem-de-produ%C3%A7%C3%A3o-vinculada",
+          "module": "Faturamento",
+          "moduleCode": "SIGAFAT",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 2377,
+          "title": "Registro de Inventário (trilha fiscal) - SUP.PROTHEUS - Eventos Tira Dúvidas (materiais de Bloco K, Bloco H e Rotina de Inventário)",
+          "label": "Registro de Inventário (trilha fiscal) - SUP.PROTHEUS - Eventos Tira Dúvidas (materiais de Bloco K, Bloco H e Rotina de Inventário)",
+          "url": "https://tdn.totvs.com/pages/releaseview.action?pageId=550307175",
+          "module": "Trilha Fiscal — Complementos",
+          "moduleCode": "TRILHA",
+          "source": "TDN",
+          "linkType": "TDN — Release",
+          "intent": "treinar"
+        },
+        {
+          "id": 1817,
+          "title": "PE - SPDFISBLCK - Geração do bloco K no SPED Fiscal - ALIAS no Banco de Dados",
+          "label": "PE - SPDFISBLCK - Geração do bloco K no SPED Fiscal - ALIAS no Banco de Dados",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=723311922",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "customizar"
+        }
+      ]
+    },
+    {
+      "id": "registro-inventario",
+      "grupo": "agenda-09-09",
+      "titulo": "Registro de inventário (Bloco H / MATR460)",
+      "status": "pendente",
+      "entrega": "Obrigação anual entregue em fevereiro (inventário de 31/12)",
+      "resumo": "Inventário físico escriturado no Bloco H da EFD ICMS/IPI a partir do arquivo gerado pelo relatório Registro de Inventário Modelo 7 (MATR460), além do processo de contagem e acerto no Estoque.",
+      "rotinas": [
+        "MATR460 — Registro de Inventário Modelo 7 (gera arquivo para o SPED)",
+        "SPEDFISCAL — perguntas \"Gera Inventário\", \"Data de fechamento do estoque\" e \"Motivo do Inventário\"",
+        "MATA270 (digitação), MATA271 (bloqueio), MATA340 (acerto) — SIGAEST",
+        "MATR280/MATR270 — lista e etiquetas de contagem",
+        "PE SPEDALTH (H010) e SPEDH020 (H020)"
+      ],
+      "implantar": [
+        "Configurar o MATR460 com \"Gerar Exp. SPED Fiscal = Sim\" e nome do arquivo no formato AAAAMMDD igual à data de fechamento do estoque.",
+        "No SPEDFISCAL, responder \"Gera Inventário = Sim\", informar a mesma data de fechamento e o motivo do inventário (01 = final do período, 06 = mudança de regime etc.).",
+        "Atualizar os fontes MATR460, MATXSPED e SPEDXFUN (pacote essencial dos blocos H e K).",
+        "Alinhar com o Estoque o processo de contagem: etiquetas, bloqueio (MATA271), digitação (MATA270) e acerto (MATA340), incluindo MV_CONTINV para múltiplas contagens.",
+        "Definir o calendário anual: fechamento em 31/12, geração do arquivo em janeiro e entrega na EFD de fevereiro."
+      ],
+      "treinar": [
+        "Executar um inventário de ponta a ponta em homologação: bloqueio, contagem, digitação, acerto, MATR460 e Bloco H no SPED.",
+        "Treinar a conferência de saldos (SB2 x SB8 x SBF) e o uso dos relatórios de conferência (MATR460, MATR260, MATR900).",
+        "Mostrar como estornar um movimento de inventário errado (MATA240/MATA241) e refazer o acerto."
+      ],
+      "validar": [
+        "H005/H010 gerados com os mesmos valores do MATR460 do fechamento.",
+        "Arquivo validado no PVA sem erro de inventário e saldo de terceiros/em terceiros corretamente segregado."
+      ],
+      "observacoes": [
+        "Itens sem movimentação no período com motivo 06 têm FAQ específica no índice local."
+      ],
+      "totalCandidatos": 38,
+      "links": [
+        {
+          "id": 851,
+          "title": "Escrita Fiscal - Impostos - PIS/COFINS (MATR460) > Cross Segmento - Backoffice (Linha Protheus) - SIGAEST - Bloco H - Não está sendo gravado o Código do Participante na tabela H e Registro H010 (COD_PART)",
+          "label": "Cross Segmento - Backoffice (Linha Protheus) - SIGAEST - Bloco H - Não está sendo gravado o Código do Participante na tabela H e Registro H010 (COD_PART)",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/1500001580661-Cross-Segmento-Backoffice-Linha-Protheus-SIGAEST-Bloco-H-N%C3%A3o-est%C3%A1-sendo-gravado-o-C%C3%B3digo-do-Participante-na-tabela-H-e-Registro-H010-COD-PART",
+          "module": "Estoque e Custos",
+          "moduleCode": "SIGAEST",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 864,
+          "title": "Escrita Fiscal - Impostos - PIS/COFINS (MATR460) > Cross Segmento - Backoffice (Linha Protheus) - SIGAEST - Existe forma do MATR460 (e Bloco H) ignorar ou filtrar armazéns específicos?",
+          "label": "Cross Segmento - Backoffice (Linha Protheus) - SIGAEST - Existe forma do MATR460 (e Bloco H) ignorar ou filtrar armazéns específicos?",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360060158694-Cross-Segmento-Backoffice-Linha-Protheus-SIGAEST-Existe-forma-do-MATR460-e-Bloco-H-ignorar-ou-filtrar-armaz%C3%A9ns-espec%C3%ADficos",
+          "module": "Estoque e Custos",
+          "moduleCode": "SIGAEST",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 5,
+          "title": "Cross Segmentos - Backoffice Protheus - FIS - Arq. Magnéticos - Motivo de Inventario Bloco H SPED Fiscal",
+          "label": "Cross Segmentos - Backoffice Protheus - FIS - Arq. Magnéticos - Motivo de Inventario Bloco H SPED Fiscal",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360028666152-Cross-Segmentos-Backoffice-Protheus-FIS-Arq-Magn%C3%A9ticos-Motivo-de-Inventario-Bloco-H-SPED-Fiscal",
+          "module": "Arquivos Magnéticos",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 880,
+          "title": "Quebra de Estoque (trilha fiscal) - SIGAEST - Como realizar o estorno (exclusão) de movimento de Inventário (MATA240/MATA241)",
+          "label": "Quebra de Estoque (trilha fiscal) - SIGAEST - Como realizar o estorno (exclusão) de movimento de Inventário (MATA240/MATA241)",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/4402384407063-Cross-Segmento-Backoffice-Linha-Protheus-SIGAEST-Como-realizar-o-estorno-exclus%C3%A3o-de-movimento-de-Invent%C3%A1rio",
+          "module": "Estoque e Custos",
+          "moduleCode": "SIGAEST",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 2375,
+          "title": "Registro de Inventário (trilha fiscal) - FIS - Arq. Magnéticos - SPED FISCAL - Como gerar bloco H Inventário Físico e Controle de Estoque",
+          "label": "Registro de Inventário (trilha fiscal) - FIS - Arq. Magnéticos - SPED FISCAL - Como gerar bloco H Inventário Físico e Controle de Estoque",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360010316131-Cross-Segmentos-Backoffice-Protheus-FIS-Arq-Magn%C3%A9ticos-SPED-FISCAL-Como-gerar-bloco-H-Invent%C3%A1rio-F%C3%ADsico-e-Controle-de-Estoque",
+          "module": "Trilha Fiscal — Complementos",
+          "moduleCode": "TRILHA",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 2376,
+          "title": "Registro de Inventário (trilha fiscal) - Relatórios - Estoque - Linha Microsiga Protheus (MATR460, MATR243 IN 1673/2016)",
+          "label": "Registro de Inventário (trilha fiscal) - Relatórios - Estoque - Linha Microsiga Protheus (MATR460, MATR243 IN 1673/2016)",
+          "url": "https://tdn.totvs.com/pages/releaseview.action?pageId=271408946",
+          "module": "Trilha Fiscal — Complementos",
+          "moduleCode": "TRILHA",
+          "source": "TDN",
+          "linkType": "TDN — Release",
+          "intent": "implantar"
+        },
+        {
+          "id": 882,
+          "title": "Registro de Inventário (trilha fiscal) - SIGAEST - MATA271 - Bloqueio de produtos para inventário por data calculada",
+          "label": "Registro de Inventário (trilha fiscal) - SIGAEST - MATA271 - Bloqueio de produtos para inventário por data calculada",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360021321072-Cross-Segmento-Backoffice-Linha-Protheus-SIGAEST-MATA271-Bloqueio-de-produtos-para-invent%C3%A1rio-por-data-calculada",
+          "module": "Estoque e Custos",
+          "moduleCode": "SIGAEST",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 883,
+          "title": "Registro de Inventário (trilha fiscal) - SIGAEST - MATA340 - MV_CONTINV múltiplas contagens de inventário por seleção de contagem",
+          "label": "Registro de Inventário (trilha fiscal) - SIGAEST - MATA340 - MV_CONTINV múltiplas contagens de inventário por seleção de contagem",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360061630273-MP-SIGAEST-MATA340-MV-CONTINV-m%C3%BAltiplas-contagens-de-invent%C3%A1rio-por-sele%C3%A7%C3%A3o-de-contagem",
+          "module": "Estoque e Custos",
+          "moduleCode": "SIGAEST",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 884,
+          "title": "Registro de Inventário (trilha fiscal) - SIGAEST - Principais relatórios para conferência dos saldos físicos e financeiros (MATR460)",
+          "label": "Registro de Inventário (trilha fiscal) - SIGAEST - Principais relatórios para conferência dos saldos físicos e financeiros (MATR460)",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360004834251-Cross-Segmento-Backoffice-Linha-Protheus-SIGAEST-Principais-relat%C3%B3rios-para-confer%C3%AAncia-dos-saldos-f%C3%ADsicos-e-financeiros",
+          "module": "Estoque e Custos",
+          "moduleCode": "SIGAEST",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 893,
+          "title": "SIGAEST - INVENTÁRIO",
+          "label": "SIGAEST - INVENTÁRIO",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001538961-SIGAEST-INVENT%C3%81RIO",
+          "module": "Estoque e Custos",
+          "moduleCode": "SIGAEST",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Seção",
+          "intent": "implantar"
+        },
+        {
+          "id": 866,
+          "title": "Escrita Fiscal - Impostos - PIS/COFINS (MATR460) > Cross Segmento - Backoffice (Linha Protheus) - SIGAEST - Guia do Bloco H do SPED Fiscal no Protheus",
+          "label": "Cross Segmento - Backoffice (Linha Protheus) - SIGAEST - Guia do Bloco H do SPED Fiscal no Protheus",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360059965954-Cross-Segmento-Backoffice-Linha-Protheus-SIGAEST-Guia-do-Bloco-H-do-SPED-Fiscal-no-Protheus",
+          "module": "Estoque e Custos",
+          "moduleCode": "SIGAEST",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "treinar"
+        },
+        {
+          "id": 885,
+          "title": "Registro de Inventário (trilha fiscal) - SIGAEST - Processo de Inventário - Conceito, Exemplo e Dúvidas (MATA270/MATA340)",
+          "label": "Registro de Inventário (trilha fiscal) - SIGAEST - Processo de Inventário - Conceito, Exemplo e Dúvidas (MATA270/MATA340)",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360020799592-Cross-Segmento-Backoffice-Linha-Protheus-SIGAEST-Processo-de-Invent%C3%A1rio-Conceito-Exemplo-e-D%C3%BAvidas",
+          "module": "Estoque e Custos",
+          "moduleCode": "SIGAEST",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "treinar"
+        },
+        {
+          "id": 2377,
+          "title": "Registro de Inventário (trilha fiscal) - SUP.PROTHEUS - Eventos Tira Dúvidas (materiais de Bloco K, Bloco H e Rotina de Inventário)",
+          "label": "Registro de Inventário (trilha fiscal) - SUP.PROTHEUS - Eventos Tira Dúvidas (materiais de Bloco K, Bloco H e Rotina de Inventário)",
+          "url": "https://tdn.totvs.com/pages/releaseview.action?pageId=550307175",
+          "module": "Trilha Fiscal — Complementos",
+          "moduleCode": "TRILHA",
+          "source": "TDN",
+          "linkType": "TDN — Release",
+          "intent": "treinar"
+        },
+        {
+          "id": 1810,
+          "title": "PE - SPDFIS07 - Registro H010 Conta Contábil",
+          "label": "PE - SPDFIS07 - Registro H010 Conta Contábil",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=702821885",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "customizar"
+        },
+        {
+          "id": 1841,
+          "title": "PE - SPEDALTH - SPEDFISCAL - Registro H010",
+          "label": "PE - SPEDALTH - SPEDFISCAL - Registro H010",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=706921852",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "customizar"
+        },
+        {
+          "id": 1508,
+          "title": "FAQ - SPEDFISCAL - Como gerar o bloco H para produtos com o motivo de inventário 06 sem movimentação no período?",
+          "label": "FAQ - SPEDFISCAL - Como gerar o bloco H para produtos com o motivo de inventário 06 sem movimentação no período?",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=745747853",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "suportar"
+        }
+      ]
+    },
+    {
+      "id": "rotinas-fiscais",
+      "grupo": "agenda-11-09",
+      "titulo": "Validação das rotinas fiscais — NF manual de entrada/saída e acertos fiscais",
+      "status": "pendente",
+      "entrega": "",
+      "resumo": "Livros Fiscais como espelho dos documentos: NF manual de entrada (MATA910) e de saída (MATA920), documentos fiscais no Compras/Faturamento (MATA103/MATA461) e a rotina de acertos fiscais (MATA900).",
+      "rotinas": [
+        "MATA910 — NF Manual de Entrada",
+        "MATA920 — NF Manual de Saída",
+        "MATA103 — Documento de Entrada (Compras)",
+        "MATA461 / MATA410 — Documento e Pedido de Saída (Faturamento)",
+        "MATA900 — Acertos Fiscais (SF3/SFT)",
+        "MATA930 — Reprocessamento dos Livros Fiscais"
+      ],
+      "implantar": [
+        "Definir quais documentos entram pelo Livros Fiscais (sem integração com estoque/financeiro) e quais entram pelo Compras/Faturamento.",
+        "Configurar séries, espécies, numeração e o compartilhamento das tabelas fiscais.",
+        "Estabelecer o procedimento de acerto fiscal: o que pode ser alterado (CFOP, base, alíquota, imposto, observações) e quem aprova.",
+        "Configurar pontos de entrada apenas quando houver exigência (MA900TOK, MA920SD2, VISUIMP).",
+        "Fechar o ciclo: documento -> livro fiscal (SF3/SFT) -> apuração -> SPED."
+      ],
+      "treinar": [
+        "Exercitar a emissão de uma NF manual de entrada e de saída e conferir o reflexo nos livros e na apuração.",
+        "Treinar acertos fiscais com reprocessamento do livro (MATA930) e conferência posterior no MATRAPR.",
+        "Revisar os helps mais comuns (A900CPO, AF036NF) e o procedimento de estorno/exclusão de documento.",
+        "Montar com o cliente um roteiro de teste (script) com os cenários de operação mapeados na matriz do projeto."
+      ],
+      "validar": [
+        "Notas manuais de entrada e saída gravadas corretamente em SF3/SFT e refletidas na apuração.",
+        "Acertos fiscais executados sem quebrar a integração com estoque/financeiro."
+      ],
+      "observacoes": [
+        "Nota fiscal de saída não é incluída diretamente no Faturamento: é preciso gerar e liberar o pedido de venda (ou usar a NF manual de saída no Livros Fiscais)."
+      ],
+      "totalCandidatos": 161,
+      "links": [
+        {
+          "id": 1401,
+          "title": "Acertos Fiscais - Fiscal - P12",
+          "label": "Acertos Fiscais - Fiscal - P12",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=654100120",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1135,
+          "title": "FATURAMENTO - DOCUMENTO DE SAÍDA > Cross Segmento - TOTVS Backoffice (Linha Protheus) - SIGAFAT - Funcionalidade do botão Refresh da rotina exclusão de documento de saída MATA521A",
+          "label": "Cross Segmento - TOTVS Backoffice (Linha Protheus) - SIGAFAT - Funcionalidade do botão Refresh da rotina exclusão de documento de saída MATA521A",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/1500009253322-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-SIGAFAT-Funcionalidade-do-bot%C3%A3o-Refresh-da-rotina-exclus%C3%A3o-de-documento-de-sa%C3%ADda-MATA521A",
+          "module": "Faturamento",
+          "moduleCode": "SIGAFAT",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 1585,
+          "title": "MATA103 - Documentos Fiscais de Entrada",
+          "label": "MATA103 - Documentos Fiscais de Entrada",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=702350726",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1586,
+          "title": "MATA461 - Documentos Fiscais de Saída",
+          "label": "MATA461 - Documentos Fiscais de Saída",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=702351308",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1588,
+          "title": "MATA910 - Documentos Fiscais de Entrada",
+          "label": "MATA910 - Documentos Fiscais de Entrada",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=948262833",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1590,
+          "title": "MATA920 - Documentos Fiscais de Saída",
+          "label": "MATA920 - Documentos Fiscais de Saída",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=702352726",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1325,
+          "title": "Rotinas Fiscais (trilha fiscal) - SIGAFAT - Emissão de nota fiscal de saída no módulo Faturamento (pedido, liberação e MATA461)",
+          "label": "Rotinas Fiscais (trilha fiscal) - SIGAFAT - Emissão de nota fiscal de saída no módulo Faturamento (pedido, liberação e MATA461)",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/1500010811321-Cross-Segmentos-Backoffice-Protheus-SIGAFAT-Emiss%C3%A3o-de-nota-fiscal-de-sa%C3%ADda-no-m%C3%B3dulo-Faturamento",
+          "module": "Faturamento",
+          "moduleCode": "SIGAFAT",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 1125,
+          "title": "FATURAMENTO - DOCUMENTO DE SAÍDA > Cross Segmento - Backoffice (Linha Protheus) – SIGAFAT – Conceito dos perguntes iniciais de parâmetro na rotina MATA521A Exclusão de Documento de Saída",
+          "label": "Cross Segmento - Backoffice (Linha Protheus) – SIGAFAT – Conceito dos perguntes iniciais de parâmetro na rotina MATA521A Exclusão de Documento de Saída",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/4413305638167-Cross-Segmento-Backoffice-Linha-Protheus-SIGAFAT-Conceito-dos-perguntes-iniciais-de-par%C3%A2metro-na-rotina-MATA521A-Exclus%C3%A3o-de-Documento-de-Sa%C3%ADda",
+          "module": "Faturamento",
+          "moduleCode": "SIGAFAT",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "treinar"
+        },
+        {
+          "id": 1608,
+          "title": "NF - Gravação dos campos F1_HORA/F2_HORA em Nota Fiscal Manual",
+          "label": "NF - Gravação dos campos F1_HORA/F2_HORA em Nota Fiscal Manual",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=697258120",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "treinar"
+        },
+        {
+          "id": 1689,
+          "title": "PE - MA900TOK - Validações no Acertos de Livros Fiscais",
+          "label": "PE - MA900TOK - Validações no Acertos de Livros Fiscais",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=642636934",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "customizar"
+        },
+        {
+          "id": 1694,
+          "title": "PE - MA920SD2 - Inclusão de Campos para consulta na NF Manual de Saída",
+          "label": "PE - MA920SD2 - Inclusão de Campos para consulta na NF Manual de Saída",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=706122373",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "customizar"
+        },
+        {
+          "id": 1712,
+          "title": "PE - MAFISOBS - Alterar mensagem de observações nos Livros Fiscais.",
+          "label": "PE - MAFISOBS - Alterar mensagem de observações nos Livros Fiscais.",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=655857370",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "customizar"
+        },
+        {
+          "id": 1738,
+          "title": "PE - MT100TOK - Valida inclusão da Nota Fiscal de Saída MATA920",
+          "label": "PE - MT100TOK - Valida inclusão da Nota Fiscal de Saída MATA920",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=773516032",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "customizar"
+        },
+        {
+          "id": 1758,
+          "title": "PE - MT920IT - Customiza a gravação dos Itens da Nota Fiscal de Saída (MATA920)",
+          "label": "PE - MT920IT - Customiza a gravação dos Itens da Nota Fiscal de Saída (MATA920)",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=705435169",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "customizar"
+        },
+        {
+          "id": 1134,
+          "title": "FATURAMENTO - DOCUMENTO DE SAÍDA > Cross Segmento - TOTVS Backoffice (Linha Protheus) - SIGAFAT - Exclusão Documento de Saída apresentado:HELP FECHTO",
+          "label": "Cross Segmento - TOTVS Backoffice (Linha Protheus) - SIGAFAT - Exclusão Documento de Saída apresentado:HELP FECHTO",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360042322274-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-SIGAFAT-Exclus%C3%A3o-Documento-de-Sa%C3%ADda-apresentado-HELP-FECHTO",
+          "module": "Faturamento",
+          "moduleCode": "SIGAFAT",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "suportar"
+        },
+        {
+          "id": 1168,
+          "title": "FATURAMENTO - DOCUMENTO DE SAÍDA > Cross Segmentos - Backoffice (Linha Protheus) - SIGAFAT - Na exclusão de um Documento de Saída, é apresentado o Help: NAOEXCL.",
+          "label": "Cross Segmentos - Backoffice (Linha Protheus) - SIGAFAT - Na exclusão de um Documento de Saída, é apresentado o Help: NAOEXCL.",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360049992114-Cross-Segmentos-Backoffice-Linha-Protheus-SIGAFAT-Na-exclus%C3%A3o-de-um-Documento-de-Sa%C3%ADda-%C3%A9-apresentado-o-Help-NAOEXCL",
+          "module": "Faturamento",
+          "moduleCode": "SIGAFAT",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "suportar"
+        }
+      ]
+    },
+    {
+      "id": "taf-extrator-reinf",
+      "grupo": "agenda-11-09",
+      "titulo": "TAF, Extrator Fiscal e EFD-REINF",
+      "status": "pendente",
+      "entrega": "",
+      "resumo": "O TAF é o módulo/aplicação que consolida e transmite as obrigações (REINF, eSocial e afins). O Protheus alimenta o TAF por meio do Extrator Fiscal (EXTFISXTAF), em arquivo TXT ou banco a banco.",
+      "rotinas": [
+        "EXTFISXTAF — Extrator Fiscal (módulo 09)",
+        "TAFA062E / TAFA062S — documentos fiscais de entrada e saída no TAF",
+        "TAFA541 (despesas processuais), TAFA537 (advogados), TAFA448/TAFA535 (processos)",
+        "FKW/FKY, TAFST1/TAFST2, FKF_REINF/FK2_REINF",
+        "TSS — transmissor"
+      ],
+      "implantar": [
+        "Instalar/atualizar o TAF (versão 12, segregado do ERP quando a base for 11) e o TSS, e definir a filial centralizadora quando houver mesma chave Empresa+CNPJ+IE+Município.",
+        "Configurar os layouts de extração: cadastros (T003/T007/T010), movimentos, apuração/SPED, inventário, financeiro, contribuinte e empresa.",
+        "No REINF: cadastrar naturezas de rendimento nos títulos e usar a pergunta \"Filtra Apenas REINF\" para performance; conferir FKF_REINF/FK2_REINF após a extração.",
+        "Definir tipo de integração (TXT x banco a banco) e o processo de reenvio quando a flag já estiver integrada.",
+        "Planejar a carga inicial de cadastros no TAF antes da primeira transmissão."
+      ],
+      "treinar": [
+        "Executar o extrator em homologação e acompanhar a integração no monitor do TAF (TAFA062E/TAFA062S).",
+        "Treinar o ciclo do REINF: título com natureza de rendimento -> extrator -> TAF -> DCTFWeb.",
+        "Mostrar o que fazer quando um documento foi lançado antes da atualização do ambiente (lançamento manual no TAF)."
+      ],
+      "validar": [
+        "Documentos e títulos integrados no TAF sem pendência no monitor.",
+        "REINF transmitido e DCTFWeb com os valores esperados."
+      ],
+      "observacoes": [
+        "Com IBS/CBS calculados no Configurador de Tributos, a integração de documentos fiscais pelo Extrator não carrega esses tributos — o caminho indicado é a integração via TSI.",
+        "Prazo registrado no TDN: 31/12/2026 — Extrator TAF (verificar o cronograma de descontinuação no escopo do projeto)."
+      ],
+      "totalCandidatos": 23,
+      "links": [
+        {
+          "id": 1393,
+          "title": "31/12/2026 Extrator TAF",
+          "label": "31/12/2026 Extrator TAF",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=1063922799",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 142,
+          "title": "Automação Fiscal",
+          "label": "Automação Fiscal",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001533341-Automa%C3%A7%C3%A3o-Fiscal",
+          "module": "Catálogo de módulos Protheus",
+          "moduleCode": "PROTHEUS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Seção",
+          "intent": "implantar"
+        },
+        {
+          "id": 2355,
+          "title": "Configurações - TAF - TOTVS Automação Fiscal - P12",
+          "label": "Configurações - TAF - TOTVS Automação Fiscal - P12",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=496806364",
+          "module": "TAF - TOTVS Automação Fiscal",
+          "moduleCode": "SIGATAF",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 583,
+          "title": "Escrita Fiscal - Error.log > Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - Procedure Livros fiscais x TAF",
+          "label": "Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - Procedure Livros fiscais x TAF",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/26560045036439-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-Procedure-Livros-fiscais-x-TAF",
+          "module": "Escrituração e Relatórios Fiscal",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 2239,
+          "title": "EFD-REINF",
+          "label": "EFD-REINF",
+          "url": "https://tdn.totvs.com/display/PROT/EFD-REINF",
+          "module": "Referências gerais TDN",
+          "moduleCode": "TDN",
+          "source": "TDN",
+          "linkType": "TDN — Display",
+          "intent": "implantar"
+        },
+        {
+          "id": 34,
+          "title": "Fiscal Arquivos Magnéticos - Extrator Fiscal",
+          "label": "Fiscal Arquivos Magnéticos - Extrator Fiscal",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001535021-Fiscal-Arquivos-Magn%C3%A9ticos-Extrator-Fiscal",
+          "module": "Arquivos Magnéticos",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Seção",
+          "intent": "implantar"
+        },
+        {
+          "id": 2356,
+          "title": "Integrações - TAF - TOTVS Automação Fiscal - P12",
+          "label": "Integrações - TAF - TOTVS Automação Fiscal - P12",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=514741848",
+          "module": "TAF - TOTVS Automação Fiscal",
+          "moduleCode": "SIGATAF",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 2359,
+          "title": "Menu do Módulo - TAF - TOTVS Automação Fiscal - P12",
+          "label": "Menu do Módulo - TAF - TOTVS Automação Fiscal - P12",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=514741474",
+          "module": "TAF - TOTVS Automação Fiscal",
+          "moduleCode": "SIGATAF",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 529,
+          "title": "Escrita Fiscal - CFOP > MP - FIS - Configuração para integração ao TAF para documentos de prestação de serviços (RPS) conforme número da N.F. Eletrônica de Prestação de Serviços (FT_NFELETR) de retorno da prefeitura.",
+          "label": "MP - FIS - Configuração para integração ao TAF para documentos de prestação de serviços (RPS) conforme número da N.F. Eletrônica de Prestação de Serviços (FT_NFELETR) de retorno da prefeitura.",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360056157594-MP-FIS-Configura%C3%A7%C3%A3o-para-integra%C3%A7%C3%A3o-ao-TAF-para-documentos-de-presta%C3%A7%C3%A3o-de-servi%C3%A7os-RPS-conforme-n%C3%BAmero-da-N-F-Eletr%C3%B4nica-de-Presta%C3%A7%C3%A3o-de-Servi%C3%A7os-FT-NFELETR-de-retorno-da-prefeitura",
+          "module": "Escrituração e Relatórios Fiscal",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 2378,
+          "title": "TAF (trilha fiscal) - Extraindo informações fiscais do ERP Protheus - Extrator Fiscal EXTFISXTAF",
+          "label": "TAF (trilha fiscal) - Extraindo informações fiscais do ERP Protheus - Extrator Fiscal EXTFISXTAF",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=233757571",
+          "module": "Trilha Fiscal — Complementos",
+          "moduleCode": "TRILHA",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 2379,
+          "title": "TAF (trilha fiscal) - Protheus - REINF Suporte Financeiro (títulos, naturezas de rendimento e integração ao TAF)",
+          "label": "TAF (trilha fiscal) - Protheus - REINF Suporte Financeiro (títulos, naturezas de rendimento e integração ao TAF)",
+          "url": "https://tdn.totvs.com/display/public/PROT/Protheus+-+REINF+Suporte+Financeiro",
+          "module": "Trilha Fiscal — Complementos",
+          "moduleCode": "TRILHA",
+          "source": "TDN",
+          "linkType": "TDN — Display",
+          "intent": "implantar"
+        },
+        {
+          "id": 2380,
+          "title": "TAF (trilha fiscal) - TAF - EFD-Reinf (documentação do módulo TAF)",
+          "label": "TAF (trilha fiscal) - TAF - EFD-Reinf (documentação do módulo TAF)",
+          "url": "https://tdn.totvs.com/display/public/TAF/EFD-Reinf",
+          "module": "Trilha Fiscal — Complementos",
+          "moduleCode": "TRILHA",
+          "source": "TDN",
+          "linkType": "TDN — Display",
+          "intent": "implantar"
+        },
+        {
+          "id": 2381,
+          "title": "TAF (trilha fiscal) - TAF - REINF - Extrator Fiscal - Layouts para Reinf (T001/T001AB/T003/T007/T010)",
+          "label": "TAF (trilha fiscal) - TAF - REINF - Extrator Fiscal - Layouts para Reinf (T001/T001AB/T003/T007/T010)",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360023075011-CROSS-Segmentos-Backoffice-Linha-Protheus-TAF-REINF-Extrator-Fiscal-Layouts-para-Reinf",
+          "module": "Trilha Fiscal — Complementos",
+          "moduleCode": "TRILHA",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 2361,
+          "title": "TAF Totvs Automação Fiscal - Protheus 12",
+          "label": "TAF Totvs Automação Fiscal - Protheus 12",
+          "url": "https://tdn.totvs.com/pages/releaseview.action?pageId=464958325",
+          "module": "TAF - TOTVS Automação Fiscal",
+          "moduleCode": "SIGATAF",
+          "source": "TDN",
+          "linkType": "TDN — Release",
+          "intent": "implantar"
+        },
+        {
+          "id": 2354,
+          "title": "Conceitos - TAF - TOTVS Automação Fiscal - P12",
+          "label": "Conceitos - TAF - TOTVS Automação Fiscal - P12",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=514741631",
+          "module": "TAF - TOTVS Automação Fiscal",
+          "moduleCode": "SIGATAF",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "treinar"
+        },
+        {
+          "id": 2360,
+          "title": "Pontos de Entrada - TAF - TOTVS Automação Fiscal - P12",
+          "label": "Pontos de Entrada - TAF - TOTVS Automação Fiscal - P12",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=514741853",
+          "module": "TAF - TOTVS Automação Fiscal",
+          "moduleCode": "SIGATAF",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "customizar"
+        }
+      ]
+    },
+    {
+      "id": "revisao-parametrizacoes",
+      "grupo": "agenda-11-09",
+      "titulo": "Revisão das parametrizações conforme o escopo do projeto",
+      "status": "pendente",
+      "entrega": "",
+      "resumo": "Auditoria do que foi parametrizado contra o escopo contratado: parâmetros (SX6), TES, cadastros, Configurador de Tributos, compartilhamento de tabelas, pontos de entrada e ciclo de vida das rotinas descontinuadas.",
+      "rotinas": [
+        "CFGX017 — Parâmetros (MV_USASPED, MV_ESTADO, MV_ESTICM, MV_LJ..., MV_FIS...)",
+        "FISA170 — Configurador de Tributos",
+        "Compartilhamento de tabelas (CFGTRIB)",
+        "Rotinas descontinuadas em 12/2026 e Livros Fiscais descontinuados em 2024"
+      ],
+      "implantar": [
+        "Listar os parâmetros alterados no projeto (com valor anterior, valor atual, motivo e responsável) — evidência de auditoria.",
+        "Revisar a aderência ao escopo: quais obrigações estão contempladas, quais ficaram fora e quais exigem customização.",
+        "Conferir compartilhamento de tabelas e dicionário (campos criados, SX3/SIX) antes do go-live.",
+        "Verificar rotinas em fim de vida (descontinuação 2024/2026) e o impacto no desenho da solução.",
+        "Revisar a convivência legado x Configurador de Tributos e o cronograma de IBS/CBS (obrigatoriedade a partir de 03/08/2026)."
+      ],
+      "treinar": [
+        "Apresentar ao cliente o mapa de parametrização (o que cada parâmetro decide) e quem pode alterar cada item.",
+        "Treinar o uso do dashboard/consultas fiscais e da listagem de conferência para autochecagem mensal.",
+        "Formalizar o procedimento de mudança: solicitação, análise de impacto, teste em homologação e aplicação."
+      ],
+      "validar": [
+        "Checklist de parametrização assinado pelo cliente, item a item do escopo.",
+        "Ambiente de homologação idêntico à produção em parâmetros, TES e dicionário."
+      ],
+      "observacoes": [
+        "Usar o pacote FISA170 já existente em docs/fisa170/ (matriz de levantamento e ciclos de operação) como instrumento da revisão."
+      ],
+      "totalCandidatos": 263,
+      "links": [
+        {
+          "id": 194,
+          "title": "CFGTRIB - Cadastro de Regras de Cálculo no Configurador de Tributos - Boas Práticas",
+          "label": "CFGTRIB - Cadastro de Regras de Cálculo no Configurador de Tributos - Boas Práticas",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=825324804",
+          "module": "Configurador de Tributos",
+          "moduleCode": "FISA",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 197,
+          "title": "CFGTRIB - Campos do cadastro de Tipos de Entrada e Saída descontinuados em favor do Configurador de Tributos",
+          "label": "CFGTRIB - Campos do cadastro de Tipos de Entrada e Saída descontinuados em favor do Configurador de Tributos",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=906853167",
+          "module": "Configurador de Tributos",
+          "moduleCode": "FISA",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 518,
+          "title": "Ciclo de Vida (SIGAFIS)",
+          "label": "Ciclo de Vida (SIGAFIS)",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=841682134",
+          "module": "Escrituração e Relatórios Fiscal",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1436,
+          "title": "Configurações - Cadastros e Parâmetros - Fiscal - P12",
+          "label": "Configurações - Cadastros e Parâmetros - Fiscal - P12",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=653144946",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 2081,
+          "title": "Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - Como calcular o Difal ec/87 base dupla no fisa170 com IBS/CBS ?",
+          "label": "Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - Como calcular o Difal ec/87 base dupla no fisa170 com IBS/CBS ?",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/39473914475159-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-Como-calcular-o-Difal-ec-87-base-dupla-no-fisa170-com-IBS-CBS",
+          "module": "Referências gerais Central TOTVS",
+          "moduleCode": "CENTRAL",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 259,
+          "title": "Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Compartilhamento de Tabelas de Perfis, Regras de Cálculo e Regra de Escrituração",
+          "label": "Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Compartilhamento de Tabelas de Perfis, Regras de Cálculo e Regra de Escrituração",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/36181199260183-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Compartilhamento-de-Tabelas-de-Perfis-Regras-de-C%C3%A1lculo-e-Regra-de-Escritura%C3%A7%C3%A3o",
+          "module": "Configurador de Tributos",
+          "moduleCode": "FISA",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 776,
+          "title": "Escrita Fiscal - Reforma Tributária - CBS e IBS > Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Importação da Tabela de Indicador de Operação (IndOp) no Configurador de Tributos",
+          "label": "Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Importação da Tabela de Indicador de Operação (IndOp) no Configurador de Tributos",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/37485247428503-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Importa%C3%A7%C3%A3o-da-Tabela-de-Indicador-de-Opera%C3%A7%C3%A3o-IndOp-no-Configurador-de-Tributos",
+          "module": "Escrituração e Relatórios Fiscal",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 777,
+          "title": "Escrita Fiscal - Reforma Tributária - CBS e IBS > Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Reforma Tributária",
+          "label": "Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Reforma Tributária",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/27223416466967-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Reforma-Tribut%C3%A1ria",
+          "module": "Escrituração e Relatórios Fiscal",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 782,
+          "title": "Escrita Fiscal - Reforma Tributária - CBS e IBS > CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS - Adequação à obrigatoriedade do IBS e CBS a partir de 03 de agosto de 2026",
+          "label": "CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS - Adequação à obrigatoriedade do IBS e CBS a partir de 03 de agosto de 2026",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/42351363577623-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-Adequa%C3%A7%C3%A3o-%C3%A0-obrigatoriedade-do-IBS-e-CBS-a-partir-de-03-de-agosto-de-2026",
+          "module": "Escrituração e Relatórios Fiscal",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 2242,
+          "title": "Escopo de atendimento - Reforma Tributária",
+          "label": "Escopo de atendimento - Reforma Tributária",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=876220090",
+          "module": "Referências gerais TDN",
+          "moduleCode": "TDN",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1484,
+          "title": "Escopo de atendimento do Configurador de Tributos",
+          "label": "Escopo de atendimento do Configurador de Tributos",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=863302293",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1626,
+          "title": "Pacotes de Atualização - Fiscal - Dicionário",
+          "label": "Pacotes de Atualização - Fiscal - Dicionário",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=527848712",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1630,
+          "title": "PARÂMETROS - Outras Configurações",
+          "label": "PARÂMETROS - Outras Configurações",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=702350606",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1886,
+          "title": "Rotinas que serão descontinuadas em 12/2026",
+          "label": "Rotinas que serão descontinuadas em 12/2026",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=1063922688",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 2353,
+          "title": "🧭 Central de Conteúdo | Reforma Tributária e Configurador de Tributos",
+          "label": "🧭 Central de Conteúdo | Reforma Tributária e Configurador de Tributos",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=945408020",
+          "module": "Referências gerais TDN",
+          "moduleCode": "TDN",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 775,
+          "title": "Escrita Fiscal - Reforma Tributária - CBS e IBS > Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Help: ARQVAZIO - Carga automática dos Tributos CBS e IBS",
+          "label": "Cross Segmento - TOTVS Backoffice (Linha Protheus) - FIS - FISA170 - Help: ARQVAZIO - Carga automática dos Tributos CBS e IBS",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/35358992653847-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Help-ARQVAZIO-Carga-autom%C3%A1tica-dos-Tributos-CBS-e-IBS",
+          "module": "Escrituração e Relatórios Fiscal",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "suportar"
+        }
+      ]
+    },
+    {
+      "id": "quebra-estoque",
+      "grupo": "agenda-11-09",
+      "titulo": "Quebra de estoque (perdas, refugo e baixas)",
+      "status": "pendente",
+      "entrega": "",
+      "resumo": "Baixa de mercadoria por perda, roubo, deterioração ou quebra de processo: movimento interno no Estoque, documento fiscal correspondente (CFOP 5.927/6.927 ou nota de débito) e estorno do crédito de ICMS/IPI/PIS/COFINS.",
+      "rotinas": [
+        "MATA241 — Movimentos Internos múltiplos (MATA240 descontinuada)",
+        "MATA340 — Acerto de Inventário",
+        "Documento de Débito no Faturamento (tipo \"Perda em Estoque\")",
+        "MV_ESTNEG, MA240NEGAT/MA240NEGLT",
+        "Bloco K — tratamento de perdas (K235 x documento fiscal no Bloco C)"
+      ],
+      "implantar": [
+        "Definir com o cliente o conceito de quebra no processo dele (perda de processo, refugo, deterioração, extravio) e onde ela é registrada.",
+        "Criar TES/cenário de baixa sem financeiro, com CFOP adequado e escrituração fiscal correta (estorno de crédito quando aplicável).",
+        "Configurar MV_ESTNEG e as validações de saldo para evitar baixas indevidas.",
+        "Estabelecer evidência documental da perda (laudo, boletim, seguro) e a rotina de aprovação.",
+        "Garantir que a perda alimente corretamente o Bloco H (inventário), o Bloco K e a apuração (estorno de crédito)."
+      ],
+      "treinar": [
+        "Exercitar a baixa por movimento interno e a conferência do reflexo fiscal (livro, apuração, SPED).",
+        "Treinar o estorno de um movimento de inventário/acerto errado (MATA241, F12 -> por item).",
+        "Mostrar a emissão do documento fiscal de perda e o estorno de crédito correspondente."
+      ],
+      "validar": [
+        "Perda registrada com documento fiscal e estorno de crédito conferido na apuração do mês.",
+        "Saldo físico (SB2) coerente com SB8/SBF e com o Bloco H/K."
+      ],
+      "observacoes": [
+        "Lacuna do índice local: havia pouquíssimas fontes sobre perda/quebra. Foram incorporados artigos oficiais de SIGAEST e SIGAFAT (nota de débito de perda em estoque, estorno de inventário, MV_ESTNEG).",
+        "No Bloco K só entram as perdas declaradas na estrutura do produto; refugo e sucata de processo exigem documento fiscal demonstrado no Bloco C."
+      ],
+      "totalCandidatos": 17,
+      "links": [
+        {
+          "id": 880,
+          "title": "Quebra de Estoque (trilha fiscal) - SIGAEST - Como realizar o estorno (exclusão) de movimento de Inventário (MATA240/MATA241)",
+          "label": "Quebra de Estoque (trilha fiscal) - SIGAEST - Como realizar o estorno (exclusão) de movimento de Inventário (MATA240/MATA241)",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/4402384407063-Cross-Segmento-Backoffice-Linha-Protheus-SIGAEST-Como-realizar-o-estorno-exclus%C3%A3o-de-movimento-de-Invent%C3%A1rio",
+          "module": "Estoque e Custos",
+          "moduleCode": "SIGAEST",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 881,
+          "title": "Quebra de Estoque (trilha fiscal) - SIGAEST - Qual o objetivo do parâmetro MV_ESTNEG?",
+          "label": "Quebra de Estoque (trilha fiscal) - SIGAEST - Qual o objetivo do parâmetro MV_ESTNEG?",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/4406452757399-Cross-Segmento-Backoffice-Linha-Protheus-SIGAEST-Qual-o-objetivo-do-par%C3%A2metro-MV-ESTNEG",
+          "module": "Estoque e Custos",
+          "moduleCode": "SIGAEST",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 1324,
+          "title": "Quebra de Estoque (trilha fiscal) - SIGAFAT - Como emitir uma Nota de Débito de Perda em Estoque (tpNFDebito = 07)",
+          "label": "Quebra de Estoque (trilha fiscal) - SIGAFAT - Como emitir uma Nota de Débito de Perda em Estoque (tpNFDebito = 07)",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/37327450272023-Cross-Segmentos-Backoffice-Protheus-SIGAFAT-Como-emitir-uma-Nota-de-D%C3%A9bito-de-Perda-em-Estoque-tpNFDebito-07",
+          "module": "Faturamento",
+          "moduleCode": "SIGAFAT",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 2375,
+          "title": "Registro de Inventário (trilha fiscal) - FIS - Arq. Magnéticos - SPED FISCAL - Como gerar bloco H Inventário Físico e Controle de Estoque",
+          "label": "Registro de Inventário (trilha fiscal) - FIS - Arq. Magnéticos - SPED FISCAL - Como gerar bloco H Inventário Físico e Controle de Estoque",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360010316131-Cross-Segmentos-Backoffice-Protheus-FIS-Arq-Magn%C3%A9ticos-SPED-FISCAL-Como-gerar-bloco-H-Invent%C3%A1rio-F%C3%ADsico-e-Controle-de-Estoque",
+          "module": "Trilha Fiscal — Complementos",
+          "moduleCode": "TRILHA",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 2376,
+          "title": "Registro de Inventário (trilha fiscal) - Relatórios - Estoque - Linha Microsiga Protheus (MATR460, MATR243 IN 1673/2016)",
+          "label": "Registro de Inventário (trilha fiscal) - Relatórios - Estoque - Linha Microsiga Protheus (MATR460, MATR243 IN 1673/2016)",
+          "url": "https://tdn.totvs.com/pages/releaseview.action?pageId=271408946",
+          "module": "Trilha Fiscal — Complementos",
+          "moduleCode": "TRILHA",
+          "source": "TDN",
+          "linkType": "TDN — Release",
+          "intent": "implantar"
+        },
+        {
+          "id": 882,
+          "title": "Registro de Inventário (trilha fiscal) - SIGAEST - MATA271 - Bloqueio de produtos para inventário por data calculada",
+          "label": "Registro de Inventário (trilha fiscal) - SIGAEST - MATA271 - Bloqueio de produtos para inventário por data calculada",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360021321072-Cross-Segmento-Backoffice-Linha-Protheus-SIGAEST-MATA271-Bloqueio-de-produtos-para-invent%C3%A1rio-por-data-calculada",
+          "module": "Estoque e Custos",
+          "moduleCode": "SIGAEST",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 883,
+          "title": "Registro de Inventário (trilha fiscal) - SIGAEST - MATA340 - MV_CONTINV múltiplas contagens de inventário por seleção de contagem",
+          "label": "Registro de Inventário (trilha fiscal) - SIGAEST - MATA340 - MV_CONTINV múltiplas contagens de inventário por seleção de contagem",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360061630273-MP-SIGAEST-MATA340-MV-CONTINV-m%C3%BAltiplas-contagens-de-invent%C3%A1rio-por-sele%C3%A7%C3%A3o-de-contagem",
+          "module": "Estoque e Custos",
+          "moduleCode": "SIGAEST",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 884,
+          "title": "Registro de Inventário (trilha fiscal) - SIGAEST - Principais relatórios para conferência dos saldos físicos e financeiros (MATR460)",
+          "label": "Registro de Inventário (trilha fiscal) - SIGAEST - Principais relatórios para conferência dos saldos físicos e financeiros (MATR460)",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360004834251-Cross-Segmento-Backoffice-Linha-Protheus-SIGAEST-Principais-relat%C3%B3rios-para-confer%C3%AAncia-dos-saldos-f%C3%ADsicos-e-financeiros",
+          "module": "Estoque e Custos",
+          "moduleCode": "SIGAEST",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 894,
+          "title": "SIGAEST - MOVIMENTAÇÕES",
+          "label": "SIGAEST - MOVIMENTAÇÕES",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001550102-SIGAEST-MOVIMENTA%C3%87%C3%95ES",
+          "module": "Estoque e Custos",
+          "moduleCode": "SIGAEST",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Seção",
+          "intent": "implantar"
+        },
+        {
+          "id": 885,
+          "title": "Registro de Inventário (trilha fiscal) - SIGAEST - Processo de Inventário - Conceito, Exemplo e Dúvidas (MATA270/MATA340)",
+          "label": "Registro de Inventário (trilha fiscal) - SIGAEST - Processo de Inventário - Conceito, Exemplo e Dúvidas (MATA270/MATA340)",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360020799592-Cross-Segmento-Backoffice-Linha-Protheus-SIGAEST-Processo-de-Invent%C3%A1rio-Conceito-Exemplo-e-D%C3%BAvidas",
+          "module": "Estoque e Custos",
+          "moduleCode": "SIGAEST",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "treinar"
+        },
+        {
+          "id": 2377,
+          "title": "Registro de Inventário (trilha fiscal) - SUP.PROTHEUS - Eventos Tira Dúvidas (materiais de Bloco K, Bloco H e Rotina de Inventário)",
+          "label": "Registro de Inventário (trilha fiscal) - SUP.PROTHEUS - Eventos Tira Dúvidas (materiais de Bloco K, Bloco H e Rotina de Inventário)",
+          "url": "https://tdn.totvs.com/pages/releaseview.action?pageId=550307175",
+          "module": "Trilha Fiscal — Complementos",
+          "moduleCode": "TRILHA",
+          "source": "TDN",
+          "linkType": "TDN — Release",
+          "intent": "treinar"
+        },
+        {
+          "id": 414,
+          "title": "Cross Segmento - Backoffice Linha Protheus - ADVPL - ExecAuto da Mata240 não chama o ponto de entrada MT241SD3",
+          "label": "Cross Segmento - Backoffice Linha Protheus - ADVPL - ExecAuto da Mata240 não chama o ponto de entrada MT241SD3",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360022338211-Cross-Segmento-Backoffice-Linha-Protheus-ADVPL-ExecAuto-da-Mata240-n%C3%A3o-chama-o-ponto-de-entrada-MT241SD3",
+          "module": "Customizações",
+          "moduleCode": "ADVPL",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "customizar"
+        },
+        {
+          "id": 916,
+          "title": "SIGAEST - MOVIMENTAÇÕES > Cross Segmento - Backoffice (Linha Protheus) - SIGAEST - MA240NEGAT - Principais situações que podem apresentar esse help",
+          "label": "Cross Segmento - Backoffice (Linha Protheus) - SIGAEST - MA240NEGAT - Principais situações que podem apresentar esse help",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360058347413-Cross-Segmento-Backoffice-Linha-Protheus-SIGAEST-MA240NEGAT-Principais-situa%C3%A7%C3%B5es-que-podem-apresentar-esse-help",
+          "module": "Estoque e Custos",
+          "moduleCode": "SIGAEST",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "suportar"
+        },
+        {
+          "id": 917,
+          "title": "SIGAEST - MOVIMENTAÇÕES > Cross Segmento - Backoffice (Linha Protheus) - SIGAEST - MATA103 não gera SD3 com RE5 retornado de beneficiamento",
+          "label": "Cross Segmento - Backoffice (Linha Protheus) - SIGAEST - MATA103 não gera SD3 com RE5 retornado de beneficiamento",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/37059208182423-Cross-Segmento-Backoffice-Linha-Protheus-SIGAEST-MATA103-n%C3%A3o-gera-SD3-com-RE5-retornado-de-beneficiamento",
+          "module": "Estoque e Custos",
+          "moduleCode": "SIGAEST",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "suportar"
+        }
+      ]
+    },
+    {
+      "id": "exportacao",
+      "grupo": "agenda-11-09",
+      "titulo": "Exportação",
+      "status": "pendente",
+      "entrega": "",
+      "resumo": "Operações de exportação direta e indireta: nota fiscal de exportação, formação de lote, DU-E no Portal Único Siscomex, câmbio e integrações do Easy Export Control (SIGAEEC) com Faturamento, Fiscal e Financeiro.",
+      "rotinas": [
+        "SIGAEEC — Easy Export Control (pedido, embarque, notas fiscais EECNF400)",
+        "Transmissão DUE (DU-E) no Siscomex/Portal Único",
+        "MATA410/MATA461 — pedido e documento de saída no Faturamento",
+        "MV_EECFAT — integração SIGAEEC x SIGAFAT",
+        "Easy Drawback Control (SIGAEDC)"
+      ],
+      "implantar": [
+        "Definir o desenho da operação: exportação direta, indireta (trading/comercial exportadora), remessa com fim específico, drawback.",
+        "Configurar cadastros: cliente estrangeiro, moeda, condição de pagamento/câmbio, TES de exportação (imunidade/não incidência de ICMS, IPI, PIS/COFINS) e CFOP 7.xxx.",
+        "Configurar MV_EECFAT e a integração das notas de saída com o SIGAEEC (mensagem INVOICE / adapter EECNF400) para composição do lote de exportação.",
+        "Configurar a DU-E: geração, vinculação das notas (inclusive quebra de lote), drawback e retificação.",
+        "Definir tratamento de variação cambial (eventos 580/581), nota complementar de preço e títulos de câmbio."
+      ],
+      "treinar": [
+        "Exercitar o fluxo completo: pedido de venda -> nota de exportação -> embarque -> DU-E -> câmbio.",
+        "Treinar a emissão de nota complementar de exportação e o impacto da variação cambial na contabilidade.",
+        "Revisar a escrituração fiscal da exportação (imunidade/não incidência) e o reflexo na apuração e no SPED."
+      ],
+      "validar": [
+        "DU-E transmitida e averbada, com notas fiscais corretamente vinculadas.",
+        "Apuração sem débito de ICMS/IPI/PIS/COFINS nas exportações, conforme regime do cliente."
+      ],
+      "observacoes": [
+        "Para mineração, confirmar com o cliente se há drawback, exportação por conta e ordem ou formação de lote com quebra — cada cenário muda a parametrização da DU-E."
+      ],
+      "totalCandidatos": 31,
+      "links": [
+        {
+          "id": 2154,
+          "title": "Comércio Exterior - Protheus 12",
+          "label": "Comércio Exterior - Protheus 12",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=284872382",
+          "module": "Referências gerais TDN",
+          "moduleCode": "TDN",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 500,
+          "title": "Cross Segmento - TOTVS Backoffice Linha Protheus - SIGAEIC - Como configurar a taxa Siscomex para sair na classificação da NF de entrada no campo outras despesas?",
+          "label": "Cross Segmento - TOTVS Backoffice Linha Protheus - SIGAEIC - Como configurar a taxa Siscomex para sair na classificação da NF de entrada no campo outras despesas?",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360045481774-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-SIGAEIC-Como-configurar-a-taxa-Siscomex-para-sair-na-classifica%C3%A7%C3%A3o-da-NF-de-entrada-no-campo-outras-despesas",
+          "module": "Easy Import Control",
+          "moduleCode": "SIGAEIC",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 446,
+          "title": "Cross Segmentos - Backoffice Protheus - Doc. Eletrônicos - 817 Rejeição : Unidade Tributável incompatível com o NCM informado na operação com Comércio Exterior",
+          "label": "Cross Segmentos - Backoffice Protheus - Doc. Eletrônicos - 817 Rejeição : Unidade Tributável incompatível com o NCM informado na operação com Comércio Exterior",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/115010074088-Cross-Segmentos-Backoffice-Protheus-Doc-Eletr%C3%B4nicos-817-Rejei%C3%A7%C3%A3o-Unidade-Tribut%C3%A1vel-incompat%C3%ADvel-com-o-NCM-informado-na-opera%C3%A7%C3%A3o-com-Com%C3%A9rcio-Exterior",
+          "module": "Documentos Eletrônicos Protheus",
+          "moduleCode": "NFE/NFSE",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 15,
+          "title": "Cross Segmentos - Backoffice Protheus - FIS - Arq. Magnéticos - SPED FISCAL - Alteração do campo CDL_INDDOC para o correto preenchimento da DU-E.",
+          "label": "Cross Segmentos - Backoffice Protheus - FIS - Arq. Magnéticos - SPED FISCAL - Alteração do campo CDL_INDDOC para o correto preenchimento da DU-E.",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360021262471-Cross-Segmentos-Backoffice-Protheus-FIS-Arq-Magn%C3%A9ticos-SPED-FISCAL-Altera%C3%A7%C3%A3o-do-campo-CDL-INDDOC-para-o-correto-preenchimento-da-DU-E",
+          "module": "Arquivos Magnéticos",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 145,
+          "title": "Easy Drawback Control (SIGAEDC)",
+          "label": "Easy Drawback Control (SIGAEDC)",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001546322-Easy-Drawback-Control-SIGAEDC",
+          "module": "Catálogo de módulos Protheus",
+          "moduleCode": "PROTHEUS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Seção",
+          "intent": "implantar"
+        },
+        {
+          "id": 146,
+          "title": "Easy Export Control (SIGAEEC)",
+          "label": "Easy Export Control (SIGAEEC)",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001534681-Easy-Export-Control-SIGAEEC",
+          "module": "Catálogo de módulos Protheus",
+          "moduleCode": "PROTHEUS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Seção",
+          "intent": "implantar"
+        },
+        {
+          "id": 148,
+          "title": "Easy Siscoserv (SIGAESS)",
+          "label": "Easy Siscoserv (SIGAESS)",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001545262-Easy-Siscoserv-SIGAESS",
+          "module": "Catálogo de módulos Protheus",
+          "moduleCode": "PROTHEUS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Seção",
+          "intent": "implantar"
+        },
+        {
+          "id": 2367,
+          "title": "Exportação (trilha fiscal) - Declaração Única de Exportação (DU-E) no SIGAEEC - Linha Microsiga Protheus",
+          "label": "Exportação (trilha fiscal) - Declaração Única de Exportação (DU-E) no SIGAEEC - Linha Microsiga Protheus",
+          "url": "https://tdn.totvs.com/pages/releaseview.action?pageId=455802907",
+          "module": "Trilha Fiscal — Complementos",
+          "moduleCode": "TRILHA",
+          "source": "TDN",
+          "linkType": "TDN — Release",
+          "intent": "implantar"
+        },
+        {
+          "id": 2368,
+          "title": "Exportação (trilha fiscal) - Integração do Easy Export Control via Mensagem Única - EAI (SIGAEEC)",
+          "label": "Exportação (trilha fiscal) - Integração do Easy Export Control via Mensagem Única - EAI (SIGAEEC)",
+          "url": "https://tdn.totvs.com/pages/releaseview.action?pageId=562473799",
+          "module": "Trilha Fiscal — Complementos",
+          "moduleCode": "TRILHA",
+          "source": "TDN",
+          "linkType": "TDN — Release",
+          "intent": "implantar"
+        },
+        {
+          "id": 2369,
+          "title": "Exportação (trilha fiscal) - SIGAEEC - Nota complementar no exportação (MV_EECFAT)",
+          "label": "Exportação (trilha fiscal) - SIGAEEC - Nota complementar no exportação (MV_EECFAT)",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/360026405292-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-SIGAEEC-Nota-complementar-no-exporta%C3%A7%C3%A3o",
+          "module": "Trilha Fiscal — Complementos",
+          "moduleCode": "TRILHA",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "implantar"
+        },
+        {
+          "id": 2371,
+          "title": "Exportação (trilha fiscal) - SIGAEEC - Rotina de vinculação das notas fiscais de saída para formação do lote de exportação (EECNF400)",
+          "label": "Exportação (trilha fiscal) - SIGAEEC - Rotina de vinculação das notas fiscais de saída para formação do lote de exportação (EECNF400)",
+          "url": "https://tdn.totvs.com/pages/releaseview.action?pageId=444609121",
+          "module": "Trilha Fiscal — Complementos",
+          "moduleCode": "TRILHA",
+          "source": "TDN",
+          "linkType": "TDN — Release",
+          "intent": "implantar"
+        },
+        {
+          "id": 2370,
+          "title": "Exportação (trilha fiscal) - SIGAEEC - Qual a configuração para não gerar o título ao emitir a nota fiscal de exportação no módulo de Faturamento?",
+          "label": "Exportação (trilha fiscal) - SIGAEEC - Qual a configuração para não gerar o título ao emitir a nota fiscal de exportação no módulo de Faturamento?",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/14394253862551-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-SIGAEEC-Qual-a-configura%C3%A7%C3%A3o-para-n%C3%A3o-gerar-o-t%C3%ADtulo-ao-emitir-a-nota-fiscal-de-exporta%C3%A7%C3%A3o-no-m%C3%B3dulo-de-Faturamento",
+          "module": "Trilha Fiscal — Complementos",
+          "moduleCode": "TRILHA",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "suportar"
+        }
+      ]
+    },
+    {
+      "id": "treinamento-oficial",
+      "grupo": "transversal",
+      "titulo": "Materiais oficiais de treinamento e referência",
+      "status": "apoio",
+      "entrega": "",
+      "resumo": "Guias, manuais, webinars, eventos tira-dúvidas e bancos de conhecimento usados para capacitar o time do cliente em qualquer um dos tópicos da trilha.",
+      "rotinas": [
+        "Banco de Conhecimento - Fiscal (BC)",
+        "Webinars e Treinamentos do Configurador de Tributos (FISA170)",
+        "SUP.PROTHEUS - Eventos Tira Dúvidas",
+        "Manuais: SPED Fiscal, CIAP, Extrator Fiscal, Apuração EFD Contribuições"
+      ],
+      "implantar": [
+        "Definir a trilha de capacitação por perfil: usuário operacional, analista fiscal e key user/administrador.",
+        "Agendar os treinamentos oficiais (eventos tira-dúvidas e webinars) e registrar as gravações no material do projeto.",
+        "Montar o material do treinamento interno a partir dos guias oficiais, sempre com o print do ambiente do cliente."
+      ],
+      "treinar": [
+        "Usar os guias de referência como apostila e os FAQs/BC como material de consulta pós-treinamento.",
+        "Aplicar exercícios práticos no ambiente de homologação ao final de cada tópico da trilha.",
+        "Registrar presença e avaliação de cada sessão para evidência de entrega do projeto."
+      ],
+      "validar": [
+        "Usuários executando sozinhos o ciclo mensal (documentos -> apuração -> SPED -> TAF).",
+        "Material de treinamento versionado e entregue ao cliente."
+      ],
+      "observacoes": [],
+      "totalCandidatos": 47,
+      "links": [
+        {
+          "id": 2229,
+          "title": "Documento de Referência",
+          "label": "Documento de Referência",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=189305592",
+          "module": "Referências gerais TDN",
+          "moduleCode": "TDN",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "implantar"
+        },
+        {
+          "id": 1418,
+          "title": "Banco de Conhecimento - Fiscal - P12",
+          "label": "Banco de Conhecimento - Fiscal - P12",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=654284086",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "treinar"
+        },
+        {
+          "id": 1419,
+          "title": "BC - Configurações",
+          "label": "BC - Configurações",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=654284199",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "treinar"
+        },
+        {
+          "id": 1425,
+          "title": "BC - Menu - Livros Fiscais",
+          "label": "BC - Menu - Livros Fiscais",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=654284181",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "treinar"
+        },
+        {
+          "id": 211,
+          "title": "CFGTRIB - Guia Prático Configurador de Tributos",
+          "label": "CFGTRIB - Guia Prático Configurador de Tributos",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=966220651",
+          "module": "Configurador de Tributos",
+          "moduleCode": "FISA",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "treinar"
+        },
+        {
+          "id": 1435,
+          "title": "Conceitos - Fiscal - P12",
+          "label": "Conceitos - Fiscal - P12",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=514454190",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "treinar"
+        },
+        {
+          "id": 520,
+          "title": "Cross Segmento - TOTVS Backoffice (Linha Protheus) - SIGAFIS - Webinars e Treinamentos do Configurador de Tributos (FISA170)",
+          "label": "Cross Segmento - TOTVS Backoffice (Linha Protheus) - SIGAFIS - Webinars e Treinamentos do Configurador de Tributos (FISA170)",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/40308222614551-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-SIGAFIS-Webinars-e-Treinamentos-do-Configurador-de-Tributos-FISA170",
+          "module": "Escrituração e Relatórios Fiscal",
+          "moduleCode": "SIGAFIS",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "treinar"
+        },
+        {
+          "id": 1454,
+          "title": "Dashboard Fiscal - Guia de Referência - P12",
+          "label": "Dashboard Fiscal - Guia de Referência - P12",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=719662649",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "treinar"
+        },
+        {
+          "id": 2377,
+          "title": "Registro de Inventário (trilha fiscal) - SUP.PROTHEUS - Eventos Tira Dúvidas (materiais de Bloco K, Bloco H e Rotina de Inventário)",
+          "label": "Registro de Inventário (trilha fiscal) - SUP.PROTHEUS - Eventos Tira Dúvidas (materiais de Bloco K, Bloco H e Rotina de Inventário)",
+          "url": "https://tdn.totvs.com/pages/releaseview.action?pageId=550307175",
+          "module": "Trilha Fiscal — Complementos",
+          "moduleCode": "TRILHA",
+          "source": "TDN",
+          "linkType": "TDN — Release",
+          "intent": "treinar"
+        },
+        {
+          "id": 1906,
+          "title": "SPDFIS- Manual de utilização Sped Fiscal",
+          "label": "SPDFIS- Manual de utilização Sped Fiscal",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=695203229",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "treinar"
+        },
+        {
+          "id": 2382,
+          "title": "Treinamento (trilha fiscal) - FIS - FISA170 - Agendas de Eventos e Treinamentos do Configurador de Tributos",
+          "label": "Treinamento (trilha fiscal) - FIS - FISA170 - Agendas de Eventos e Treinamentos do Configurador de Tributos",
+          "url": "https://centraldeatendimento.totvs.com/hc/pt-br/articles/26426594441751-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Agendas-de-Eventos-EXCLUSIVA-PARA-CONSULTORES-TOTVS-Configurador-de-Tributos",
+          "module": "Trilha Fiscal — Complementos",
+          "moduleCode": "TRILHA",
+          "source": "Central de Atendimento TOTVS",
+          "linkType": "Central TOTVS — Artigo",
+          "intent": "treinar"
+        },
+        {
+          "id": 1426,
+          "title": "BC - Pontos de Entrada",
+          "label": "BC - Pontos de Entrada",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=654284154",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "customizar"
+        },
+        {
+          "id": 1420,
+          "title": "BC - FAQ - Apuração e Livros Fiscais",
+          "label": "BC - FAQ - Apuração e Livros Fiscais",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=657057065",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "suportar"
+        },
+        {
+          "id": 1421,
+          "title": "BC - FAQ - Arquivos Magnéticos",
+          "label": "BC - FAQ - Arquivos Magnéticos",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=657057078",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "suportar"
+        },
+        {
+          "id": 1422,
+          "title": "BC - FAQ - CIAP",
+          "label": "BC - FAQ - CIAP",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=6076087",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "suportar"
+        },
+        {
+          "id": 1423,
+          "title": "BC - FAQ - Documentos Fiscais",
+          "label": "BC - FAQ - Documentos Fiscais",
+          "url": "https://tdn.totvs.com/pages/viewpage.action?pageId=657216307",
+          "module": "Fiscal - Protheus 12",
+          "moduleCode": "SIGAFIS",
+          "source": "TDN",
+          "linkType": "TDN — Página",
+          "intent": "suportar"
+        }
+      ]
+    }
+  ]
+}

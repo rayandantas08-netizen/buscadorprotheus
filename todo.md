@@ -23,3 +23,12 @@
 - [x] Restringir o filtro de tipo de link para apenas TDN e Central de Atendimento TOTVS, regenerar a base completa e sincronizar as alterações com o GitHub
 - [ ] Estruturar levantamento de necessidades do Configurador de Tributos (FISA170) para cliente — pacote em `docs/fisa170/` com método, matriz de 91 colunas, caso de remessa para demonstração (CFOP 5912/6912, CST ICMS 50, IPI 53, PIS/COFINS 49, ClassTrib 410/410999, cBenef SP053190, TES 704) e validador `scripts/gerar_pacote_fisa170.py` ancorado nos índices locais
 - [x] Gerar planilha Excel de ciclos de operação para o FISA170 — `docs/fisa170/gerado/ciclos-operacoes-fisa170.xlsx` com 18 ciclos e 64 movimentos (CFOP de saída × CFOP de entrada, CST, cBenef, TES e status na matriz), produzida por `scripts/gerar_ciclos_operacoes_xlsx.py`
+- [x] Corrigir a base de conhecimento: URLs concatenadas (duplo host), títulos perdidos no formato `* Título` + `URL:` e deduplicação que mantinha o pior título — 2.382 links limpos, 0 títulos "URL" e cobertura do Bloco K restaurada (`scripts/build_knowledge.py`)
+- [x] Mapear os links do repositório para os tópicos do escopo Minérios Gerais e gerar a trilha de implantação/treinamento (`scripts/gerar_trilha_treinamento.py` → `client/public/trilhas.json` + `docs/trilha-minerios-gerais/`)
+- [x] Complementar lacunas da base com páginas oficiais do TDN/Central versionadas em `data/indices/Indice_Trilha_Complementos.txt` (Bloco K, Bloco H/MATR460, CIAP, EFD Contribuições FISA001/FISA008, Extrator Fiscal/REINF, DU-E, PCC vencimento, perda de estoque, FISA170)
+- [x] Priorizar documentação específica de Minas Gerais no P9 (P9AUTOTEXT.MG, MGREDICM, MGIVAAJUS, MGLEITE, MGRESST, SINTEGRA-MG) com cotas para os demais estados
+- [x] Publicar a aba **Trilha de treinamento** no site (Busca ↔ Trilha) com filtros por status/busca, tópicos expansíveis e links agrupados por intenção (`TrilhaPanel.tsx`, `lib/trilhas.ts`)
+- [x] Cobrir a trilha com testes: qualidade do JSON gerado (sem duplicatas, domínios oficiais, MG no P9) e comportamento do painel (filtros, expansão, JSON inválido)
+- [ ] Homologar com a SEF/MG a tese fiscal de perda/quebra de estoque (estorno de crédito, CFOP 5.927) — documentação cobre a mecânica, não a tese
+- [ ] Confirmar se o beneficiamento de minério caracteriza industrialização para fins do Bloco K (IND_ATIV do registro 0000) — decisão de escopo
+- [ ] Abrir consulta na TOTVS para conteúdo fiscal específico de mineração (CFEM, exportação de minério, Lei Kandir), inexistente na base indexada

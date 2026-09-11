@@ -1,0 +1,69 @@
+# =====================================================================
+# ÍNDICE COMPLEMENTAR — TRILHA DE IMPLANTAÇÃO E TREINAMENTO FISCAL
+# Projeto: Minérios Gerais (agenda 09/09 e 11/09)
+# ---------------------------------------------------------------------
+# Origem: lacunas identificadas no índice local (Bloco K, registro de
+# inventário, CIAP, EFD Contribuições, extrator fiscal/REINF, quebra de
+# estoque, exportação e vencimento do PCC) e preenchidas com páginas
+# oficiais do TDN e da Central de Atendimento TOTVS localizadas em
+# 2026-09-11. Todas as URLs pertencem a tdn.totvs.com ou
+# centraldeatendimento.totvs.com.
+# Formato: Título | URL (mesmo padrão dos demais índices)
+# =====================================================================
+
+# ---- Bloco K (EFD ICMS/IPI) ----
+Bloco K (trilha fiscal) - Bloco K: Informações Gerais sobre o Bloco - Linha Microsiga Protheus | https://tdn.totvs.com/pages/releaseview.action?pageId=259560649
+Bloco K (trilha fiscal) - SIGAEST - Como o Protheus gera no SPED o Registro K200: Estoque Escriturado? | https://centraldeatendimento.totvs.com/hc/pt-br/articles/360019502091-Cross-Segmento-Backoffice-Linha-Protheus-SIGAEST-Como-o-Protheus-gera-no-SPED-o-Registro-K200-Estoque-Escriturado
+Bloco K (trilha fiscal) - SIGAEST - Quais são as tabelas relacionadas para composição do saldo do registro K200 no bloco K? | https://centraldeatendimento.totvs.com/hc/pt-br/articles/360021629091-Cross-Segmento-Backoffice-Linha-Protheus-SIGAEST-Quais-s%C3%A3o-as-tabelas-relacionadas-para-composi%C3%A7%C3%A3o-do-saldo-do-registro-K200-no-bloco-K
+Bloco K (trilha fiscal) - SIGAEST - Como definir um tipo de produto que não é padrão do Protheus para ser considerado no Registro K200? | https://centraldeatendimento.totvs.com/hc/pt-br/articles/360033136554
+Bloco K (trilha fiscal) - SIGAEST - Legais e Fiscais no Estoque (seção de artigos) | https://centraldeatendimento.totvs.com/hc/pt-br/sections/1500001538941-SIGAEST-LEGAIS
+
+# ---- Registro de inventário / Bloco H ----
+Registro de Inventário (trilha fiscal) - FIS - Arq. Magnéticos - SPED FISCAL - Como gerar bloco H Inventário Físico e Controle de Estoque | https://centraldeatendimento.totvs.com/hc/pt-br/articles/360010316131-Cross-Segmentos-Backoffice-Protheus-FIS-Arq-Magn%C3%A9ticos-SPED-FISCAL-Como-gerar-bloco-H-Invent%C3%A1rio-F%C3%ADsico-e-Controle-de-Estoque
+Registro de Inventário (trilha fiscal) - SIGAEST - Processo de Inventário - Conceito, Exemplo e Dúvidas (MATA270/MATA340) | https://centraldeatendimento.totvs.com/hc/pt-br/articles/360020799592-Cross-Segmento-Backoffice-Linha-Protheus-SIGAEST-Processo-de-Invent%C3%A1rio-Conceito-Exemplo-e-D%C3%BAvidas
+Registro de Inventário (trilha fiscal) - SIGAEST - MATA271 - Bloqueio de produtos para inventário por data calculada | https://centraldeatendimento.totvs.com/hc/pt-br/articles/360021321072-Cross-Segmento-Backoffice-Linha-Protheus-SIGAEST-MATA271-Bloqueio-de-produtos-para-invent%C3%A1rio-por-data-calculada
+Registro de Inventário (trilha fiscal) - SIGAEST - MATA340 - MV_CONTINV múltiplas contagens de inventário por seleção de contagem | https://centraldeatendimento.totvs.com/hc/pt-br/articles/360061630273-MP-SIGAEST-MATA340-MV-CONTINV-m%C3%BAltiplas-contagens-de-invent%C3%A1rio-por-sele%C3%A7%C3%A3o-de-contagem
+Registro de Inventário (trilha fiscal) - SIGAEST - Principais relatórios para conferência dos saldos físicos e financeiros (MATR460) | https://centraldeatendimento.totvs.com/hc/pt-br/articles/360004834251-Cross-Segmento-Backoffice-Linha-Protheus-SIGAEST-Principais-relat%C3%B3rios-para-confer%C3%AAncia-dos-saldos-f%C3%ADsicos-e-financeiros
+Registro de Inventário (trilha fiscal) - Relatórios - Estoque - Linha Microsiga Protheus (MATR460, MATR243 IN 1673/2016) | https://tdn.totvs.com/pages/releaseview.action?pageId=271408946
+Registro de Inventário (trilha fiscal) - SUP.PROTHEUS - Eventos Tira Dúvidas (materiais de Bloco K, Bloco H e Rotina de Inventário) | https://tdn.totvs.com/pages/releaseview.action?pageId=550307175
+
+# ---- CIAP ----
+CIAP (trilha fiscal) - CIAP - Crédito de ICMS sobre o Ativo Permanente - Linha Microsiga Protheus | https://tdn.totvs.com/pages/viewpage.action?pageId=708871751
+CIAP (trilha fiscal) - FIS - Processo de configuração do CIAP para gerar o SPED Fiscal (MATA905/MATA906) | https://centraldeatendimento.totvs.com/hc/pt-br/articles/360035400914-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-Processo-de-configura%C3%A7%C3%A3o-do-CIAP-para-gerar-o-SPED-Fiscal
+CIAP (trilha fiscal) - FIS - CIAP - Crédito ICMS sobre ativo permanente / Relatório CIAP (MATR995) | https://centraldeatendimento.totvs.com/hc/pt-br/articles/360028514051-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-CIAP-Cr%C3%A9dito-ICMS-sobre-ativo-permanente-Relat%C3%B3rio-CIAP
+
+# ---- EFD Contribuições ----
+EFD Contribuições (trilha fiscal) - Apuração EFD Contribuições - Linha Microsiga Protheus (FISA001) | https://tdn.totvs.com/pages/viewpage.action?pageId=270905514
+EFD Contribuições (trilha fiscal) - FIS - Arq. Magnéticos - EFD Contribuições - Nova Apuração e Geração do Arquivo (FISA001 e FISA008) | https://centraldeatendimento.totvs.com/hc/pt-br/articles/360028967531-Cross-Segmentos-Backoffice-Protheus-FIS-Arq-Magn%C3%A9ticos-EFD-Contribui%C3%A7%C3%B5es-Nova-Apura%C3%A7%C3%A3o-e-Gera%C3%A7%C3%A3o-do-Arquivo-FISA001-e-FISA008
+
+# ---- TAF, Extrator Fiscal e REINF ----
+TAF (trilha fiscal) - Extraindo informações fiscais do ERP Protheus - Extrator Fiscal EXTFISXTAF | https://tdn.totvs.com/pages/viewpage.action?pageId=233757571
+TAF (trilha fiscal) - Protheus - REINF Suporte Financeiro (títulos, naturezas de rendimento e integração ao TAF) | https://tdn.totvs.com/display/public/PROT/Protheus+-+REINF+Suporte+Financeiro
+TAF (trilha fiscal) - TAF - EFD-Reinf (documentação do módulo TAF) | https://tdn.totvs.com/display/public/TAF/EFD-Reinf
+TAF (trilha fiscal) - TAF - REINF - Extrator Fiscal - Layouts para Reinf (T001/T001AB/T003/T007/T010) | https://centraldeatendimento.totvs.com/hc/pt-br/articles/360023075011-CROSS-Segmentos-Backoffice-Linha-Protheus-TAF-REINF-Extrator-Fiscal-Layouts-para-Reinf
+
+# ---- Impostos retidos / PCC e data de vencimento ----
+Impostos Retidos (trilha fiscal) - Configurador de Tributos - Regras Financeiras (data base para vencimento do imposto e cumulatividade) | https://tdn.totvs.com/display/public/PROT/Configurador+de+Tributos+-+Regras+Financeiras
+Impostos Retidos (trilha fiscal) - MP - FIS - Retenção de PIS, COFINS e CSLL (MV_BX10925, MV_VCPCCP, MV_VL13137, MV_PISNAT) | https://centraldeatendimento.totvs.com/hc/pt-br/articles/360056887693-MP-FIS-Reten%C3%A7%C3%A3o-de-PIS-COFINS-e-CSLL
+Impostos Retidos (trilha fiscal) - MP - FIS - Cumulatividade PIS, COFINS e CSLL (Lei 13.137/15 e vencimento no 2º decêndio) | https://centraldeatendimento.totvs.com/hc/pt-br/articles/360053516414-MP-FIS-Cumulatividade-Pis-Cofins-e-CSLL
+Impostos Retidos (trilha fiscal) - SIGAFIN - FINA378 - É possível aglutinar títulos dos impostos PIS/COFINS/CSLL pela data de vencimento? | https://centraldeatendimento.totvs.com/hc/pt-br/articles/360022030252-Cross-Segmento-Backoffice-Linha-Protheus-SIGAFIN-FINA378-%C3%89-poss%C3%ADvel-aglutinar-t%C3%ADtulos-dos-impostos-PIS-COFINS-CSLL-pela-data-de-vencimento
+Impostos Retidos (trilha fiscal) - Roteiro Proc. Cálc. Retenção e Ap. PIS/Cofins/CSLL (SIGAFAT) | https://tdn.totvs.com/pages/releaseview.action?pageId=312163918
+
+# ---- Quebra / perda de estoque ----
+Quebra de Estoque (trilha fiscal) - SIGAFAT - Como emitir uma Nota de Débito de Perda em Estoque (tpNFDebito = 07) | https://centraldeatendimento.totvs.com/hc/pt-br/articles/37327450272023-Cross-Segmentos-Backoffice-Protheus-SIGAFAT-Como-emitir-uma-Nota-de-D%C3%A9bito-de-Perda-em-Estoque-tpNFDebito-07
+Quebra de Estoque (trilha fiscal) - SIGAEST - Como realizar o estorno (exclusão) de movimento de Inventário (MATA240/MATA241) | https://centraldeatendimento.totvs.com/hc/pt-br/articles/4402384407063-Cross-Segmento-Backoffice-Linha-Protheus-SIGAEST-Como-realizar-o-estorno-exclus%C3%A3o-de-movimento-de-Invent%C3%A1rio
+Quebra de Estoque (trilha fiscal) - SIGAEST - Qual o objetivo do parâmetro MV_ESTNEG? | https://centraldeatendimento.totvs.com/hc/pt-br/articles/4406452757399-Cross-Segmento-Backoffice-Linha-Protheus-SIGAEST-Qual-o-objetivo-do-par%C3%A2metro-MV-ESTNEG
+
+# ---- Exportação ----
+Exportação (trilha fiscal) - Declaração Única de Exportação (DU-E) no SIGAEEC - Linha Microsiga Protheus | https://tdn.totvs.com/pages/releaseview.action?pageId=455802907
+Exportação (trilha fiscal) - Integração do Easy Export Control via Mensagem Única - EAI (SIGAEEC) | https://tdn.totvs.com/pages/releaseview.action?pageId=562473799
+Exportação (trilha fiscal) - SIGAEEC - Rotina de vinculação das notas fiscais de saída para formação do lote de exportação (EECNF400) | https://tdn.totvs.com/pages/releaseview.action?pageId=444609121
+Exportação (trilha fiscal) - SIGAEEC - Nota complementar no exportação (MV_EECFAT) | https://centraldeatendimento.totvs.com/hc/pt-br/articles/360026405292-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-SIGAEEC-Nota-complementar-no-exporta%C3%A7%C3%A3o
+Exportação (trilha fiscal) - SIGAEEC - Qual a configuração para não gerar o título ao emitir a nota fiscal de exportação no módulo de Faturamento? | https://centraldeatendimento.totvs.com/hc/pt-br/articles/14394253862551-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-SIGAEEC-Qual-a-configura%C3%A7%C3%A3o-para-n%C3%A3o-gerar-o-t%C3%ADtulo-ao-emitir-a-nota-fiscal-de-exporta%C3%A7%C3%A3o-no-m%C3%B3dulo-de-Faturamento
+
+# ---- Validação das rotinas fiscais (NF manual de entrada e saída) ----
+Rotinas Fiscais (trilha fiscal) - SIGAFAT - Emissão de nota fiscal de saída no módulo Faturamento (pedido, liberação e MATA461) | https://centraldeatendimento.totvs.com/hc/pt-br/articles/1500010811321-Cross-Segmentos-Backoffice-Protheus-SIGAFAT-Emiss%C3%A3o-de-nota-fiscal-de-sa%C3%ADda-no-m%C3%B3dulo-Faturamento
+
+# ---- Revisão de parametrização / escopo (IBS e CBS em 2026) e treinamento ----
+Parametrização (trilha fiscal) - FIS - Adequação à obrigatoriedade do IBS e CBS a partir de 03 de agosto de 2026 | https://centraldeatendimento.totvs.com/hc/pt-br/articles/42351363577623-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-Adequa%C3%A7%C3%A3o-%C3%A0-obrigatoriedade-do-IBS-e-CBS-a-partir-de-03-de-agosto-de-2026
+Treinamento (trilha fiscal) - FIS - FISA170 - Agendas de Eventos e Treinamentos do Configurador de Tributos | https://centraldeatendimento.totvs.com/hc/pt-br/articles/26426594441751-Cross-Segmento-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Agendas-de-Eventos-EXCLUSIVA-PARA-CONSULTORES-TOTVS-Configurador-de-Tributos

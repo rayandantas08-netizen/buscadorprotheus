@@ -1,6 +1,6 @@
 # Resumo do levantamento — FISA170
 
-Gerado em 2026-09-01 a partir de `docs/fisa170/modelos/matriz-operacoes.csv`.
+Gerado em 2026-09-15 a partir de `docs/fisa170/modelos/matriz-operacoes.csv`.
 
 | Operação | Descrição | CFOP | CST ICMS | PIS/COF | IBS/CBS | cBenef | TES | Bloqueios | Atenções |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |

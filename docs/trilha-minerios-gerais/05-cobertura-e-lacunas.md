@@ -6,19 +6,19 @@ Leitura gerada automaticamente: quantos links do índice local casam com cada t�
 | --- | --- | --- | --- | --- |
 | Cadastros fiscais: produtos, fornecedores e clientes | 109 | 12 | 0 | ✅ cobertura própria |
 | TES: entrada e saída | 75 | 12 | 0 | ✅ cobertura própria |
-| Configuração de tributos (impostos legados) e Configurador de Tributos | 220 | 12 | 0 | ✅ cobertura própria |
-| Diferencial de alíquota (DIFAL) | 115 | 12 | 0 | ✅ cobertura própria |
+| Configuração de tributos (impostos legados) e Configurador de Tributos | 228 | 12 | 0 | ✅ cobertura própria |
+| Diferencial de alíquota (DIFAL) | 116 | 12 | 0 | ✅ cobertura própria |
 | Apuração de impostos | 94 | 14 | 0 | ✅ cobertura própria |
 | Impostos retidos (PCC, IRRF, INSS, ISS) | 38 | 16 | 5 | ⚠️ dependente de complemento |
-| Geração do EFD-ICMS/IPI (SPED Fiscal) | 96 | 16 | 0 | ✅ cobertura própria |
+| Geração do EFD-ICMS/IPI (SPED Fiscal) | 97 | 16 | 0 | ✅ cobertura própria |
 | Geração da EFD Contribuições (PIS/COFINS) | 104 | 16 | 2 | ✅ cobertura própria |
 | Registro de Apuração de ICMS — P9 (outros créditos e débitos) | 80 | 14 | 0 | ✅ cobertura própria |
 | CIAP — Controle de Crédito de ICMS do Ativo Permanente | 85 | 14 | 2 | ✅ cobertura própria |
 | Bloco K — controle da produção e do estoque | 14 | 14 | 6 | ⚠️ dependente de complemento |
 | Registro de inventário (Bloco H / MATR460) | 38 | 16 | 8 | ⚠️ dependente de complemento |
-| Validação das rotinas fiscais — NF manual de entrada/saída e acertos fiscais | 161 | 16 | 1 | ✅ cobertura própria |
-| TAF, Extrator Fiscal e EFD-REINF | 23 | 16 | 4 | ✅ cobertura própria |
-| Revisão das parametrizações conforme o escopo do projeto | 263 | 16 | 0 | ✅ cobertura própria |
+| Validação das rotinas fiscais — NF manual de entrada/saída e acertos fiscais | 162 | 16 | 1 | ✅ cobertura própria |
+| TAF, Extrator Fiscal e EFD-REINF | 24 | 16 | 4 | ✅ cobertura própria |
+| Revisão das parametrizações conforme o escopo do projeto | 270 | 16 | 0 | ✅ cobertura própria |
 | Quebra de estoque (perdas, refugo e baixas) | 17 | 14 | 10 | ⚠️ dependente de complemento |
 | Exportação | 31 | 12 | 5 | ⚠️ dependente de complemento |
 | Materiais oficiais de treinamento e referência | 47 | 16 | 2 | ✅ cobertura própria |

@@ -4,7 +4,7 @@ O **Buscador Protheus** é uma aplicação estática para consulta técnica da d
 
 ## O que a aplicação faz
 
-A interface carrega um índice JSON local com **2.382 links deduplicados** do TDN e da Central de Atendimento TOTVS, incluindo artigos e seções/subseções mapeadas. A busca acontece inteiramente no navegador e considera títulos, URLs, códigos de módulo e termos técnicos. Os resultados exibem o título, a origem, o módulo e o link clicável para a documentação original.
+A interface carrega um índice JSON local com **2.391 links deduplicados** do TDN e da Central de Atendimento TOTVS, incluindo artigos e seções/subseções mapeadas. A busca acontece inteiramente no navegador e considera títulos, URLs, códigos de módulo e termos técnicos. Os resultados exibem o título, a origem, o módulo e o link clicável para a documentação original.
 
 Além da busca, a aplicação tem a aba **Trilha de treinamento**: um dossiê de implantação e capacitação do escopo fiscal (projeto Minérios Gerais) com 18 tópicos, cada um com o que implantar, o que treinar, como validar e as fontes oficiais selecionadas automaticamente a partir do próprio índice local.
 
@@ -14,19 +14,21 @@ A aplicação também oferece uma camada opcional de análise com OpenAI ou Goog
 
 ## Estrutura principal
 
-| Caminho | Finalidade |
-| --- | --- |
-| `client/src/pages/Home.tsx` | Interface, alternância Busca/Trilha, filtros e chamadas opcionais às APIs de IA. |
-| `client/src/components/TrilhaPanel.tsx` | Aba **Trilha de treinamento**: grupos da agenda, tópicos expansíveis e links por intenção. |
-| `client/src/lib/trilhas.ts` | Tipos, validação e filtros (status/busca) da trilha consumida pelo navegador. |
-| `client/public/knowledge.json` | Base estática de links consumida pelo navegador. |
-| `client/public/trilhas.json` | Trilha de implantação e treinamento gerada a partir da base estática. |
-| `docs/trilha-minerios-gerais/` | Dossiê em Markdown da trilha (agendas 09/09 e 11/09, treinamento e cobertura). |
-| `scripts/build_knowledge.py` | Regeneração da base JSON a partir dos índices `.txt` versionados em `data/indices/`. |
-| `scripts/gerar_trilha_treinamento.py` | Seleção dos links por tópico e geração de `trilhas.json` + dossiê Markdown. |
-| `data/indices/Indice_Trilha_Complementos.txt` | Complementos oficiais (TDN/Central) usados para cobrir lacunas da trilha. |
-| `.github/workflows/deploy-pages.yml` | Build e publicação automática no GitHub Pages. |
-| `vite.config.ts` | Configuração do caminho-base para preview local e subdiretório do GitHub Pages. |
+| Caminho                                             | Finalidade                                                                                      |
+| --------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| `client/src/pages/Home.tsx`                         | Interface, alternância Busca/Trilha, filtros e chamadas opcionais às APIs de IA.                |
+| `client/src/components/TrilhaPanel.tsx`             | Aba **Trilha de treinamento**: grupos da agenda, tópicos expansíveis e links por intenção.      |
+| `client/src/lib/trilhas.ts`                         | Tipos, validação e filtros (status/busca) da trilha consumida pelo navegador.                   |
+| `client/public/knowledge.json`                      | Base estática de links consumida pelo navegador.                                                |
+| `client/public/trilhas.json`                        | Trilha de implantação e treinamento gerada a partir da base estática.                           |
+| `docs/trilha-minerios-gerais/`                      | Dossiê em Markdown da trilha (agendas 09/09 e 11/09, treinamento e cobertura).                  |
+| `scripts/build_knowledge.py`                        | Regeneração da base JSON a partir dos índices `.txt` versionados em `data/indices/`.            |
+| `scripts/gerar_trilha_treinamento.py`               | Seleção dos links por tópico e geração de `trilhas.json` + dossiê Markdown.                     |
+| `data/indices/Indice_Trilha_Complementos.txt`       | Complementos oficiais (TDN/Central) usados para cobrir lacunas da trilha.                       |
+| `data/indices/Indice_Cfgtrib_Documento_Entrada.txt` | 52 links curados do sintoma "Documento de Entrada sem os impostos do Configurador de Tributos". |
+| `docs/cfgtrib-documento-entrada/`                   | Roteiro de diagnóstico desse sintoma, com a fonte de cada verificação.                          |
+| `.github/workflows/deploy-pages.yml`                | Build e publicação automática no GitHub Pages.                                                  |
+| `vite.config.ts`                                    | Configuração do caminho-base para preview local e subdiretório do GitHub Pages.                 |
 
 ## Regenerar a base de conhecimento
 
@@ -104,7 +106,24 @@ python3 scripts/gerar_pacote_fisa170.py --check      # falha se houver bloqueio 
 As fontes citadas nas fichas são sempre links já versionados em `data/indices/`, o que mantém o pacote
 ancorado na documentação oficial em vez de citar páginas soltas.
 
+## Roteiro: Documento de Entrada sem os impostos do Configurador de Tributos
+
+O sintoma "o documento de entrada não traz os impostos do Configurador de Tributos" não tem um
+artigo oficial com esse título: o que existe são três documentos que precisam ser lidos juntos. Em
+`docs/cfgtrib-documento-entrada/` está o roteiro na ordem de verificação (confirmar a origem do
+cálculo, validar a regra, conferir o enquadramento dos quatro perfis, base/alíquota, tabelas,
+financeiro, pré-nota e simuladores), cada passo com o link da fonte e o status da verificação.
+
+```bash
+python3 scripts/build_knowledge.py   # inclui o índice curado na base (2.391 links)
+pnpm test                            # garante que a frase do usuário acha as fontes
+```
+
+A busca passou a normalizar acentos nos dois lados (antes "classificação tributária" devolvia 9
+resultados; agora devolve 65) e a casar singular e plural ("impostos" x "Imposto"). Palavras vazias
+("de", "do", "os") valem menos, e expressões inteiras no título ("documento de entrada",
+"configurador de tributos") recebem bônus — é isso que coloca o artigo certo na primeira posição.
+
 ## Limitações deliberadas
 
 A aplicação pesquisa os títulos e URLs disponíveis no índice; ela não baixa automaticamente o conteúdo completo de cada artigo. Isso mantém o projeto gratuito, rápido e compatível com hospedagem puramente estática. Para obter uma resposta da IA, os links relevantes encontrados são enviados como contexto, e o usuário deve abrir a fonte oficial para confirmar a versão, o pacote e os detalhes de implantação.
-

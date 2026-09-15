@@ -2,7 +2,7 @@
 
 > Itens já implantados no cliente. A trilha serve para revisar a parametrização feita, padronizar o discurso do treinamento e registrar evidências de validação.
 
-Projeto: **Minérios Gerais — implantação e treinamento do Fiscal Protheus 12**  ·  Gerado em 2026-09-11  ·  Base local com 2382 links.
+Projeto: **Minérios Gerais — implantação e treinamento do Fiscal Protheus 12**  ·  Gerado em 2026-09-15  ·  Base local com 2391 links.
 
 ## 1. Cadastros fiscais: produtos, fornecedores e clientes
 
@@ -113,7 +113,7 @@ Tipo de Entrada e Saída (SF4) define CFOP, atualização de estoque/financeiro,
 
 ## 3. Configuração de tributos (impostos legados) e Configurador de Tributos
 
-**Status:** `concluido`  ·  **Fontes na base:** 220 candidatas, 12 selecionadas.
+**Status:** `concluido`  ·  **Fontes na base:** 228 candidatas, 12 selecionadas.
 
 Duas camadas convivem: os impostos legados (TES, exceção fiscal, alíquotas em cadastro) e o Configurador de Tributos (FISA170), que passa a ser obrigatório para novas legislações e para IBS/CBS.
 
@@ -170,7 +170,7 @@ Duas camadas convivem: os impostos legados (TES, exceção fiscal, alíquotas em
 
 ## 4. Diferencial de alíquota (DIFAL)
 
-**Status:** `concluido`  ·  **Fontes na base:** 115 candidatas, 12 selecionadas.
+**Status:** `concluido`  ·  **Fontes na base:** 116 candidatas, 12 selecionadas.
 
 DIFAL de aquisição (uso/consumo e ativo imobilizado) e DIFAL EC 87/2015 para não contribuinte, com ou sem base dupla, FECP e GNRE.
 
@@ -330,7 +330,7 @@ Retenções na entrada e na saída, geração de títulos de imposto, cumulativi
 - [Configurações - INSS - Fiscal - P12](https://tdn.totvs.com/pages/viewpage.action?pageId=654102732) — Fiscal - Protheus 12 (TDN)
 - [Configurações - IRRF - Fiscal - P12](https://tdn.totvs.com/pages/viewpage.action?pageId=653143855) — Fiscal - Protheus 12 (TDN)
 - [Financeiro - Cadastros > Cross Segmentos - Backoffice Linha Protheus - SIGAFIN - Natureza utilizada nos titulos de retenção de impostos](https://centraldeatendimento.totvs.com/hc/pt-br/articles/39270216649495-Cross-Segmentos-Backoffice-Linha-Protheus-SIGAFIN-Natureza-utilizada-nos-titulos-de-reten%C3%A7%C3%A3o-de-impostos) — Financeiro (Central TOTVS)
-- [Escrita Fiscal - Impostos - Cálculos > CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS - Como habilitar a opção Modalidade de retenção do PIS, COFINS e CSLL localizado na aba Duplicatas na rotina MATA103 - Documento de Entrada?](https://centraldeatendimento.totvs.com/hc/pt-br/articles/4409524481047-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-Como-habilitar-a-op%C3%A7%C3%A3o-Modalidade-de-reten%C3%A7%C3%A3o-do-PIS-COFINS-e-CSLL-localizado-na-aba-Duplicatas-na-rotina-MATA103-Documento-de-Entrada) — Escrituração e Relatórios Fiscal (Central TOTVS)
+- [Escrita Fiscal - Impostos - Cálculos > CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS - Como habilitar a opção Modalidade de retenção do PIS, COFINS e CSLL localizado na aba Duplicatas na rotina MATA103 - Documento de Entrada?](https://centraldeatendimento.totvs.com/hc/pt-br/articles/4409524481047-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-Como-habilitar-a-op%C3%A7%C3%A3o-Modalidade-de-reten%C3%A7%C3%A3o-do-PIS-COFINS-e-CSLL-localizado-na-aba-Duplicatas-na-rotina-MATA103-Documento-de-Entrada) — Configurador de Tributos (Central TOTVS)
 - [Escrita Fiscal - Impostos - Cálculos > CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS - Cumulatividade do INSS](https://centraldeatendimento.totvs.com/hc/pt-br/articles/4411045344919-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-Cumulatividade-do-INSS) — Escrituração e Relatórios Fiscal (Central TOTVS)
 - [CROSS Segmentos - TOTVS Backoffice Linha Protheus - FIS – FISA170 – Como calcular PIS/COFINS/CSLL retenção utilizando o Configurador de Tributos para notas de entrada e saída.](https://centraldeatendimento.totvs.com/hc/pt-br/articles/28271950709399-CROSS-Segmentos-TOTVS-Backoffice-Linha-Protheus-FIS-FISA170-Como-calcular-PIS-COFINS-CSLL-reten%C3%A7%C3%A3o-utilizando-o-Configurador-de-Tributos-para-notas-de-entrada-e-sa%C3%ADda) — Configurador de Tributos (Central TOTVS)
 - [Impostos Retidos (trilha fiscal) - Configurador de Tributos - Regras Financeiras (data base para vencimento do imposto e cumulatividade)](https://tdn.totvs.com/display/public/PROT/Configurador+de+Tributos+-+Regras+Financeiras) — Trilha Fiscal — Complementos (TDN) · complemento da trilha

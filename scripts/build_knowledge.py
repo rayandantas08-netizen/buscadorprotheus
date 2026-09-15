@@ -21,6 +21,7 @@ OUTPUT_PATH = PROJECT_ROOT / 'client' / 'public' / 'knowledge.json'
 
 MODULES = {
     'Indice_Configurador_Tributos.txt': ('Configurador de Tributos', 'FISA'),
+    'Indice_Cfgtrib_Documento_Entrada.txt': ('Configurador de Tributos', 'FISA'),
     'Indice_SIGAFIS_Fiscal.txt': ('Escrituração e Relatórios Fiscal', 'SIGAFIS'),
     'Indice_SIGAFAT_Faturamento.txt': ('Faturamento', 'SIGAFAT'),
     'Indice_SIGAFIN_Financeiro.txt': ('Financeiro', 'SIGAFIN'),

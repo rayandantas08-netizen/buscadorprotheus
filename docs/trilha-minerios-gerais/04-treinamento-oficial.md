@@ -2,7 +2,7 @@
 
 > Materiais de treinamento, guias de referência e bancos de conhecimento usados em todos os tópicos.
 
-Projeto: **Minérios Gerais — implantação e treinamento do Fiscal Protheus 12**  ·  Gerado em 2026-09-11  ·  Base local com 2382 links.
+Projeto: **Minérios Gerais — implantação e treinamento do Fiscal Protheus 12**  ·  Gerado em 2026-09-15  ·  Base local com 2391 links.
 
 ## 1. Materiais oficiais de treinamento e referência
 

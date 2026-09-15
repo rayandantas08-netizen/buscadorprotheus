@@ -1,6 +1,6 @@
 # Trilha de implantação e treinamento — Fiscal Protheus 12
 
-Projeto: **Minérios Gerais — implantação e treinamento do Fiscal Protheus 12**. Dossiê gerado por `scripts/gerar_trilha_treinamento.py` a partir do índice local (`client/public/knowledge.json`, 2382 links do TDN e da Central de Atendimento TOTVS). Nenhum link aqui é inventado: todos existem na base versionada do repositório.
+Projeto: **Minérios Gerais — implantação e treinamento do Fiscal Protheus 12**. Dossiê gerado por `scripts/gerar_trilha_treinamento.py` a partir do índice local (`client/public/knowledge.json`, 2391 links do TDN e da Central de Atendimento TOTVS). Nenhum link aqui é inventado: todos existem na base versionada do repositório.
 
 ## Como usar
 
@@ -33,19 +33,19 @@ python3 scripts/gerar_trilha_treinamento.py --check  # falha se algum tópico fi
 | --- | --- | --- | --- | --- | --- |
 | 1 | Cadastros fiscais: produtos, fornecedores e clientes | Tópicos concluídos | concluido | 109 | 12 |
 | 2 | TES: entrada e saída | Tópicos concluídos | concluido | 75 | 12 |
-| 3 | Configuração de tributos (impostos legados) e Configurador de Tributos | Tópicos concluídos | concluido | 220 | 12 |
-| 4 | Diferencial de alíquota (DIFAL) | Tópicos concluídos | concluido | 115 | 12 |
+| 3 | Configuração de tributos (impostos legados) e Configurador de Tributos | Tópicos concluídos | concluido | 228 | 12 |
+| 4 | Diferencial de alíquota (DIFAL) | Tópicos concluídos | concluido | 116 | 12 |
 | 5 | Apuração de impostos | Tópicos concluídos | concluido | 94 | 14 |
 | 6 | Impostos retidos (PCC, IRRF, INSS, ISS) | Tópicos concluídos | concluido | 38 | 16 |
-| 7 | Geração do EFD-ICMS/IPI (SPED Fiscal) | Agenda 09/09 | pendente | 96 | 16 |
+| 7 | Geração do EFD-ICMS/IPI (SPED Fiscal) | Agenda 09/09 | pendente | 97 | 16 |
 | 8 | Geração da EFD Contribuições (PIS/COFINS) | Agenda 09/09 | pendente | 104 | 16 |
 | 9 | Registro de Apuração de ICMS — P9 (outros créditos e débitos) | Agenda 09/09 | pendente | 80 | 14 |
 | 10 | CIAP — Controle de Crédito de ICMS do Ativo Permanente | Agenda 09/09 | pendente | 85 | 14 |
 | 11 | Bloco K — controle da produção e do estoque | Agenda 09/09 | pendente | 14 | 14 |
 | 12 | Registro de inventário (Bloco H / MATR460) | Agenda 09/09 | pendente | 38 | 16 |
-| 13 | Validação das rotinas fiscais — NF manual de entrada/saída e acertos fiscais | Agenda 11/09 | pendente | 161 | 16 |
-| 14 | TAF, Extrator Fiscal e EFD-REINF | Agenda 11/09 | pendente | 23 | 16 |
-| 15 | Revisão das parametrizações conforme o escopo do projeto | Agenda 11/09 | pendente | 263 | 16 |
+| 13 | Validação das rotinas fiscais — NF manual de entrada/saída e acertos fiscais | Agenda 11/09 | pendente | 162 | 16 |
+| 14 | TAF, Extrator Fiscal e EFD-REINF | Agenda 11/09 | pendente | 24 | 16 |
+| 15 | Revisão das parametrizações conforme o escopo do projeto | Agenda 11/09 | pendente | 270 | 16 |
 | 16 | Quebra de estoque (perdas, refugo e baixas) | Agenda 11/09 | pendente | 17 | 14 |
 | 17 | Exportação | Agenda 11/09 | pendente | 31 | 12 |
 | 18 | Materiais oficiais de treinamento e referência | Apoio transversal | apoio | 47 | 16 |
